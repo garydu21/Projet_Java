@@ -1,15 +1,24 @@
 package Modele;
 
 import Criminel.Criminel;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 
 public class Modele extends Observable {
+    private static final String FICHIER_JSON = "criminels.json";
     private List<Criminel> listeCriminel;
 
     public Modele() {
         this.listeCriminel = new ArrayList<>();
+        chargerDonnees();
     }
 
     public List<Criminel> getListeCriminel() {
@@ -18,6 +27,7 @@ public class Modele extends Observable {
 
     public void addListeCriminel(Criminel c) {
         this.listeCriminel.add(c);
+        sauvegarderDonnees();
         setChanged();
         notifyObservers();
     }
@@ -25,6 +35,7 @@ public class Modele extends Observable {
     public void supprimerCriminel(int index) {
         if (index >= 0 && index < listeCriminel.size()) {
             listeCriminel.remove(index);
+            sauvegarderDonnees();
             setChanged();
             notifyObservers();
         }
@@ -34,65 +45,40 @@ public class Modele extends Observable {
         if (index >= 0 && index < listeCriminel.size()) {
             listeCriminel.get(index).setNom(nom);
             listeCriminel.get(index).setPrenom(prenom);
+            sauvegarderDonnees();
             setChanged();
             notifyObservers();
         }
     }
 
+    public void exporterJson(File fichier) {
+        try (FileWriter writer = new FileWriter(fichier)) {
+            new Gson().toJson(listeCriminel, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    public void importerJson(File fichier) {
+        try (FileReader reader = new FileReader(fichier)) {
+            Type listType = new TypeToken<ArrayList<Criminel>>() {}.getType();
+            listeCriminel = new Gson().fromJson(reader, listType);
+            setChanged();
+            notifyObservers();
+            sauvegarderDonnees();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-//    private ArrayList<Criminel> listeCriminel;
-//
-//    private Button[] tabButtons;
-//
-//    public Modele(){
-//        this.listeCriminel = new ArrayList<>();
-//    }
-//
-//    // Methode qui lorsque est appelé, va faire une recherche dans une liste de criminel et va
-//    // Retourne une liste des criminels qui correspond aux String passé en paramêtre.
-//    public ArrayList<Criminel> rechercheCriminel(String nomCriminel) {
-//        ArrayList<Criminel> criminelBarreRecherce = new ArrayList<Criminel>(); // On initialise la liste qu'on va remplir
-//
-//        for (Criminel unCriminel : listeCriminel) { // On parcours la liste contenant tout les criminels
-//            if (unCriminel.getNom().contains(nomCriminel)) { // On verifie si un nom de criminel contient les characters
-//                criminelBarreRecherce.add(unCriminel); // On l'ajoute à la liste
-//            }
-//        }
-//
-//        return criminelBarreRecherce; // On retourne la liste
-//    }
-//
-//    public int getIndexCriminel(Criminel unCriminel) {
-//        for (Criminel criminel : listeCriminel) {
-//            if (criminel.getNom().equals(unCriminel.getNom())) {
-//                return listeCriminel.indexOf(criminel);
-//            }
-//        }
-//        return this.listeCriminel.toArray().length;
-//    }
-//
-//    public ArrayList<Criminel> getListeCriminel() {
-//        return this.listeCriminel;
-//    }
-//
-//    public ArrayList<Criminel> getCriminelAffaireCommun() {
-//        ArrayList<Criminel> criminelAffaireCommun = new ArrayList<Criminel>();
-//        ArrayList<Criminel> affaire = this.getListeCriminel();
-//        for (Criminel c : affaire) {
-//            for (Criminel c2 : affaire) {
-//                if (!c.equals(c2)) {
-//                    if (c.getPreuve().contains(c2.getPreuve())){
-//                        criminelAffaireCommun.add(c);
-//                    }
-//                }
-//            }
-//        }
-//    }
-//
-//    public void changeCriminel(Criminel criminel) {
-//        this.listeCriminel.remove(getIndexCriminel(criminel));
-//        this.listeCriminel.add(criminel);
-//        this.setChanged();
-//    }
+    private void sauvegarderDonnees() {
+        exporterJson(new File(FICHIER_JSON));
+    }
+
+    private void chargerDonnees() {
+        File fichier = new File(FICHIER_JSON);
+        if (fichier.exists()) {
+            importerJson(fichier);
+        }
+    }
 }

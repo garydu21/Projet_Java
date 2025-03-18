@@ -6,6 +6,7 @@ import Modele.Modele;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
@@ -14,7 +15,7 @@ public class Vue extends JFrame implements Observer {
     private JList<String> listeCriminels;
     private DefaultListModel<String> listeModel;
     private JTextArea detailsCriminel;
-    private JButton btnModifier, btnAjouter, btnSupprimer;
+    private JButton btnModifier, btnAjouter, btnSupprimer, btnImporter, btnExporter;
     private Modele modele;
 
     public Vue(Controleur controleur, Modele modele) {
@@ -28,6 +29,10 @@ public class Vue extends JFrame implements Observer {
 
         // Haut : Boutons pour navigation
         JPanel panelHaut = new JPanel();
+        btnImporter = new JButton("Importer JSON");
+        btnExporter = new JButton("Exporter JSON");
+        panelHaut.add(btnImporter);
+        panelHaut.add(btnExporter);
         panelHaut.add(new JButton("Base de données"));
         panelHaut.add(new JButton("Graphique"));
         panelHaut.add(new JButton("Maps"));
@@ -64,6 +69,8 @@ public class Vue extends JFrame implements Observer {
         btnModifier.addActionListener(e -> modifierCriminel());
         btnAjouter.addActionListener(e -> ajouterCriminel());
         btnSupprimer.addActionListener(e -> supprimerCriminel());
+        btnImporter.addActionListener(e -> importerJson());
+        btnExporter.addActionListener(e -> exporterJson());
 
         setVisible(true);
     }
@@ -109,6 +116,20 @@ public class Vue extends JFrame implements Observer {
         int index = listeCriminels.getSelectedIndex();
         if (index >= 0) {
             modele.supprimerCriminel(index);
+        }
+    }
+
+    private void importerJson() {
+        JFileChooser fileChooser = new JFileChooser();
+        if (fileChooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
+            modele.importerJson(fileChooser.getSelectedFile());
+        }
+    }
+
+    private void exporterJson() {
+        JFileChooser fileChooser = new JFileChooser();
+        if (fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
+            modele.exporterJson(fileChooser.getSelectedFile());
         }
     }
 
