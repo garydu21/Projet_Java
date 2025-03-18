@@ -1,32 +1,47 @@
 package Modele;
 
 import Criminel.Criminel;
-
-import java.awt.*;
-import java.io.File;
 import java.util.ArrayList;
-import java.util.Objects;
+import java.util.List;
 import java.util.Observable;
-import java.util.Scanner;
 
 public class Modele extends Observable {
-
-
-    private ArrayList<Criminel> listeCriminel;
-
-    private int criminelSelect = 0;
+    private List<Criminel> listeCriminel;
 
     public Modele() {
         this.listeCriminel = new ArrayList<>();
     }
 
-    public void addListeCriminel(Criminel c) {
-        this.listeCriminel.add(c);
-
-        System.out.println(c.getNom());
+    public List<Criminel> getListeCriminel() {
+        return listeCriminel;
     }
 
-    //    private ArrayList<Criminel> listeCriminel;
+    public void addListeCriminel(Criminel c) {
+        this.listeCriminel.add(c);
+        setChanged();
+        notifyObservers();
+    }
+
+    public void supprimerCriminel(int index) {
+        if (index >= 0 && index < listeCriminel.size()) {
+            listeCriminel.remove(index);
+            setChanged();
+            notifyObservers();
+        }
+    }
+
+    public void modifierCriminel(int index, String nom, String prenom) {
+        if (index >= 0 && index < listeCriminel.size()) {
+            listeCriminel.get(index).setNom(nom);
+            listeCriminel.get(index).setPrenom(prenom);
+            setChanged();
+            notifyObservers();
+        }
+    }
+
+
+
+//    private ArrayList<Criminel> listeCriminel;
 //
 //    private Button[] tabButtons;
 //

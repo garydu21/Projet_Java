@@ -3,26 +3,23 @@ package Vue;
 import Criminel.Criminel;
 import Controleur.Controleur;
 import Modele.Modele;
-import Modele.Modifier;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.List;
-import java.util.Scanner;
+import java.util.Observable;
+import java.util.Observer;
 
-public class Vue extends JFrame {
+public class Vue extends JFrame implements Observer {
     private JList<String> listeCriminels;
     private DefaultListModel<String> listeModel;
     private JTextArea detailsCriminel;
     private JButton btnModifier, btnAjouter, btnSupprimer;
-    private Controleur controleur;
-    private Modifier modifier;
     private Modele modele;
 
-    public Vue(Controleur controleur, List<Criminel> criminels) {
-        this.controleur = controleur;
+    public Vue(Controleur controleur, Modele modele) {
+        this.modele = modele;
+        this.modele.addObserver(this);
 
         setTitle("Gestion des Criminels");
         setSize(800, 600);
@@ -60,12 +57,10 @@ public class Vue extends JFrame {
         add(panelBas, BorderLayout.SOUTH);
 
         // Remplir la liste des criminels
-        for (Criminel c : criminels) {
-            listeModel.addElement(c.getNom() + " " + c.getPrenom());
-        }
+        mettreAJourListe();
 
         // Ajout des événements
-        listeCriminels.addListSelectionListener(e -> afficherDetails(criminels));
+        listeCriminels.addListSelectionListener(e -> afficherDetails());
         btnModifier.addActionListener(e -> modifierCriminel());
         btnAjouter.addActionListener(e -> ajouterCriminel());
         btnSupprimer.addActionListener(e -> supprimerCriminel());
@@ -73,35 +68,52 @@ public class Vue extends JFrame {
         setVisible(true);
     }
 
-    private void afficherDetails(List<Criminel> criminels) {
+    private void mettreAJourListe() {
+        listeModel.clear();
+        for (Criminel c : modele.getListeCriminel()) {
+            listeModel.addElement(c.getNom() + " " + c.getPrenom());
+        }
+    }
+
+    private void afficherDetails() {
         int index = listeCriminels.getSelectedIndex();
         if (index >= 0) {
-            Criminel c = criminels.get(index);
+            Criminel c = modele.getListeCriminel().get(index);
             detailsCriminel.setText("Nom : " + c.getNom() + "\n"
                     + "Prénom : " + c.getPrenom() + "\n"
                     + "Peine Totale : " + c.getPeineTotale() + " ans");
         }
     }
 
-    private void modifierCriminel() {
-        JOptionPane.showMessageDialog(this, "Modifier criminel - Fonction à implémenter");
+    private void ajouterCriminel() {
+        String nom = JOptionPane.showInputDialog(this, "Nom du criminel :");
+        String prenom = JOptionPane.showInputDialog(this, "Prénom du criminel :");
+        if (nom != null && prenom != null) {
+            modele.addListeCriminel(new Criminel(nom, prenom));
+        }
     }
 
-    private void ajouterCriminel() {
-        //JOptionPane.showMessageDialog(this, "Ajouter criminel - Fonction à implémenter");
-        //this.modifier.ajouterCriminelModifier();
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Veuillez entrer le nom d'un criminel : ");
-        String nom = sc.nextLine();
-        System.out.println("Veuillez entrer le prenom d'un criminel : ");
-        String prenom = sc.nextLine();
-        System.out.println("Merci, le criminel a été ajouter ! ");
-        Criminel c = new Criminel(nom, prenom);
-
-        modele.addListeCriminel(c);
+    private void modifierCriminel() {
+        int index = listeCriminels.getSelectedIndex();
+        if (index >= 0) {
+            Criminel c = modele.getListeCriminel().get(index);
+            String nom = JOptionPane.showInputDialog(this, "Modifier le nom :", c.getNom());
+            String prenom = JOptionPane.showInputDialog(this, "Modifier le prénom :", c.getPrenom());
+            if (nom != null && prenom != null) {
+                modele.modifierCriminel(index, nom, prenom);
+            }
+        }
     }
 
     private void supprimerCriminel() {
-        JOptionPane.showMessageDialog(this, "Supprimer criminel - Fonction à implémenter");
+        int index = listeCriminels.getSelectedIndex();
+        if (index >= 0) {
+            modele.supprimerCriminel(index);
+        }
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        mettreAJourListe();
     }
 }

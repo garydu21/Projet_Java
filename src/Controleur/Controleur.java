@@ -1,29 +1,22 @@
 package Controleur;
 
-import Criminel.Criminel;
+import Modele.Modele;
 import Vue.Vue;
 
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Observer;
 
 public class Controleur {
-    private List<Criminel> criminels;
+    private Modele modele;
     private Vue vue;
 
     public Controleur() {
-        this.criminels = new ArrayList<>();
-        this.vue = new Vue(this, criminels);
-    }
-
-    private void rafraichirVue() {
-        SwingUtilities.invokeLater(() -> {
-            vue.dispose();
-            vue = new Vue(this, criminels);
-        });
+        this.modele = new Modele();
+        this.vue = new Vue(this, modele);
+        modele.addObserver((Observer) vue);  // Permet à la vue d'être mise à jour automatiquement
     }
 
     public static void main(String[] args) {
-        new Controleur();
+        SwingUtilities.invokeLater(Controleur::new);
     }
 }
