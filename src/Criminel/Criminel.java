@@ -9,6 +9,8 @@ public class Criminel {
 
     private ArrayList<Crime> crimes;
 
+    private ArrayList<Preuve> preuves;
+
     private int peineTotale;
 
     public Criminel(String nom, String prenom) {
@@ -16,6 +18,7 @@ public class Criminel {
         this.prenom = prenom;
         this.crimes = new ArrayList<Crime>();
         this.peineTotale = 0;
+        this.preuves = new ArrayList<Preuve>();
     }
 
     public void ajouterCrime(Crime crime) {
@@ -33,5 +36,9 @@ public class Criminel {
 
     public String getPrenom() {
         return this.prenom;
+    }
+
+    public ArrayList<Preuve> getPreuve(int index) {
+        return this.preuves;
     }
 }
