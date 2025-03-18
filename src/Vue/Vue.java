@@ -15,7 +15,7 @@ public class Vue extends JFrame implements Observer {
     private JList<String> listeCriminels;
     private DefaultListModel<String> listeModel;
     private JTextArea detailsCriminel;
-    private JButton btnModifier, btnAjouter, btnSupprimer, btnImporter, btnExporter;
+    private JButton btnModifier, btnAjouter, btnSupprimer, btnGestionJson;
     private Modele modele;
 
     public Vue(Controleur controleur, Modele modele) {
@@ -29,10 +29,8 @@ public class Vue extends JFrame implements Observer {
 
         // Haut : Boutons pour navigation
         JPanel panelHaut = new JPanel();
-        btnImporter = new JButton("Importer JSON");
-        btnExporter = new JButton("Exporter JSON");
-        panelHaut.add(btnImporter);
-        panelHaut.add(btnExporter);
+        btnGestionJson = new JButton("Gérer JSON");
+        panelHaut.add(btnGestionJson);
         panelHaut.add(new JButton("Base de données"));
         panelHaut.add(new JButton("Graphique"));
         panelHaut.add(new JButton("Maps"));
@@ -69,8 +67,7 @@ public class Vue extends JFrame implements Observer {
         btnModifier.addActionListener(e -> modifierCriminel());
         btnAjouter.addActionListener(e -> ajouterCriminel());
         btnSupprimer.addActionListener(e -> supprimerCriminel());
-        btnImporter.addActionListener(e -> importerJson());
-        btnExporter.addActionListener(e -> exporterJson());
+        btnGestionJson.addActionListener(e -> afficherPopupGestionJson());
 
         setVisible(true);
     }
@@ -117,6 +114,19 @@ public class Vue extends JFrame implements Observer {
         if (index >= 0) {
             modele.supprimerCriminel(index);
         }
+    }
+
+    private void afficherPopupGestionJson() {
+        JPopupMenu popupMenu = new JPopupMenu();
+        JMenuItem importer = new JMenuItem("Importer JSON");
+        JMenuItem exporter = new JMenuItem("Exporter JSON");
+
+        importer.addActionListener(e -> importerJson());
+        exporter.addActionListener(e -> exporterJson());
+
+        popupMenu.add(importer);
+        popupMenu.add(exporter);
+        popupMenu.show(btnGestionJson, btnGestionJson.getWidth() / 2, btnGestionJson.getHeight() / 2);
     }
 
     private void importerJson() {
