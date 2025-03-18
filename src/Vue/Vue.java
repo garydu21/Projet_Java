@@ -2,12 +2,15 @@ package Vue;
 
 import Criminel.Criminel;
 import Controleur.Controleur;
+import Modele.Modele;
+import Modele.Modifier;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import java.util.Scanner;
 
 public class Vue extends JFrame {
     private JList<String> listeCriminels;
@@ -15,6 +18,8 @@ public class Vue extends JFrame {
     private JTextArea detailsCriminel;
     private JButton btnModifier, btnAjouter, btnSupprimer;
     private Controleur controleur;
+    private Modifier modifier;
+    private Modele modele;
 
     public Vue(Controleur controleur, List<Criminel> criminels) {
         this.controleur = controleur;
@@ -83,7 +88,17 @@ public class Vue extends JFrame {
     }
 
     private void ajouterCriminel() {
-        JOptionPane.showMessageDialog(this, "Ajouter criminel - Fonction à implémenter");
+        //JOptionPane.showMessageDialog(this, "Ajouter criminel - Fonction à implémenter");
+        //this.modifier.ajouterCriminelModifier();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Veuillez entrer le nom d'un criminel : ");
+        String nom = sc.nextLine();
+        System.out.println("Veuillez entrer le prenom d'un criminel : ");
+        String prenom = sc.nextLine();
+        System.out.println("Merci, le criminel a été ajouter ! ");
+        Criminel c = new Criminel(nom, prenom);
+
+        modele.addListeCriminel(c);
     }
 
     private void supprimerCriminel() {
