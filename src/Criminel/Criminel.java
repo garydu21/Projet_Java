@@ -49,4 +49,8 @@ public class Criminel {
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
+
+    public ArrayList<Crime> getCrimes(){
+        return this.crimes;
+    }
 }
