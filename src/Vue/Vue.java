@@ -22,6 +22,7 @@ public class Vue extends JFrame implements Observer {
     private JButton btnModifier, btnAjouter, btnSupprimer, btnGestionJson;
     private Modele modele;
     private JTextArea infoCriminel;
+    private JButton ajouterCrime;
 
     private JTextField champTexte;
     private JComboBox<String> liste;
@@ -31,10 +32,12 @@ public class Vue extends JFrame implements Observer {
     private JTextArea description;
     private JButton ajouterDescription;
 
+    private ListeCrime afficheListeCrime;
+
     public Vue(Controleur controleur, Modele modele) {
+
         this.modele = modele;
         this.modele.addObserver(this);
-
         setTitle("Gestion des Criminels");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -42,7 +45,8 @@ public class Vue extends JFrame implements Observer {
 
         // Haut : Boutons pour navigation
         JPanel panelHaut = new JPanel();
-        panelHaut.add(new JButton("Liste des Crime"));
+        ajouterCrime = new JButton("Liste des Crime");
+        panelHaut.add(ajouterCrime);
         btnGestionJson = new JButton("Gérer JSON");
         panelHaut.add(btnGestionJson);
         panelHaut.add(new JButton("Base de données"));
@@ -61,7 +65,6 @@ public class Vue extends JFrame implements Observer {
         infoCriminel = new JTextArea();
         infoCriminel.setEditable(false);
         detailsCriminel.add(infoCriminel, BorderLayout.NORTH);
-
 
         panelCentre.add(new JScrollPane(detailsCriminel));
 
@@ -86,6 +89,7 @@ public class Vue extends JFrame implements Observer {
         btnAjouter.addActionListener(e -> ajouterCriminel());
         btnSupprimer.addActionListener(e -> supprimerCriminel());
         btnGestionJson.addActionListener(e -> afficherPopupGestionJson());
+        ajouterCrime.addActionListener(e -> fenetreCrime());
 
         setVisible(true);
     }
@@ -285,6 +289,10 @@ public class Vue extends JFrame implements Observer {
             Criminel mechant = modele.getListeCriminel().get(index);
             modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), mechant.getDescription());
         }
+    }
+
+    public void fenetreCrime() {
+        this.afficheListeCrime = new ListeCrime();
     }
 
 }
