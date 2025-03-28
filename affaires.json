@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "description": "Vol à la bijouterie",
+    "lieu": "Paris",
+    "date": "2023-11-09",
+    "idCriminels": [
+      479,
+      809,
+      271
+    ]
+  },
+  {
+    "id": 2,
+    "description": "Braquage de banque",
+    "lieu": "Lille",
+    "date": "2023-08-22",
+    "idCriminels": [
+      946,
+      502
+    ]
+  },
+  {
+    "id": 3,
+    "description": "Cambriolage en série",
+    "lieu": "Lille",
+    "date": "2022-08-02",
+    "idCriminels": [
+      369,
+      561,
+      848,
+      979
+    ]
+  },
+  {
+    "id": 4,
+    "description": "Fraude fiscale massive",
+    "lieu": "Marseille",
+    "date": "2022-08-12",
+    "idCriminels": [
+      312,
+      483,
+      973,
+      956
+    ]
+  },
+  {
+    "id": 5,
+    "description": "Enlèvement d’un diplomate",
+    "lieu": "Lyon",
+    "date": "2023-07-17",
+    "idCriminels": [
+      529,
+      600,
+      835,
+      120
+    ]
+  },
+  {
+    "id": 6,
+    "description": "Contrebande d’armes",
+    "lieu": "Grenoble",
+    "date": "2022-09-14",
+    "idCriminels": [
+      479,
+      794,
+      835,
+      681
+    ]
+  },
+  {
+    "id": 7,
+    "description": "Corruption politique",
+    "lieu": "Toulouse",
+    "date": "2022-05-30",
+    "idCriminels": [
+      502,
+      873,
+      641
+    ]
+  },
+  {
+    "id": 8,
+    "description": "Piratage informatique",
+    "lieu": "Paris",
+    "date": "2023-09-19",
+    "idCriminels": [
+      809,
+      477,
+      215,
+      312
+    ]
+  },
+  {
+    "id": 9,
+    "description": "Sabotage d’usine",
+    "lieu": "Strasbourg",
+    "date": "2024-02-27",
+    "idCriminels": [
+      812,
+      989
+    ]
+  },
+  {
+    "id": 10,
+    "description": "Trafic de drogues",
+    "lieu": "Nantes",
+    "date": "2023-06-12",
+    "idCriminels": [
+      843
+    ]
+  },
+  {
+    "id": 11,
+    "description": "Falsification de documents",
+    "lieu": "Toulouse",
+    "date": "2024-05-14",
+    "idCriminels": [
+      691,
+      218,
+      312,
+      311
+    ]
+  },
+  {
+    "id": 12,
+    "description": "Attaque de convoi blindé",
+    "lieu": "Nantes",
+    "date": "2022-11-16",
+    "idCriminels": [
+      762,
+      192,
+      502,
+      527
+    ]
+  },
+  {
+    "id": 13,
+    "description": "Espionnage industriel",
+    "lieu": "Lyon",
+    "date": "2023-03-08",
+    "idCriminels": [
+      933,
+      169,
+      288
+    ]
+  },
+  {
+    "id": 14,
+    "description": "Vol d’œuvres d’art",
+    "lieu": "Paris",
+    "date": "2022-11-09",
+    "idCriminels": [
+      238,
+      812
+    ]
+  },
+  {
+    "id": 15,
+    "description": "Rançongiciel sur hôpital",
+    "lieu": "Lille",
+    "date": "2023-02-06",
+    "idCriminels": [
+      641,
+      827,
+      682,
+      140
+    ]
+  },
+  {
+    "id": 16,
+    "description": "Incendie criminel",
+    "lieu": "Lyon",
+    "date": "2023-07-21",
+    "idCriminels": [
+      971,
+      488,
+      271,
+      551
+    ]
+  },
+  {
+    "id": 17,
+    "description": "Meurtre en série",
+    "lieu": "Toulouse",
+    "date": "2022-01-22",
+    "idCriminels": [
+      158,
+      250,
+      870
+    ]
+  },
+  {
+    "id": 18,
+    "description": "Arnaque téléphonique",
+    "lieu": "Marseille",
+    "date": "2022-06-06",
+    "idCriminels": [
+      621
+    ]
+  },
+  {
+    "id": 19,
+    "description": "Infiltration mafieuse",
+    "lieu": "Lille",
+    "date": "2022-12-27",
+    "idCriminels": [
+      250,
+      257
+    ]
+  },
+  {
+    "id": 20,
+    "description": "Déraillement de train",
+    "lieu": "Paris",
+    "date": "2022-05-04",
+    "idCriminels": [
+      621,
+      670
+    ]
+  }
+]
