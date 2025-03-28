@@ -5,6 +5,8 @@ import Controleur.Controleur;
 import Modele.Modele;
 
 import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,6 +26,10 @@ public class Vue extends JFrame implements Observer {
     private JTextField champTexte;
     private JComboBox<String> liste;
     private ArrayList<String> str = new ArrayList<>();
+
+    private JPanel panelDescription;
+    private JTextArea description;
+    private JButton ajouterDescription;
 
     public Vue(Controleur controleur, Modele modele) {
         this.modele = modele;
@@ -55,6 +61,7 @@ public class Vue extends JFrame implements Observer {
         infoCriminel = new JTextArea();
         infoCriminel.setEditable(false);
         detailsCriminel.add(infoCriminel, BorderLayout.NORTH);
+
 
         panelCentre.add(new JScrollPane(detailsCriminel));
 
@@ -120,6 +127,54 @@ public class Vue extends JFrame implements Observer {
         detailsCriminel.setLayout(new BorderLayout());
         detailsCriminel.add(infoCriminel, BorderLayout.NORTH);
 
+        panelDescription = new JPanel();
+
+        ajouterDescription = new JButton("Ajouter");
+        ajouterDescription.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int index = listeCriminels.getSelectedIndex();
+                if (index >= 0) {
+                    Criminel mechant = modele.getListeCriminel().get(index);
+                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), mechant.getDescription());
+                }
+            }
+        });
+        panelDescription.add(ajouterDescription);
+
+        description = new JTextArea();
+        description.setLineWrap(true);
+        description.setWrapStyleWord(true);
+        description.setBackground(Color.LIGHT_GRAY);
+
+        JScrollPane scrollPaneDescription = new JScrollPane(description);
+        detailsCriminel.add(scrollPaneDescription, BorderLayout.CENTER);
+
+
+        description.setText(modele.getListeCriminel().get(index).getDescription() != null ? modele.getListeCriminel().get(index).getDescription() : "");
+        description.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                sauvegarderDescription();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                sauvegarderDescription();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+            }
+
+            private void sauvegarderDescription() {
+                int index = listeCriminels.getSelectedIndex();
+                if (index >= 0) {
+                    Criminel mechant = modele.getListeCriminel().get(index);
+                    mechant.setDescription(description.getText());
+                }
+            }
+        });
 
         JPanel panelDetails = new JPanel(new FlowLayout());
 
@@ -148,12 +203,14 @@ public class Vue extends JFrame implements Observer {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (!champTexte.getText().isEmpty()) {
+                    int index = listeCriminels.getSelectedIndex();
                     Criminel mechant = modele.getListeCriminel().get(index);
                     Crime leCrime = new Crime(10,champTexte.getText());
 
                     mechant.ajouterCrime(leCrime);
                     afficherDetails();
                     System.out.println(mechant.getNom() + " " + mechant.getPrenom());
+                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), mechant.getDescription());
                 }
             }
         });
@@ -178,7 +235,7 @@ public class Vue extends JFrame implements Observer {
             String nom = JOptionPane.showInputDialog(this, "Modifier le nom :", c.getNom());
             String prenom = JOptionPane.showInputDialog(this, "Modifier le prénom :", c.getPrenom());
             if (nom != null && prenom != null) {
-                modele.modifierCriminel(index, nom, prenom);
+                modele.modifierCriminel(index, nom, prenom,c.getDescription());
             }
         }
     }
@@ -221,4 +278,13 @@ public class Vue extends JFrame implements Observer {
     public void update(Observable o, Object arg) {
         mettreAJourListe();
     }
+
+    private void appliquerModifications() {
+        int index = listeCriminels.getSelectedIndex();
+        if (index >= 0) {
+            Criminel mechant = modele.getListeCriminel().get(index);
+            modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), mechant.getDescription());
+        }
+    }
+
 }

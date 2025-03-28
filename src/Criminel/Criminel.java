@@ -11,6 +11,8 @@ public class Criminel {
 
     private ArrayList<Preuve> preuves;
 
+    private String description;
+
     private int peineTotale;
 
     public Criminel(String nom, String prenom) {
@@ -19,11 +21,20 @@ public class Criminel {
         this.crimes = new ArrayList<Crime>();
         this.peineTotale = 0;
         this.preuves = new ArrayList<Preuve>();
+        this.description = "";
     }
 
     public void ajouterCrime(Crime crime) {
         this.crimes.add(crime);
         this.peineTotale += crime.getPeine();
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return this.description;
     }
 
     public int getPeineTotale() {
