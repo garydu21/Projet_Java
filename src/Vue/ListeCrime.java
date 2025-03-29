@@ -25,7 +25,11 @@ public class ListeCrime extends JFrame {
     private JTextField lesCrime;
 
     private ArrayList<Crime> crimes;
-    public ListeCrime(ArrayList<Crime> crimes) {
+
+    private Vue view;
+
+    public ListeCrime(ArrayList<Crime> crimes, Vue view) {
+        this.view = view;
         this.crimes = crimes;
 
         setTitle("Gestion des Criminels");

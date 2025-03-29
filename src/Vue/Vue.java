@@ -141,10 +141,18 @@ public class Vue extends JFrame implements Observer {
         ajouterDescription.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int index = listeCriminels.getSelectedIndex();
-                if (index >= 0 && index < modele.getListeCriminel().size()) {
-                    Criminel mechant = modele.getListeCriminel().get(index);
-                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), description.getText());
+                try {
+                    int index = listeCriminels.getSelectedIndex();
+                    if (index >= 0 && index < modele.getListeCriminel().size()) {
+                        Criminel mechant = modele.getListeCriminel().get(index);
+                        modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), description.getText());
+                    }
+                }catch (Exception ex) {
+                    int index = listeCriminels.getSelectedIndex();
+                    if (index >= 0 && index < modele.getListeCriminel().size()) {
+                        Criminel mechant = modele.getListeCriminel().get(index);
+                        modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), "Une erreur est survenu, veuiller ressaisir le texte");
+                    }
                 }
             }
         });
@@ -163,7 +171,9 @@ public class Vue extends JFrame implements Observer {
         detailsCriminel.add(panelDescription, BorderLayout.CENTER);
 
 
-        //description.setText(modele.getListeCriminel().get(index).getDescription() != null ? modele.getListeCriminel().get(index).getDescription() : "");
+        try {
+            description.setText(modele.getListeCriminel().get(index).getDescription());
+        }catch (Exception expe){}
 
         description.getDocument().addDocumentListener(new DocumentListener() {
 
@@ -200,7 +210,7 @@ public class Vue extends JFrame implements Observer {
                     elements[c.getId()] = c.getIntitule();
                 }
             }
-        }catch (NullPointerException e) {
+        }catch (Exception e) {
         }
         liste = new JComboBox<>(elements);
         panelDetails.add(liste);
@@ -322,7 +332,7 @@ public class Vue extends JFrame implements Observer {
     }
 
     public void fenetreCrime() {
-        this.afficheListeCrime = new ListeCrime(this.str);
+        this.afficheListeCrime = new ListeCrime(this.str,this);
     }
 
 }
