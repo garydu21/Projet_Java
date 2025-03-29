@@ -10,6 +10,8 @@ import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.io.File;
 import java.util.*;
 import java.util.List;
@@ -26,7 +28,8 @@ public class Vue extends JFrame implements Observer {
 
     private JTextField champTexte;
     private JComboBox<String> liste;
-    private ArrayList<String> str = new ArrayList<>();
+    private ArrayList<Crime> str = new ArrayList<>();
+
 
     private JPanel panelDescription;
     private JTextArea description;
@@ -132,31 +135,38 @@ public class Vue extends JFrame implements Observer {
         detailsCriminel.add(infoCriminel, BorderLayout.NORTH);
 
         panelDescription = new JPanel();
+        panelDescription.setLayout(new BorderLayout());
 
-        ajouterDescription = new JButton("Ajouter");
+        ajouterDescription = new JButton("Ajouter Description");
         ajouterDescription.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int index = listeCriminels.getSelectedIndex();
-                if (index >= 0) {
+                if (index >= 0 && index < modele.getListeCriminel().size()) {
                     Criminel mechant = modele.getListeCriminel().get(index);
-                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), mechant.getDescription());
+                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), description.getText());
                 }
             }
         });
-        panelDescription.add(ajouterDescription);
 
         description = new JTextArea();
         description.setLineWrap(true);
         description.setWrapStyleWord(true);
         description.setBackground(Color.LIGHT_GRAY);
+        description.setPreferredSize(new Dimension(200, 200));
 
         JScrollPane scrollPaneDescription = new JScrollPane(description);
-        detailsCriminel.add(scrollPaneDescription, BorderLayout.CENTER);
+        panelDescription.add(scrollPaneDescription, BorderLayout.CENTER);
+        panelDescription.add(ajouterDescription, BorderLayout.SOUTH);
 
 
-        description.setText(modele.getListeCriminel().get(index).getDescription() != null ? modele.getListeCriminel().get(index).getDescription() : "");
+        detailsCriminel.add(panelDescription, BorderLayout.CENTER);
+
+
+        //description.setText(modele.getListeCriminel().get(index).getDescription() != null ? modele.getListeCriminel().get(index).getDescription() : "");
+
         description.getDocument().addDocumentListener(new DocumentListener() {
+
             @Override
             public void insertUpdate(DocumentEvent e) {
                 sauvegarderDescription();
@@ -182,7 +192,16 @@ public class Vue extends JFrame implements Observer {
 
         JPanel panelDetails = new JPanel(new FlowLayout());
 
-        String[] elements = {"A", "B", "C", "D", "E", "F", "G", "H"}; // A modifier lorsque l'Ensemble des crimes est ajouté
+        String[] elements = new String[]{}; // A modifier lorsque l'Ensemble des crimes est ajouté
+        try {
+            for (Crime c : this.afficheListeCrime.getCrimes()) {
+                if (c.getId() >= 0) {
+                    elements = new String[this.afficheListeCrime.getCrimes().getLast().getMaxId()];
+                    elements[c.getId()] = c.getIntitule();
+                }
+            }
+        }catch (NullPointerException e) {
+        }
         liste = new JComboBox<>(elements);
         panelDetails.add(liste);
 
@@ -207,14 +226,25 @@ public class Vue extends JFrame implements Observer {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (!champTexte.getText().isEmpty()) {
-                    int index = listeCriminels.getSelectedIndex();
-                    Criminel mechant = modele.getListeCriminel().get(index);
-                    Crime leCrime = new Crime(10,champTexte.getText());
+                    try{
+                        int index = listeCriminels.getSelectedIndex();
+                        Criminel mechant = modele.getListeCriminel().get(index);
 
-                    mechant.ajouterCrime(leCrime);
-                    afficherDetails();
-                    System.out.println(mechant.getNom() + " " + mechant.getPrenom());
-                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), mechant.getDescription());
+                        int peine = -1;
+                        for (int i = 0; i < afficheListeCrime.getCrimes().size(); i++) {
+                            if (champTexte.getText().equalsIgnoreCase(afficheListeCrime.getCrimes().get(i).getIntitule())) {
+                                peine = afficheListeCrime.getCrimes().get(i).getPeine();
+                            }
+                        }
+                        if (peine != -1) {
+                            Crime leCrime = new Crime(peine, champTexte.getText());
+                            mechant.ajouterCrime(leCrime);
+                            afficherDetails();
+                            modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), "");
+                        }
+                    }catch(Exception err){
+
+                    }
                 }
             }
         });
@@ -234,7 +264,7 @@ public class Vue extends JFrame implements Observer {
 
     private void modifierCriminel() {
         int index = listeCriminels.getSelectedIndex();
-        if (index >= 0) {
+        if (index >= 0 && index < modele.getListeCriminel().size()) {
             Criminel c = modele.getListeCriminel().get(index);
             String nom = JOptionPane.showInputDialog(this, "Modifier le nom :", c.getNom());
             String prenom = JOptionPane.showInputDialog(this, "Modifier le prénom :", c.getPrenom());
@@ -292,7 +322,7 @@ public class Vue extends JFrame implements Observer {
     }
 
     public void fenetreCrime() {
-        this.afficheListeCrime = new ListeCrime();
+        this.afficheListeCrime = new ListeCrime(this.str);
     }
 
 }
