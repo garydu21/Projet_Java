@@ -64,4 +64,8 @@ public class Criminel {
     public ArrayList<Crime> getCrimes(){
         return this.crimes;
     }
+
+    public void resetPeineTotal() {
+        this.peineTotale = 0;
+    }
 }

@@ -36,13 +36,15 @@ public class Vue extends JFrame implements Observer {
     private JButton ajouterDescription;
 
     private ListeCrime afficheListeCrime;
+    private String[] elements;
 
     public Vue(Controleur controleur, Modele modele) {
 
         this.modele = modele;
         this.modele.addObserver(this);
         setTitle("Gestion des Criminels");
-        setSize(800, 600);
+        setSize(1200, 600);
+        setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -104,7 +106,7 @@ public class Vue extends JFrame implements Observer {
         }
     }
 
-    private void afficherDetails() {
+    public void afficherDetails() {
 
         int index = listeCriminels.getSelectedIndex();
         if (index >= 0) {
@@ -202,16 +204,18 @@ public class Vue extends JFrame implements Observer {
 
         JPanel panelDetails = new JPanel(new FlowLayout());
 
-        String[] elements = new String[]{}; // A modifier lorsque l'Ensemble des crimes est ajouté
+        elements = new String[]{}; // A modifier lorsque l'Ensemble des crimes est ajouté
         try {
-            for (Crime c : this.afficheListeCrime.getCrimes()) {
-                if (c.getId() >= 0) {
-                    elements = new String[this.afficheListeCrime.getCrimes().getLast().getMaxId()];
-                    elements[c.getId()] = c.getIntitule();
+            if (!this.afficheListeCrime.getCrimes().isEmpty()) {
+                elements = new String[this.afficheListeCrime.getCrimes().size()];
+                int i = 0;
+                for (Crime c : this.afficheListeCrime.getCrimes()) {
+                    elements[i] = c.getIntitule();
+                    i++;
                 }
             }
-        }catch (Exception e) {
-        }
+        }catch (Exception expe){}
+
         liste = new JComboBox<>(elements);
         panelDetails.add(liste);
 
@@ -222,13 +226,32 @@ public class Vue extends JFrame implements Observer {
         panelDetails.add(champTexte);
 
         JButton ajouterCrime = new JButton("Ajouter");
+        JButton supprimerCrime = new JButton("Supprimer");
         panelDetails.add(ajouterCrime,BorderLayout.SOUTH);
+        panelDetails.add(supprimerCrime, BorderLayout.SOUTH);
 
         liste.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String selectedItem = (String) liste.getSelectedItem();
                 champTexte.setText(selectedItem);
+            }
+        });
+
+        supprimerCrime.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+
+                    int index = listeCriminels.getSelectedIndex();
+                    Criminel mechant = modele.getListeCriminel().get(index);
+
+                    mechant.resetPeineTotal();
+                    mechant.getCrimes().clear();
+                    afficherDetails();
+                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), "");
+
+                }catch (Exception expe){}
             }
         });
 
@@ -252,8 +275,9 @@ public class Vue extends JFrame implements Observer {
                             afficherDetails();
                             modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), "");
                         }
+                        afficherDetails();
                     }catch(Exception err){
-
+                        afficherDetails();
                     }
                 }
             }
