@@ -66,6 +66,8 @@ public class VueAffaires extends JFrame {
         btnModifier.addActionListener(e -> modifierAffaire());
         btnSupprimer.addActionListener(e -> supprimerAffaire());
         btnAssocierCriminel.addActionListener(e -> associerCriminel());
+        btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
+        btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
 
         setVisible(true);
     }
@@ -237,9 +239,7 @@ public class VueAffaires extends JFrame {
             int index = combo.getSelectedIndex();
             if (index >= 0) {
                 Criminel c = suspects.get(index);
-                affaire.getSuspects().remove(c);
-                c.getAffaires().remove(affaire);
-                modele.mettreAJourAffaire(affaire, c); // pour forcer save
+                modele.retirerCriminelAffaire(affaire, c);
                 afficherDetails();
             }
         }

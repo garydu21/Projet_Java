@@ -22,7 +22,7 @@ public class Modele extends Observable {
     private List<Affaire> listeAffaires;
 
     private static final Gson gson = new GsonBuilder()
-            .setDateFormat("yyyy-MM-dd") //Format ISO : yyyy-MM-dd, je n'ai pas encore regardé comment la passer en français - Angel
+            .setDateFormat("dd-MM-yyyy") //Format ISO : yyyy-MM-dd, je n'ai pas encore regardé comment la passer en français - Angel
             .excludeFieldsWithoutExposeAnnotation()
             .setPrettyPrinting()
             .create();
@@ -168,5 +168,17 @@ public class Modele extends Observable {
             setChanged();
             notifyObservers();
         }
+    }
+
+    public void retirerCriminelAffaire(Affaire affaire, Criminel criminel) {
+        affaire.getSuspects().remove(criminel);
+        affaire.getIdCriminels().remove((Integer) criminel.getId());
+        criminel.getAffaires().remove(affaire);
+        criminel.getIdAffaires().remove((Integer) affaire.getId());
+
+        sauvegarderAffaires();
+        sauvegarderDonnees();
+        setChanged();
+        notifyObservers();
     }
 }
