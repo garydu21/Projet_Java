@@ -10,6 +10,7 @@ public class ListeCrime extends JFrame {
 
     private JPanel panelHaut, panelCentre, panelGauche, panelDroite, panelBas;
     private JButton buttonAjouter;
+    private JButton afficherCrime;
     private JTextArea crime, sanction;
     private JTextField lesCrime;
     private ArrayList<Crime> crimes;
@@ -20,16 +21,16 @@ public class ListeCrime extends JFrame {
         this.view = view;
         this.crimes = crimes;
 
-        setTitle("Gestion des Crimes");
+        setTitle("Crime");
         setSize(500, 300);
         setLayout(new BorderLayout());
 
-        // Panel Haut : Bouton Ajouter
         panelHaut = new JPanel();
         buttonAjouter = new JButton("Ajouter un Crime");
+        afficherCrime = new JButton("Afficher les crimes");
         panelHaut.add(buttonAjouter);
+        panelHaut.add(afficherCrime);
 
-        // Panel Centre : Champs de saisie pour crime et sanction
         panelCentre = new JPanel(new GridLayout(2, 2, 10, 10));
 
         panelGauche = new JPanel(new BorderLayout());
@@ -51,7 +52,7 @@ public class ListeCrime extends JFrame {
         panelCentre.add(panelGauche);
         panelCentre.add(panelDroite);
 
-        // Panel Bas : Liste des crimes ajoutés
+
         panelBas = new JPanel(new BorderLayout());
         JLabel labelListeCrime = new JLabel("Crimes enregistrés :");
         lesCrime = new JTextField();
@@ -60,15 +61,20 @@ public class ListeCrime extends JFrame {
         panelBas.add(labelListeCrime, BorderLayout.NORTH);
         panelBas.add(lesCrime, BorderLayout.CENTER);
 
-        // Ajout des panels à la fenêtre
+
         add(panelHaut, BorderLayout.NORTH);
         add(panelCentre, BorderLayout.CENTER);
         add(panelBas, BorderLayout.SOUTH);
 
-        // Action du bouton Ajouter
+
         buttonAjouter.addActionListener(e -> ajouterCrime());
+        afficherCrime.addActionListener(e -> listeCrime());
 
         setVisible(true);
+    }
+
+    private void listeCrime(){
+        new AfficheCrime(this.view,this.view.getStr(), this);
     }
 
     public void ajouterCrime() {
@@ -83,14 +89,14 @@ public class ListeCrime extends JFrame {
 
             this.crimes.add(new Crime(peine, str));
 
-            // Mise à jour de la liste des crimes
+
             StringBuilder sb = new StringBuilder();
             for (Crime c : crimes) {
                 sb.append(c.getIntitule()).append(": ").append(c.getPeine()).append(" ans | ");
             }
             lesCrime.setText(sb.toString());
 
-            // Réinitialiser les champs
+
             crime.setText("");
             sanction.setText("");
 

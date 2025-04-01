@@ -148,12 +148,14 @@ public class Vue extends JFrame implements Observer {
                     if (index >= 0 && index < modele.getListeCriminel().size()) {
                         Criminel mechant = modele.getListeCriminel().get(index);
                         modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), description.getText());
+                        afficherDetails();
                     }
                 }catch (Exception ex) {
                     int index = listeCriminels.getSelectedIndex();
                     if (index >= 0 && index < modele.getListeCriminel().size()) {
                         Criminel mechant = modele.getListeCriminel().get(index);
                         modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), "Une erreur est survenu, veuiller ressaisir le texte");
+                        afficherDetails();
                     }
                 }
             }
@@ -226,7 +228,7 @@ public class Vue extends JFrame implements Observer {
         panelDetails.add(champTexte);
 
         JButton ajouterCrime = new JButton("Ajouter");
-        JButton supprimerCrime = new JButton("Supprimer");
+        JButton supprimerCrime = new JButton("Réinitialiser");
         panelDetails.add(ajouterCrime,BorderLayout.SOUTH);
         panelDetails.add(supprimerCrime, BorderLayout.SOUTH);
 
@@ -242,14 +244,13 @@ public class Vue extends JFrame implements Observer {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-
                     int index = listeCriminels.getSelectedIndex();
                     Criminel mechant = modele.getListeCriminel().get(index);
 
                     mechant.resetPeineTotal();
                     mechant.getCrimes().clear();
                     afficherDetails();
-                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), "");
+                    modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), mechant.getDescription());
 
                 }catch (Exception expe){}
             }
@@ -271,11 +272,18 @@ public class Vue extends JFrame implements Observer {
                         }
                         if (peine != -1) {
                             Crime leCrime = new Crime(peine, champTexte.getText());
-                            mechant.ajouterCrime(leCrime);
+                            boolean aDejaCrime = false;
+                            for (Crime c : mechant.getCrimes()){
+                                if (c.getIntitule().equals(leCrime.getIntitule())) {
+                                    aDejaCrime = true;
+                                }
+                            }
+                            if (!aDejaCrime) {
+                                mechant.ajouterCrime(leCrime);
+                                modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), mechant.getDescription());
+                            }
                             afficherDetails();
-                            modele.modifierCriminel(index, mechant.getNom(), mechant.getPrenom(), "");
                         }
-                        afficherDetails();
                     }catch(Exception err){
                         afficherDetails();
                     }
@@ -357,6 +365,14 @@ public class Vue extends JFrame implements Observer {
 
     public void fenetreCrime() {
         this.afficheListeCrime = new ListeCrime(this.str,this);
+    }
+
+    public ArrayList<Crime> getStr(){
+        return this.str;
+    }
+
+    public void removeStr(int index){
+        this.str.remove(index);
     }
 
 }
