@@ -1,1 +1,904 @@
-[{"nom":"Simon","prenom":"Luc","crimes":[{"id":2992,"peine":0},{"id":9351,"peine":0},{"id":9372,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-11-12"}],"peineTotale":0},{"nom":"Dupont","prenom":"Nicolas","crimes":[{"id":5898,"peine":0},{"id":7060,"peine":0},{"id":3911,"peine":0}],"preuves":[{"description":"ADN","date":"2022-12-14"}],"peineTotale":0},{"nom":"Robert","prenom":"Nicolas","crimes":[{"id":2125,"peine":0}],"preuves":[{"description":"ADN","date":"2022-11-22"},{"description":"Empreintes digitales","date":"2022-02-27"}],"peineTotale":0},{"nom":"Martin","prenom":"Julien","crimes":[{"id":2733,"peine":0},{"id":3302,"peine":0},{"id":4132,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-04-26"}],"peineTotale":0},{"nom":"Richard","prenom":"Paul","crimes":[{"id":3385,"peine":0},{"id":7170,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2020-03-08"}],"peineTotale":0},{"nom":"Robert","prenom":"Nicolas","crimes":[{"id":3757,"peine":0},{"id":2255,"peine":0},{"id":2895,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2021-03-01"},{"description":"Vidéo surveillance","date":"2023-10-18"}],"peineTotale":0},{"nom":"Durand","prenom":"Nicolas","crimes":[{"id":4843,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-03-03"},{"description":"Empreintes digitales","date":"2023-06-15"}],"peineTotale":0},{"nom":"Moreau","prenom":"David","crimes":[{"id":6332,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2021-08-11"},{"description":"Témoignage","date":"2020-12-07"}],"peineTotale":0},{"nom":"Richard","prenom":"Jean","crimes":[{"id":2915,"peine":0},{"id":3528,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-08-27"}],"peineTotale":0},{"nom":"Moreau","prenom":"David","crimes":[{"id":4912,"peine":0},{"id":1632,"peine":0}],"preuves":[{"description":"ADN","date":"2022-11-25"},{"description":"ADN","date":"2021-08-12"}],"peineTotale":0},{"nom":"Bernard","prenom":"Nicolas","crimes":[{"id":3935,"peine":0},{"id":1400,"peine":0},{"id":2451,"peine":0}],"preuves":[{"description":"ADN","date":"2023-09-20"},{"description":"Témoignage","date":"2022-03-19"}],"peineTotale":0},{"nom":"Laurent","prenom":"Jacques","crimes":[{"id":3257,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2022-05-16"},{"description":"Témoignage","date":"2020-11-26"}],"peineTotale":0},{"nom":"Moreau","prenom":"Jacques","crimes":[{"id":2350,"peine":0},{"id":4772,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2022-01-01"},{"description":"Empreintes digitales","date":"2022-01-22"}],"peineTotale":0},{"nom":"Bernard","prenom":"Pierre","crimes":[{"id":4555,"peine":0}],"preuves":[{"description":"Témoignage","date":"2022-10-04"}],"peineTotale":0},{"nom":"Simon","prenom":"Jacques","crimes":[{"id":9746,"peine":0},{"id":5388,"peine":0},{"id":3979,"peine":0}],"preuves":[{"description":"Témoignage","date":"2023-11-02"},{"description":"ADN","date":"2022-10-04"}],"peineTotale":0},{"nom":"Martin","prenom":"Nicolas","crimes":[{"id":9135,"peine":0},{"id":3982,"peine":0},{"id":8515,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2021-03-03"},{"description":"Empreintes digitales","date":"2022-06-06"}],"peineTotale":0},{"nom":"Simon","prenom":"Jean","crimes":[{"id":5225,"peine":0},{"id":1068,"peine":0}],"preuves":[{"description":"ADN","date":"2020-08-08"}],"peineTotale":0},{"nom":"Dupont","prenom":"Louis","crimes":[{"id":9923,"peine":0}],"preuves":[{"description":"ADN","date":"2023-04-09"}],"peineTotale":0},{"nom":"Robert","prenom":"David","crimes":[{"id":6401,"peine":0},{"id":2894,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2022-03-08"},{"description":"Empreintes digitales","date":"2020-06-22"}],"peineTotale":0},{"nom":"Dubois","prenom":"Julien","crimes":[{"id":1579,"peine":0},{"id":7054,"peine":0},{"id":2047,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2020-10-03"},{"description":"Vidéo surveillance","date":"2021-03-20"}],"peineTotale":0},{"nom":"Simon","prenom":"Nicolas","crimes":[{"id":4846,"peine":0},{"id":9713,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-10-20"}],"peineTotale":0},{"nom":"Martin","prenom":"Jean","crimes":[{"id":2327,"peine":0},{"id":2547,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2023-05-21"},{"description":"Témoignage","date":"2023-12-02"}],"peineTotale":0},{"nom":"Laurent","prenom":"Julien","crimes":[{"id":8611,"peine":0},{"id":7255,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-09-10"},{"description":"Empreintes digitales","date":"2020-05-07"}],"peineTotale":0},{"nom":"Bernard","prenom":"Jacques","crimes":[{"id":7855,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-09-14"},{"description":"Témoignage","date":"2022-07-25"}],"peineTotale":0},{"nom":"Bernard","prenom":"David","crimes":[{"id":8805,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2023-01-22"},{"description":"Témoignage","date":"2020-05-03"}],"peineTotale":0},{"nom":"Martin","prenom":"Louis","crimes":[{"id":9369,"peine":0},{"id":1492,"peine":0},{"id":1368,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2020-08-05"},{"description":"ADN","date":"2023-07-07"}],"peineTotale":0},{"nom":"Richard","prenom":"Jean","crimes":[{"id":4258,"peine":0},{"id":7250,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2022-06-06"},{"description":"Vidéo surveillance","date":"2022-05-23"}],"peineTotale":0},{"nom":"Robert","prenom":"Nicolas","crimes":[{"id":9085,"peine":0},{"id":5294,"peine":0},{"id":3886,"peine":0}],"preuves":[{"description":"Témoignage","date":"2022-11-28"},{"description":"Empreintes digitales","date":"2023-01-22"}],"peineTotale":0},{"nom":"Laurent","prenom":"Pierre","crimes":[{"id":6706,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-03-18"},{"description":"ADN","date":"2020-06-14"}],"peineTotale":0},{"nom":"Moreau","prenom":"Pierre","crimes":[{"id":8557,"peine":0},{"id":7568,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-03-06"},{"description":"ADN","date":"2021-02-12"}],"peineTotale":0},{"nom":"Richard","prenom":"Luc","crimes":[{"id":1464,"peine":0},{"id":7972,"peine":0},{"id":6809,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2022-12-23"},{"description":"ADN","date":"2023-01-22"}],"peineTotale":0},{"nom":"Richard","prenom":"Hugo","crimes":[{"id":2866,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-03-01"}],"peineTotale":0},{"nom":"Moreau","prenom":"Jean","crimes":[{"id":3046,"peine":0},{"id":8712,"peine":0},{"id":6577,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2023-10-12"}],"peineTotale":0},{"nom":"Dubois","prenom":"Jean","crimes":[{"id":7825,"peine":0},{"id":5548,"peine":0},{"id":9499,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2022-12-11"}],"peineTotale":0},{"nom":"Richard","prenom":"Pierre","crimes":[{"id":6047,"peine":0},{"id":1975,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-03-17"},{"description":"Vidéo surveillance","date":"2020-09-14"}],"peineTotale":0},{"nom":"Dubois","prenom":"Nicolas","crimes":[{"id":4441,"peine":0},{"id":5919,"peine":0},{"id":8969,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-08-13"},{"description":"Témoignage","date":"2023-02-11"}],"peineTotale":0},{"nom":"Durand","prenom":"Louis","crimes":[{"id":2277,"peine":0},{"id":6855,"peine":0},{"id":3440,"peine":0}],"preuves":[{"description":"ADN","date":"2022-04-22"}],"peineTotale":0},{"nom":"Dubois","prenom":"Paul","crimes":[{"id":7931,"peine":0}],"preuves":[{"description":"ADN","date":"2021-04-06"}],"peineTotale":0},{"nom":"Moreau","prenom":"Paul","crimes":[{"id":6526,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-05-02"}],"peineTotale":0},{"nom":"Richard","prenom":"Hugo","crimes":[{"id":3668,"peine":0}],"preuves":[{"description":"Témoignage","date":"2023-01-15"},{"description":"Témoignage","date":"2021-07-28"}],"peineTotale":0},{"nom":"Martin","prenom":"David","crimes":[{"id":5126,"peine":0}],"preuves":[{"description":"Témoignage","date":"2022-08-08"},{"description":"Vidéo surveillance","date":"2022-04-05"}],"peineTotale":0},{"nom":"Durand","prenom":"Hugo","crimes":[{"id":3924,"peine":0},{"id":3422,"peine":0},{"id":7474,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2023-12-24"},{"description":"Témoignage","date":"2023-02-17"}],"peineTotale":0},{"nom":"Moreau","prenom":"Paul","crimes":[{"id":5689,"peine":0},{"id":8539,"peine":0},{"id":7716,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2020-05-02"},{"description":"ADN","date":"2020-02-10"}],"peineTotale":0},{"nom":"Martin","prenom":"Jacques","crimes":[{"id":2798,"peine":0}],"preuves":[{"description":"ADN","date":"2021-12-10"},{"description":"Empreintes digitales","date":"2020-12-20"}],"peineTotale":0},{"nom":"Simon","prenom":"David","crimes":[{"id":9893,"peine":0},{"id":3103,"peine":0}],"preuves":[{"description":"ADN","date":"2021-11-17"}],"peineTotale":0},{"nom":"Moreau","prenom":"Louis","crimes":[{"id":3775,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2021-09-14"}],"peineTotale":0},{"nom":"Dupont","prenom":"Pierre","crimes":[{"id":3619,"peine":0}],"preuves":[{"description":"Témoignage","date":"2023-07-01"}],"peineTotale":0},{"nom":"Durand","prenom":"Paul","crimes":[{"id":4372,"peine":0},{"id":6029,"peine":0},{"id":9993,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2020-03-10"},{"description":"Empreintes digitales","date":"2022-09-25"}],"peineTotale":0},{"nom":"Simon","prenom":"Louis","crimes":[{"id":4032,"peine":0},{"id":9371,"peine":0},{"id":6910,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2021-09-03"}],"peineTotale":0},{"nom":"Dupont","prenom":"Jacques","crimes":[{"id":2203,"peine":0},{"id":6789,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-07-27"},{"description":"Témoignage","date":"2022-11-22"}],"peineTotale":0},{"nom":"Bernard","prenom":"Paul","crimes":[{"id":8171,"peine":0},{"id":5515,"peine":0},{"id":6372,"peine":0}],"preuves":[{"description":"ADN","date":"2020-04-03"}],"peineTotale":0},{"nom":"Laurent","prenom":"Louis","crimes":[{"id":7013,"peine":0},{"id":3210,"peine":0},{"id":2219,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2020-10-12"},{"description":"ADN","date":"2021-02-26"}],"peineTotale":0},{"nom":"Bernard","prenom":"Luc","crimes":[{"id":8764,"peine":0},{"id":1227,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2023-11-08"}],"peineTotale":0},{"nom":"Dupont","prenom":"Pierre","crimes":[{"id":2901,"peine":0},{"id":1710,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2021-08-12"},{"description":"Vidéo surveillance","date":"2021-02-22"}],"peineTotale":0},{"nom":"Dupont","prenom":"David","crimes":[{"id":5963,"peine":0},{"id":1052,"peine":0},{"id":4225,"peine":0}],"preuves":[{"description":"ADN","date":"2020-03-26"},{"description":"Empreintes digitales","date":"2021-07-26"}],"peineTotale":0},{"nom":"Martin","prenom":"Paul","crimes":[{"id":5591,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-02-21"}],"peineTotale":0},{"nom":"Simon","prenom":"Paul","crimes":[{"id":8171,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2022-12-02"}],"peineTotale":0},{"nom":"Robert","prenom":"Luc","crimes":[{"id":7519,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2022-08-08"}],"peineTotale":0},{"nom":"Moreau","prenom":"Luc","crimes":[{"id":9169,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2020-12-06"},{"description":"Empreintes digitales","date":"2023-06-14"}],"peineTotale":0},{"nom":"Simon","prenom":"Julien","crimes":[{"id":4540,"peine":0},{"id":5472,"peine":0},{"id":1588,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2022-10-09"}],"peineTotale":0},{"nom":"Robert","prenom":"Jean","crimes":[{"id":2754,"peine":0},{"id":1318,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2021-07-21"},{"description":"Vidéo surveillance","date":"2023-05-04"}],"peineTotale":0},{"nom":"Robert","prenom":"Pierre","crimes":[{"id":5010,"peine":0},{"id":1292,"peine":0}],"preuves":[{"description":"Témoignage","date":"2023-07-24"},{"description":"ADN","date":"2020-05-21"}],"peineTotale":0},{"nom":"Martin","prenom":"Hugo","crimes":[{"id":2295,"peine":0},{"id":3791,"peine":0}],"preuves":[{"description":"ADN","date":"2023-02-19"},{"description":"Vidéo surveillance","date":"2020-03-16"}],"peineTotale":0},{"nom":"Durand","prenom":"Jacques","crimes":[{"id":7988,"peine":0},{"id":7483,"peine":0},{"id":1152,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2022-07-05"},{"description":"Vidéo surveillance","date":"2021-06-06"}],"peineTotale":0},{"nom":"Laurent","prenom":"Jacques","crimes":[{"id":5960,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2021-07-11"}],"peineTotale":0},{"nom":"Durand","prenom":"David","crimes":[{"id":1946,"peine":0},{"id":4407,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2020-08-03"},{"description":"ADN","date":"2021-03-03"}],"peineTotale":0},{"nom":"Martin","prenom":"Paul","crimes":[{"id":9966,"peine":0}],"preuves":[{"description":"ADN","date":"2022-10-09"},{"description":"Témoignage","date":"2022-02-24"}],"peineTotale":0},{"nom":"Simon","prenom":"Louis","crimes":[{"id":7759,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2022-08-03"}],"peineTotale":0},{"nom":"Laurent","prenom":"David","crimes":[{"id":4042,"peine":0},{"id":7147,"peine":0},{"id":9422,"peine":0}],"preuves":[{"description":"Témoignage","date":"2023-07-24"},{"description":"Témoignage","date":"2021-06-21"}],"peineTotale":0},{"nom":"Robert","prenom":"Louis","crimes":[{"id":4171,"peine":0},{"id":1572,"peine":0},{"id":6171,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2023-11-11"}],"peineTotale":0},{"nom":"Dupont","prenom":"Julien","crimes":[{"id":2326,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2021-03-12"},{"description":"Vidéo surveillance","date":"2020-08-25"}],"peineTotale":0},{"nom":"Bernard","prenom":"David","crimes":[{"id":7672,"peine":0},{"id":8277,"peine":0},{"id":5137,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2022-12-01"},{"description":"Vidéo surveillance","date":"2023-10-08"}],"peineTotale":0},{"nom":"Dupont","prenom":"Paul","crimes":[{"id":7453,"peine":0},{"id":6427,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2023-11-09"},{"description":"Empreintes digitales","date":"2020-02-06"}],"peineTotale":0},{"nom":"Durand","prenom":"Jean","crimes":[{"id":3897,"peine":0},{"id":1185,"peine":0},{"id":2166,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2021-10-03"},{"description":"ADN","date":"2020-02-11"}],"peineTotale":0},{"nom":"Dubois","prenom":"Pierre","crimes":[{"id":3059,"peine":0},{"id":2470,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2022-03-11"},{"description":"ADN","date":"2023-09-13"}],"peineTotale":0},{"nom":"Simon","prenom":"Julien","crimes":[{"id":6067,"peine":0}],"preuves":[{"description":"ADN","date":"2021-07-18"},{"description":"Vidéo surveillance","date":"2021-01-01"}],"peineTotale":0},{"nom":"Robert","prenom":"Paul","crimes":[{"id":4152,"peine":0},{"id":4665,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2023-03-28"}],"peineTotale":0},{"nom":"Bernard","prenom":"Paul","crimes":[{"id":2637,"peine":0},{"id":4674,"peine":0},{"id":9588,"peine":0}],"preuves":[{"description":"ADN","date":"2023-08-28"},{"description":"Empreintes digitales","date":"2023-02-17"}],"peineTotale":0},{"nom":"Simon","prenom":"Julien","crimes":[{"id":9304,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2023-03-01"},{"description":"Vidéo surveillance","date":"2020-06-20"}],"peineTotale":0},{"nom":"Dupont","prenom":"David","crimes":[{"id":1132,"peine":0},{"id":7745,"peine":0}],"preuves":[{"description":"ADN","date":"2020-12-07"}],"peineTotale":0},{"nom":"Dubois","prenom":"Paul","crimes":[{"id":4901,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-03-15"},{"description":"Vidéo surveillance","date":"2021-07-02"}],"peineTotale":0},{"nom":"Bernard","prenom":"Pierre","crimes":[{"id":6616,"peine":0},{"id":1724,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2022-04-09"}],"peineTotale":0},{"nom":"Simon","prenom":"Paul","crimes":[{"id":4118,"peine":0},{"id":1887,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2021-06-27"}],"peineTotale":0},{"nom":"Dupont","prenom":"Pierre","crimes":[{"id":4531,"peine":0},{"id":1009,"peine":0},{"id":2807,"peine":0}],"preuves":[{"description":"ADN","date":"2022-02-11"}],"peineTotale":0},{"nom":"Dubois","prenom":"Paul","crimes":[{"id":2577,"peine":0},{"id":7531,"peine":0}],"preuves":[{"description":"ADN","date":"2020-09-24"},{"description":"Vidéo surveillance","date":"2022-05-22"}],"peineTotale":0},{"nom":"Bernard","prenom":"Hugo","crimes":[{"id":2220,"peine":0},{"id":6436,"peine":0}],"preuves":[{"description":"ADN","date":"2023-02-15"}],"peineTotale":0},{"nom":"Robert","prenom":"Luc","crimes":[{"id":1406,"peine":0},{"id":7947,"peine":0},{"id":3043,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2020-07-04"},{"description":"Témoignage","date":"2023-03-13"}],"peineTotale":0},{"nom":"Dupont","prenom":"Paul","crimes":[{"id":8984,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2023-09-06"}],"peineTotale":0},{"nom":"Martin","prenom":"Pierre","crimes":[{"id":7426,"peine":0},{"id":3742,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-12-11"},{"description":"Empreintes digitales","date":"2022-03-02"}],"peineTotale":0},{"nom":"Dupont","prenom":"Louis","crimes":[{"id":8406,"peine":0},{"id":6329,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2020-02-07"},{"description":"Témoignage","date":"2022-10-12"}],"peineTotale":0},{"nom":"Durand","prenom":"Jacques","crimes":[{"id":8232,"peine":0},{"id":2689,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2020-03-26"}],"peineTotale":0},{"nom":"Martin","prenom":"Hugo","crimes":[{"id":4230,"peine":0},{"id":4801,"peine":0},{"id":8299,"peine":0}],"preuves":[{"description":"Témoignage","date":"2021-07-16"},{"description":"Vidéo surveillance","date":"2020-04-19"}],"peineTotale":0},{"nom":"Richard","prenom":"Louis","crimes":[{"id":4395,"peine":0},{"id":2858,"peine":0},{"id":4947,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-02-19"},{"description":"Empreintes digitales","date":"2023-05-16"}],"peineTotale":0},{"nom":"Durand","prenom":"Jacques","crimes":[{"id":3218,"peine":0}],"preuves":[{"description":"Empreintes digitales","date":"2020-06-20"},{"description":"Témoignage","date":"2021-07-27"}],"peineTotale":0},{"nom":"Simon","prenom":"Jean","crimes":[{"id":2800,"peine":0},{"id":3367,"peine":0},{"id":1207,"peine":0}],"preuves":[{"description":"ADN","date":"2021-05-22"}],"peineTotale":0},{"nom":"Bernard","prenom":"Jacques","crimes":[{"id":9306,"peine":0},{"id":9607,"peine":0},{"id":6651,"peine":0}],"preuves":[{"description":"ADN","date":"2020-08-10"},{"description":"ADN","date":"2020-02-24"}],"peineTotale":0},{"nom":"Durand","prenom":"Paul","crimes":[{"id":7308,"peine":0}],"preuves":[{"description":"ADN","date":"2020-03-23"},{"description":"Empreintes digitales","date":"2021-09-09"}],"peineTotale":0},{"nom":"Simon","prenom":"David","crimes":[{"id":5633,"peine":0},{"id":4581,"peine":0}],"preuves":[{"description":"Témoignage","date":"2020-03-05"}],"peineTotale":0},{"nom":"Dubois","prenom":"Nicolas","crimes":[{"id":7639,"peine":0},{"id":9313,"peine":0},{"id":9793,"peine":0}],"preuves":[{"description":"Témoignage","date":"2023-09-26"},{"description":"ADN","date":"2021-05-26"}],"peineTotale":0},{"nom":"Richard","prenom":"Louis","crimes":[{"id":1559,"peine":0},{"id":3497,"peine":0}],"preuves":[{"description":"Vidéo surveillance","date":"2020-04-03"}],"peineTotale":0}]
+[
+  {
+    "id": 670,
+    "nom": "Dupont",
+    "prenom": "Arthur",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": [
+      20
+    ]
+  },
+  {
+    "id": 483,
+    "nom": "Gauthier",
+    "prenom": "Chloé",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 169,
+    "nom": "Muller",
+    "prenom": "Pierre",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 673,
+    "nom": "Fernandez",
+    "prenom": "Lucas",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 192,
+    "nom": "Martinez",
+    "prenom": "Arthur",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 250,
+    "nom": "Perez",
+    "prenom": "Lola",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 527,
+    "nom": "Leroy",
+    "prenom": "Eva",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 660,
+    "nom": "Bertrand",
+    "prenom": "Marie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 506,
+    "nom": "Adam",
+    "prenom": "Antoine",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 238,
+    "nom": "Moreau",
+    "prenom": "Louis",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 933,
+    "nom": "Weber",
+    "prenom": "Liam",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 870,
+    "nom": "Martinez",
+    "prenom": "Enzo",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 410,
+    "nom": "Lambert",
+    "prenom": "Nina",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 444,
+    "nom": "Benoit",
+    "prenom": "Jade",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 168,
+    "nom": "Richard",
+    "prenom": "Théo",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 369,
+    "nom": "Gauthier",
+    "prenom": "Maxime",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 524,
+    "nom": "Lambert",
+    "prenom": "Marie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 956,
+    "nom": "Bertrand",
+    "prenom": "Chloé",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 517,
+    "nom": "Benoit",
+    "prenom": "Hugo",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 895,
+    "nom": "Garcia",
+    "prenom": "Anaïs",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 116,
+    "nom": "Barbier",
+    "prenom": "Julie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 529,
+    "nom": "Fernandez",
+    "prenom": "Mia",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 120,
+    "nom": "Benoit",
+    "prenom": "Inès",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 781,
+    "nom": "Lopez",
+    "prenom": "Ethan",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 629,
+    "nom": "Moreau",
+    "prenom": "Thomas",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 445,
+    "nom": "Marchand",
+    "prenom": "Jean",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 691,
+    "nom": "Dupont",
+    "prenom": "Camille",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 330,
+    "nom": "Lemoine",
+    "prenom": "Léa",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 641,
+    "nom": "Morin",
+    "prenom": "Théo",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 873,
+    "nom": "Barbier",
+    "prenom": "Kylian",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 633,
+    "nom": "Sanchez",
+    "prenom": "Nina",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 136,
+    "nom": "Fernandez",
+    "prenom": "Maxime",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 474,
+    "nom": "Garcia",
+    "prenom": "Thomas",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 311,
+    "nom": "Aubry",
+    "prenom": "Amélie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 771,
+    "nom": "Gilbert",
+    "prenom": "Arthur",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 600,
+    "nom": "Gauthier",
+    "prenom": "Maxime",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 681,
+    "nom": "Girard",
+    "prenom": "Julien",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 479,
+    "nom": "Henry",
+    "prenom": "Lucas",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 350,
+    "nom": "Faure",
+    "prenom": "Claire",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 989,
+    "nom": "Bourdon",
+    "prenom": "Noah",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 312,
+    "nom": "Girard",
+    "prenom": "Pierre",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 118,
+    "nom": "Marchand",
+    "prenom": "Inès",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 765,
+    "nom": "Gauthier",
+    "prenom": "Lucie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 542,
+    "nom": "Aubry",
+    "prenom": "Nina",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 167,
+    "nom": "Lemoine",
+    "prenom": "Lucie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 946,
+    "nom": "Bourdon",
+    "prenom": "Yanis",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 869,
+    "nom": "Rolland",
+    "prenom": "Nicolas",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 762,
+    "nom": "Faure",
+    "prenom": "Lucie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 159,
+    "nom": "Aubry",
+    "prenom": "Louis",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 502,
+    "nom": "Andre",
+    "prenom": "Inès",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 919,
+    "nom": "Roux",
+    "prenom": "Axel",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 351,
+    "nom": "Bertrand",
+    "prenom": "Inès",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 288,
+    "nom": "Garcia",
+    "prenom": "Jean",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 304,
+    "nom": "Sanchez",
+    "prenom": "Marie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 271,
+    "nom": "Girard",
+    "prenom": "Lola",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 419,
+    "nom": "Lemoine",
+    "prenom": "Kylian",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 477,
+    "nom": "Morin",
+    "prenom": "Julie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 741,
+    "nom": "Baron",
+    "prenom": "Liam",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 149,
+    "nom": "Lopez",
+    "prenom": "Arthur",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 843,
+    "nom": "Francois",
+    "prenom": "Ethan",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 827,
+    "nom": "Henry",
+    "prenom": "Eva",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 412,
+    "nom": "Sanchez",
+    "prenom": "Jean",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 462,
+    "nom": "Weber",
+    "prenom": "Luc",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 140,
+    "nom": "Girard",
+    "prenom": "Ethan",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 488,
+    "nom": "Moreau",
+    "prenom": "Yanis",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 865,
+    "nom": "Joly",
+    "prenom": "Liam",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 563,
+    "nom": "Gilbert",
+    "prenom": "Julie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 835,
+    "nom": "Dupont",
+    "prenom": "Kylian",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 551,
+    "nom": "Henry",
+    "prenom": "Inès",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 812,
+    "nom": "Martinez",
+    "prenom": "Thomas",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 622,
+    "nom": "Gonzalez",
+    "prenom": "Antoine",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 986,
+    "nom": "Andre",
+    "prenom": "Milan",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 215,
+    "nom": "Girard",
+    "prenom": "Jean",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 554,
+    "nom": "Richard",
+    "prenom": "Léa",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 979,
+    "nom": "Robin",
+    "prenom": "Mia",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 848,
+    "nom": "Renaud",
+    "prenom": "Axel",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 794,
+    "nom": "Durand",
+    "prenom": "Anaïs",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 973,
+    "nom": "Benoit",
+    "prenom": "Nicolas",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 963,
+    "nom": "Martinez",
+    "prenom": "Jean",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 682,
+    "nom": "Clement",
+    "prenom": "Léa",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 561,
+    "nom": "Faure",
+    "prenom": "Julien",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 417,
+    "nom": "Leroy",
+    "prenom": "Sarah",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 381,
+    "nom": "Weber",
+    "prenom": "Manon",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 158,
+    "nom": "Lemoine",
+    "prenom": "Lucie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 415,
+    "nom": "Martinez",
+    "prenom": "Anaïs",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 130,
+    "nom": "Gonzalez",
+    "prenom": "Zoé",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 165,
+    "nom": "Benoit",
+    "prenom": "Julien",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 544,
+    "nom": "Lemoine",
+    "prenom": "Maël",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 776,
+    "nom": "Durand",
+    "prenom": "Nathan",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 971,
+    "nom": "Francois",
+    "prenom": "Axel",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 218,
+    "nom": "Garcia",
+    "prenom": "Zoé",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 257,
+    "nom": "Henry",
+    "prenom": "Alice",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 128,
+    "nom": "Andre",
+    "prenom": "Nina",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 709,
+    "nom": "Renaud",
+    "prenom": "Nathan",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 439,
+    "nom": "Moreau",
+    "prenom": "Sophie",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 831,
+    "nom": "Fernandez",
+    "prenom": "Arthur",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 656,
+    "nom": "Renard",
+    "prenom": "Mathis",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 296,
+    "nom": "Girard",
+    "prenom": "Julien",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 809,
+    "nom": "Henry",
+    "prenom": "Antoine",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  },
+  {
+    "id": 621,
+    "nom": "Marchand",
+    "prenom": "Nathan",
+    "crimes": [],
+    "preuves": [],
+    "peineTotale": 0,
+    "idAffaires": []
+  }
+]

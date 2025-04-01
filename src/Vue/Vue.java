@@ -3,10 +3,12 @@ package Vue;
 import Criminel.Criminel;
 import Controleur.Controleur;
 import Modele.Modele;
+import Criminel.Affaire;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
+import java.util.Date;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
@@ -32,9 +34,13 @@ public class Vue extends JFrame implements Observer {
         btnGestionJson = new JButton("Gérer JSON");
         panelHaut.add(btnGestionJson);
         panelHaut.add(new JButton("Base de données"));
-        panelHaut.add(new JButton("Graphique"));
         panelHaut.add(new JButton("Maps"));
         add(panelHaut, BorderLayout.NORTH);
+
+        JButton btnAffaires = new JButton("Affaires");
+        panelHaut.add(btnAffaires);
+        btnAffaires.addActionListener(e -> new VueAffaires(modele));
+
 
         // Centre : Liste des criminels à gauche + Détails à droite
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));
@@ -85,7 +91,14 @@ public class Vue extends JFrame implements Observer {
             Criminel c = modele.getListeCriminel().get(index);
             detailsCriminel.setText("Nom : " + c.getNom() + "\n"
                     + "Prénom : " + c.getPrenom() + "\n"
-                    + "Peine Totale : " + c.getPeineTotale() + " ans");
+                    + "Peine Totale : " + c.getPeineTotale() + " ans\n");
+
+            if (c.getAffaires() != null && !c.getAffaires().isEmpty()) {
+                detailsCriminel.append("Affaires :\n");
+                for (Affaire a : c.getAffaires()) {
+                    detailsCriminel.append(" - " + a.getDescription() + " (" + a.getLieu() + ")\n");
+                }
+            }
         }
     }
 
