@@ -90,11 +90,7 @@ public class ListeCrime extends JFrame {
             this.crimes.add(new Crime(peine, str));
 
 
-            StringBuilder sb = new StringBuilder();
-            for (Crime c : crimes) {
-                sb.append(c.getIntitule()).append(": ").append(c.getPeine()).append(" ans | ");
-            }
-            lesCrime.setText(sb.toString());
+            updateAffichageListeCrimes();
 
 
             crime.setText("");
@@ -109,4 +105,17 @@ public class ListeCrime extends JFrame {
     public ArrayList<Crime> getCrimes() {
         return this.crimes;
     }
+
+    public void updateAffichageListeCrimes() {
+        if (crimes.isEmpty()) {
+            lesCrime.setText("Aucun crime enregistré.");
+        } else {
+            StringBuilder sb = new StringBuilder();
+            for (Crime c : crimes) {
+                sb.append(c.getIntitule()).append(": ").append(c.getPeine()).append(" ans | ");
+            }
+            lesCrime.setText(sb.toString());
+        }
+    }
+
 }

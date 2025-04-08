@@ -100,9 +100,15 @@ public class Vue extends JFrame implements Observer {
     }
 
     private void mettreAJourListe() {
+        int selectedIndex = listeCriminels.getSelectedIndex();
+
         listeModel.clear();
         for (Criminel c : modele.getListeCriminel()) {
             listeModel.addElement(c.getNom() + " " + c.getPrenom());
+        }
+
+        if (selectedIndex >= 0 && selectedIndex < listeModel.size()) {
+            listeCriminels.setSelectedIndex(selectedIndex);
         }
     }
 
@@ -112,9 +118,15 @@ public class Vue extends JFrame implements Observer {
         if (index >= 0) {
             Criminel c = modele.getListeCriminel().get(index);
             StringBuilder sb = new StringBuilder();
-            for (Crime lesCrime : c.getCrimes()){
-                if (lesCrime.getIntitule() != null){
-                    sb.append(lesCrime.getIntitule()).append(" ");
+            for (int i = 0; i < c.getCrimes().size(); i++){
+                if  (c.getCrimes().get(i).getIntitule() != null){
+                    sb.append(c.getCrimes().get(i).getIntitule());
+                }
+                if (i != c.getCrimes().size() - 1){
+                    sb.append(", ");
+                }
+                else{
+                    sb.append(" ");
                 }
             }
             if (!sb.isEmpty()) {
@@ -301,6 +313,7 @@ public class Vue extends JFrame implements Observer {
         String prenom = JOptionPane.showInputDialog(this, "Prénom du criminel :");
         if (nom != null && prenom != null) {
             modele.addListeCriminel(new Criminel(nom, prenom));
+            listeCriminels.setSelectedIndex(modele.getListeCriminel().size() - 1);
         }
     }
 
@@ -320,6 +333,11 @@ public class Vue extends JFrame implements Observer {
         int index = listeCriminels.getSelectedIndex();
         if (index >= 0) {
             modele.supprimerCriminel(index);
+        }
+        if (index > 0) {
+            listeCriminels.setSelectedIndex(index - 1);
+        } else if (!modele.getListeCriminel().isEmpty()) {
+            listeCriminels.setSelectedIndex(0);
         }
     }
 

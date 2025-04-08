@@ -17,7 +17,6 @@ public class AfficheCrime extends JFrame {
 
     public AfficheCrime(Vue view, ArrayList<Crime> lesCrime,ListeCrime reloadListe){
         this.view = view;
-
         this.panelGlobal = new JPanel();
 
         setTitle("Information sur les crimes");
@@ -32,7 +31,7 @@ public class AfficheCrime extends JFrame {
 
         StringBuilder sb = new StringBuilder();
         if (lesCrime.isEmpty()){
-            sb.append("Aucun crime existante 😔\n");
+            sb.append("Aucun crime existant 😔\n");
         }
         else {
             for (Crime c : lesCrime) {
@@ -91,10 +90,9 @@ public class AfficheCrime extends JFrame {
                     if (existe != -1) {
                         view.removeStr(existe);
                         view.afficherDetails();
-                        reloadListe.revalidate();
-                        reloadListe.repaint();
-                        panelGlobal.revalidate();
-                        panelGlobal.repaint();
+                        reloadListe.updateAffichageListeCrimes();
+                        updateAffichage(lesCrime, liste, champTexte);
+                        select.setText("");
                     }
                 }
             }
@@ -106,5 +104,25 @@ public class AfficheCrime extends JFrame {
         add(panelSud, BorderLayout.SOUTH);
 
         setVisible(true);
+    }
+
+
+    private void updateAffichage(ArrayList<Crime> lesCrime, JComboBox<String> liste, JTextArea champTexte) {
+        // Mise à jour de la zone de texte
+        StringBuilder sb = new StringBuilder();
+        if (lesCrime.isEmpty()) {
+            sb.append("Aucun crime existant 😔\n");
+        } else {
+            for (Crime c : lesCrime) {
+                sb.append(c.getIntitule()).append("\n");
+            }
+        }
+        champTexte.setText(sb.toString());
+
+        // Mise à jour de la ComboBox
+        liste.removeAllItems();
+        for (Crime c : lesCrime) {
+            liste.addItem(c.getIntitule());
+        }
     }
 }
