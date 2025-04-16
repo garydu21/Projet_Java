@@ -3,6 +3,7 @@ package Vue;
 import Criminel.Criminel;
 import Controleur.Controleur;
 import Modele.Modele;
+import Criminel.Affaire;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -55,9 +56,13 @@ public class Vue extends JFrame implements Observer {
         btnGestionJson = new JButton("Gérer JSON");
         panelHaut.add(btnGestionJson);
         panelHaut.add(new JButton("Base de données"));
-        panelHaut.add(new JButton("Graphique"));
         panelHaut.add(new JButton("Maps"));
         add(panelHaut, BorderLayout.NORTH);
+
+        JButton btnAffaires = new JButton("Affaires");
+        panelHaut.add(btnAffaires);
+        btnAffaires.addActionListener(e -> new VueAffaires(modele));
+
 
         // Centre : Liste des criminels à gauche + Détails à droite
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));
@@ -112,41 +117,40 @@ public class Vue extends JFrame implements Observer {
         }
     }
 
-    public void afficherDetails() {
+      public void afficherDetails() {
 
-        int index = listeCriminels.getSelectedIndex();
-        if (index >= 0) {
-            Criminel c = modele.getListeCriminel().get(index);
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < c.getCrimes().size(); i++){
-                if  (c.getCrimes().get(i).getIntitule() != null){
-                    sb.append(c.getCrimes().get(i).getIntitule());
-                }
-                if (i != c.getCrimes().size() - 1){
-                    sb.append(", ");
-                }
-                else{
-                    sb.append(" ");
-                }
+    int index = listeCriminels.getSelectedIndex();
+    if (index >= 0) {
+        Criminel c = modele.getListeCriminel().get(index);
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < c.getCrimes().size(); i++){
+            if (c.getCrimes().get(i).getIntitule() != null){
+                sb.append(c.getCrimes().get(i).getIntitule());
             }
-            if (!sb.isEmpty()) {
-                infoCriminel.setText("Nom : " + c.getNom() + "\n"
-                        + "Prénom : " + c.getPrenom() + "\n"
-                        + "Peine Totale : " + c.getPeineTotale() + " ans \n"
-                        + "Arrêter pour : " + sb + "\n");
-            }
-            else{
-                infoCriminel.setText("Nom : " + c.getNom() + "\n"
-                        + "Prénom : " + c.getPrenom() + "\n"
-                        + "Peine Totale : " + c.getPeineTotale() + " ans \n"
-                        + "Arrêter pour : rien \n");
+            if (i != c.getCrimes().size() - 1){
+                sb.append(", ");
             }
         }
 
+        String texte = "Nom : " + c.getNom() + "\n"
+                + "Prénom : " + c.getPrenom() + "\n"
+                + "Peine Totale : " + c.getPeineTotale() + " ans \n"
+                + "Arrêter pour : " + (sb.isEmpty() ? "rien" : sb.toString()) + "\n";
 
-        detailsCriminel.removeAll();
-        detailsCriminel.setLayout(new BorderLayout());
-        detailsCriminel.add(infoCriminel, BorderLayout.NORTH);
+        if (c.getAffaires() != null && !c.getAffaires().isEmpty()) {
+            texte += "Affaires :\n";
+            for (Affaire a : c.getAffaires()) {
+                texte += " - " + a.getDescription() + " (" + a.getLieu() + ")\n";
+            }
+        }
+
+        infoCriminel.setText(texte);
+    }
+
+    detailsCriminel.removeAll();
+    detailsCriminel.setLayout(new BorderLayout());
+    detailsCriminel.add(infoCriminel, BorderLayout.NORTH);
 
         panelDescription = new JPanel();
         panelDescription.setLayout(new BorderLayout());
