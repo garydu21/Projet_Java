@@ -13,7 +13,7 @@ public class Controleur {
     public Controleur() {
         this.modele = new Modele();
         this.vue = new Vue(this, modele);
-        modele.addObserver((Observer) vue);  // Permet à la vue d'être mise à jour automatiquement
+        modele.addObserver(vue);  // Permet à la vue d'être mise à jour automatiquement
     }
 
     public static void main(String[] args) {

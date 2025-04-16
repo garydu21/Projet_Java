@@ -58,10 +58,11 @@ public class Modele extends Observable {
         }
     }
 
-    public void modifierCriminel(int index, String nom, String prenom) {
+    public void modifierCriminel(int index, String nom, String prenom, String description) {
         if (index >= 0 && index < listeCriminel.size()) {
             listeCriminel.get(index).setNom(nom);
             listeCriminel.get(index).setPrenom(prenom);
+            listeCriminel.get(index).setDescription(description);
             sauvegarderDonnees();
             setChanged();
             notifyObservers();

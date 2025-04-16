@@ -4,10 +4,11 @@ public class Crime {
 
     private int id;
     private int peine;
+    private String intitule;
 
-    public Crime(int id, int peine) {
-        this.id = id;
+    public Crime(int peine, String intitule) {
         this.peine = peine;
+        this.intitule = intitule;
     }
 
     public int getPeine() {
@@ -17,4 +18,9 @@ public class Crime {
     public int getId() {
         return this.id;
     }
+
+    public String getIntitule() {
+        return this.intitule;
+    }
+
 }

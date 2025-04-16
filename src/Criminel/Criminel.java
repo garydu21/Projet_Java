@@ -15,15 +15,19 @@ public class Criminel {
     @Expose private int peineTotale;
     @Expose private List<Integer> idAffaires = new ArrayList<>();
 
+    private String description = "";
+
     private transient List<Affaire> affaires = new ArrayList<>();
 
     public Criminel(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
         this.peineTotale = 0;
-        this.id = nom.hashCode() + prenom.hashCode(); // simple identifiant basé sur nom/prenom
+        this.id = nom.hashCode() + prenom.hashCode();
         this.idAffaires = new ArrayList<>();
         this.affaires = new ArrayList<>();
+        this.preuves = new ArrayList<>();
+        this.description = "";
     }
 
     public int getId() {
@@ -50,9 +54,25 @@ public class Criminel {
         this.prenom = prenom;
     }
 
+    public ArrayList<Crime> getCrimes(){
+        return this.crimes;
+    }
+
+    public void resetPeineTotal() {
+        this.peineTotale = 0;
+    }
+
     public void ajouterCrime(Crime crime) {
-        crimes.add(crime);
-        peineTotale += crime.getPeine();
+        this.crimes.add(crime);
+        this.peineTotale += crime.getPeine();
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public List<Affaire> getAffaires() {
@@ -68,10 +88,10 @@ public class Criminel {
     }
 
     public void ajouterAffaire(Affaire affaire) {
-        if (!affaires.contains(affaire)) {
-            affaires.add(affaire);
-            if (!idAffaires.contains(affaire.getId()))
-                idAffaires.add(affaire.getId());
+        if (!getAffaires().contains(affaire)) {
+            getAffaires().add(affaire);
+            if (!getIdAffaires().contains(affaire.getId()))
+                getIdAffaires().add(affaire.getId());
         }
     }
 }
