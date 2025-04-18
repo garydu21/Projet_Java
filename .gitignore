@@ -1,0 +1,22 @@
+---
+
+## ✅ `.gitignore` (adapté à ton projet Java + IntelliJ)
+
+```gitignore
+# Fichiers de build Java
+/bin/
+/out/
+/build/
+
+# IDEs
+.idea/
+*.iml
+
+# Données locales
+*.log
+*.class
+*.jar
+
+# OS
+.DS_Store
+Thumbs.db
