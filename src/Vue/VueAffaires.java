@@ -6,6 +6,7 @@ import Modele.Modele;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class VueAffaires extends JFrame {
@@ -14,6 +15,9 @@ public class VueAffaires extends JFrame {
     private JTextArea detailsAffaire;
     private JButton btnAjouter, btnModifier, btnSupprimer, btnAssocierCriminel;
     private Modele modele;
+
+
+    private String lieu;
 
     public VueAffaires(Modele modele) {
         this.modele = modele;
@@ -72,6 +76,82 @@ public class VueAffaires extends JFrame {
         setVisible(true);
     }
 
+    public VueAffaires(Modele modele, String lieu) {
+        this.lieu = lieu;
+        this.modele = modele;
+
+        setTitle("Gestion des Affaires");
+        setSize(800, 600);
+        setLayout(new BorderLayout());
+
+        // Haut
+        JPanel panelHaut = new JPanel();
+        JLabel label = new JLabel("Base des affaires criminelles");
+        panelHaut.add(label);
+        add(panelHaut, BorderLayout.NORTH);
+
+        // Centre
+        JPanel panelCentre = new JPanel(new GridLayout(1, 2));
+        listeModel = new DefaultListModel<>();
+        listeAffaires = new JList<>(listeModel);
+        panelCentre.add(new JScrollPane(listeAffaires));
+
+        detailsAffaire = new JTextArea();
+        detailsAffaire.setEditable(false);
+        panelCentre.add(new JScrollPane(detailsAffaire));
+        add(panelCentre, BorderLayout.CENTER);
+
+        // Bas
+        JPanel panelBas = new JPanel();
+        btnAjouter = new JButton("Ajouter");
+        btnModifier = new JButton("Modifier");
+        btnSupprimer = new JButton("Supprimer");
+
+        btnAssocierCriminel = new JButton("Associer Criminel");
+        JButton btnDissocierCriminel = new JButton("Retirer Criminel");
+        JButton btnAjouterPlusieurs = new JButton("Associer plusieurs");
+
+        panelBas.add(btnAjouter);
+        panelBas.add(btnModifier);
+        panelBas.add(btnSupprimer);
+
+        panelBas.add(btnAssocierCriminel);
+        panelBas.add(btnAjouterPlusieurs);
+        panelBas.add(btnDissocierCriminel);
+        add(panelBas, BorderLayout.SOUTH);
+
+        // Actions
+        mettreAJourAffichage();
+
+        listeAffaires.addListSelectionListener(e -> afficherDetails());
+        btnAjouter.addActionListener(e -> ajouterAffaire());
+        btnModifier.addActionListener(e -> modifierAffaire());
+        btnSupprimer.addActionListener(e -> supprimerAffaire());
+        btnAssocierCriminel.addActionListener(e -> associerCriminel());
+        btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
+        btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
+
+        setVisible(true);
+    }
+
+    private void mettreAJourAffichage() {
+        if (this.lieu != null) {
+            mettreAJourListe(this.lieu);
+        } else {
+            mettreAJourListe();
+        }
+    }
+
+
+    private void mettreAJourListe(String lieu) {
+        listeModel.clear();
+        for (Affaire a : modele.getListeAffaires()) {
+            if (a.getLieu().equalsIgnoreCase(lieu)) {
+                listeModel.addElement("Affaire #" + a.getId() + " - " + a.getDescription());
+            }
+        }
+    }
+
     private void mettreAJourListe() {
         listeModel.clear();
         for (Affaire a : modele.getListeAffaires()) {
@@ -79,10 +159,20 @@ public class VueAffaires extends JFrame {
         }
     }
 
+
     private void afficherDetails() {
         int index = listeAffaires.getSelectedIndex();
         if (index >= 0) {
-            Affaire affaire = modele.getListeAffaires().get(index);
+            Affaire affaire;
+            if (this.lieu != null) {
+                List<Affaire> affairesLieu = modele.getListeAffaires().stream().filter(a -> a.getLieu().equalsIgnoreCase(this.lieu)).toList(); // J'ai aucune idée que comment ça fonctionne, je ferais un version personnel plus tard
+                affaire = affairesLieu.get(index);
+            }
+            else{
+                affaire = modele.getListeAffaires().get(index);
+            }
+
+
             StringBuilder sb = new StringBuilder();
             sb.append("Description : ").append(affaire.getDescription()).append("\n");
             sb.append("Lieu : ").append(affaire.getLieu()).append("\n");
@@ -110,7 +200,7 @@ public class VueAffaires extends JFrame {
 
             Affaire affaire = new Affaire(id, description, lieu, date);
             modele.ajouterAffaire(affaire);
-            mettreAJourListe();
+            mettreAJourAffichage();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Erreur lors de la création de l'affaire.");
         }
@@ -129,7 +219,7 @@ public class VueAffaires extends JFrame {
             affaire.setDate(java.sql.Date.valueOf(dateStr));
 
             modele.ajouterAffaire(affaire);
-            mettreAJourListe();
+            mettreAJourAffichage();
         }
     }
 
@@ -137,7 +227,7 @@ public class VueAffaires extends JFrame {
         int index = listeAffaires.getSelectedIndex();
         if (index >= 0) {
             modele.supprimerAffaire(index);
-            mettreAJourListe();
+            mettreAJourAffichage();
             detailsAffaire.setText("");
         }
     }

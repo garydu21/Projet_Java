@@ -2,6 +2,7 @@ package Vue;
 
 import Criminel.Criminel;
 import Controleur.Controleur;
+import Maps.Maps;
 import Modele.Modele;
 import Criminel.Affaire;
 
@@ -22,7 +23,7 @@ public class Vue extends JFrame implements Observer {
     private JList<String> listeCriminels;
     private DefaultListModel<String> listeModel;
     private JPanel detailsCriminel;
-    private JButton btnModifier, btnAjouter, btnSupprimer, btnGestionJson;
+    private JButton btnModifier, btnAjouter, btnSupprimer, btnGestionJson,btnMap;
     private Modele modele;
     private JTextArea infoCriminel;
     private JButton ajouterCrime;
@@ -56,7 +57,8 @@ public class Vue extends JFrame implements Observer {
         btnGestionJson = new JButton("Gérer JSON");
         panelHaut.add(btnGestionJson);
         panelHaut.add(new JButton("Base de données"));
-        panelHaut.add(new JButton("Maps"));
+        btnMap = new JButton("Maps");
+        panelHaut.add(btnMap);
         add(panelHaut, BorderLayout.NORTH);
 
         JButton btnAffaires = new JButton("Affaires");
@@ -97,11 +99,18 @@ public class Vue extends JFrame implements Observer {
         listeCriminels.addListSelectionListener(e -> afficherDetails());
         btnModifier.addActionListener(e -> modifierCriminel());
         btnAjouter.addActionListener(e -> ajouterCriminel());
+
         btnSupprimer.addActionListener(e -> supprimerCriminel());
         btnGestionJson.addActionListener(e -> afficherPopupGestionJson());
         ajouterCrime.addActionListener(e -> fenetreCrime());
 
+        btnMap.addActionListener(e -> ouvrirMap());
+
         setVisible(true);
+    }
+
+    private void ouvrirMap() {
+        new Maps(this.modele);
     }
 
     private void mettreAJourListe() {
@@ -117,7 +126,7 @@ public class Vue extends JFrame implements Observer {
         }
     }
 
-      public void afficherDetails() {
+    public void afficherDetails() {
 
     int index = listeCriminels.getSelectedIndex();
     if (index >= 0) {
