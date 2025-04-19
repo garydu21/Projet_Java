@@ -134,6 +134,19 @@ public class VueAffaires extends JFrame {
         setVisible(true);
     }
 
+    private Affaire getAffaireSelectionnee() {
+        int index = listeAffaires.getSelectedIndex();
+        if (index < 0) return null;
+
+        List<Affaire> source = (lieu != null) ?
+                modele.getListeAffaires().stream()
+                        .filter(a -> a.getLieu().equalsIgnoreCase(lieu))
+                        .toList()
+                : modele.getListeAffaires();
+
+        return source.get(index);
+    }
+
     private void mettreAJourAffichage() {
         if (this.lieu != null) {
             mettreAJourListe(this.lieu);
@@ -208,42 +221,41 @@ public class VueAffaires extends JFrame {
     }
 
     private void modifierAffaire() {
-        int index = listeAffaires.getSelectedIndex();
-        if (index >= 0) {
-            Affaire affaire = modele.getListeAffaires().get(index);
+        Affaire affaire = getAffaireSelectionnee();
+        if (affaire != null) {
             String desc = JOptionPane.showInputDialog(this, "Modifier la description :", affaire.getDescription());
             String lieu = JOptionPane.showInputDialog(this, "Modifier le lieu :", affaire.getLieu());
             String dateStr = JOptionPane.showInputDialog(this, "Modifier la date (yyyy-MM-dd) :", affaire.getDate().toString());
 
             affaire.setDescription(desc);
             affaire.setLieu(lieu);
-            try {
-                affaire.setDate(java.sql.Date.valueOf(dateStr));
-            } catch (IllegalArgumentException ex) {
-                JOptionPane.showMessageDialog(this, "Format de date invalide. Veuillez entrer la date au format yyyy-MM-dd.");
+            if (desc != null && lieu != null && dateStr != null) {
+                try {
+
+                    affaire.setDate(java.sql.Date.valueOf(dateStr));
+                } catch (IllegalArgumentException ex) {
+                    JOptionPane.showMessageDialog(this, "Format de date invalide. Veuillez entrer la date au format yyyy-MM-dd.");
+                }
             }
-            //modele.ajouterAffaire(affaire);
             modele.sauvegarderAffaires();
             mettreAJourAffichage();
-
-            listeAffaires.setSelectedIndex(index);
         }
     }
 
     private void supprimerAffaire() {
-        int index = listeAffaires.getSelectedIndex();
-        if (index >= 0) {
-            modele.supprimerAffaire(index);
+        Affaire affaire = getAffaireSelectionnee();
+        if (affaire != null) {
+            modele.getListeAffaires().remove(affaire);
+            modele.sauvegarderAffaires();
             mettreAJourAffichage();
             detailsAffaire.setText("");
         }
     }
 
     private void associerCriminel() {
-        int iAffaire = listeAffaires.getSelectedIndex();
-        if (iAffaire < 0) return;
+        Affaire affaire = getAffaireSelectionnee();
+        if (affaire == null) return;
 
-        Affaire affaire = modele.getListeAffaires().get(iAffaire);
         List<Criminel> criminels = modele.getListeCriminel();
 
         if (criminels.isEmpty()) {
@@ -269,16 +281,16 @@ public class VueAffaires extends JFrame {
             if (iCriminel >= 0) {
                 Criminel c = criminels.get(iCriminel);
                 modele.mettreAJourAffaire(affaire, c);
-                afficherDetails();
+                mettreAJourAffichage();
+                listeAffaires.setSelectedIndex(listeAffaires.getSelectedIndex());
             }
         }
     }
 
     private void associerCriminelsMultiples() {
-        int iAffaire = listeAffaires.getSelectedIndex();
-        if (iAffaire < 0) return;
+        Affaire affaire = getAffaireSelectionnee();
+        if (affaire == null) return;
 
-        Affaire affaire = modele.getListeAffaires().get(iAffaire);
         List<Criminel> criminels = modele.getListeCriminel();
 
         if (criminels.isEmpty()) {
@@ -303,15 +315,15 @@ public class VueAffaires extends JFrame {
                 Criminel c = criminels.get(i);
                 modele.mettreAJourAffaire(affaire, c);
             }
-            afficherDetails();
+            mettreAJourAffichage();
+            listeAffaires.setSelectedIndex(listeAffaires.getSelectedIndex());
         }
     }
 
     private void dissocierCriminel() {
-        int iAffaire = listeAffaires.getSelectedIndex();
-        if (iAffaire < 0) return;
+        Affaire affaire = getAffaireSelectionnee();
+        if (affaire == null) return;
 
-        Affaire affaire = modele.getListeAffaires().get(iAffaire);
         List<Criminel> suspects = affaire.getSuspects();
 
         if (suspects.isEmpty()) {
@@ -337,7 +349,8 @@ public class VueAffaires extends JFrame {
             if (index >= 0) {
                 Criminel c = suspects.get(index);
                 modele.retirerCriminelAffaire(affaire, c);
-                afficherDetails();
+                mettreAJourAffichage();
+                listeAffaires.setSelectedIndex(listeAffaires.getSelectedIndex());
             }
         }
     }
