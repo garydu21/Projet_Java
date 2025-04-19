@@ -122,7 +122,7 @@ public class Modele extends Observable {
         }
     }
 
-    private void sauvegarderAffaires() {
+    public void sauvegarderAffaires() {
         try (FileWriter writer = new FileWriter(FICHIER_AFFAIRES)) {
             gson.toJson(listeAffaires, writer);
         } catch (IOException e) {

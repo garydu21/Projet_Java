@@ -20,26 +20,38 @@ public class Maps extends JFrame implements MouseListener {
         setSize(800, 800);
         setLayout(new BorderLayout());
         setLocationRelativeTo(null);
-
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\yaaco\\Desktop\\bureau\\javaProject\\image\\Carte_France_geo_dep.png");
-
-        JLabel label = new JLabel(imageIcon);
-
-        add(label);
-
-        //405
-        //255
         this.addMouseListener(this);
         this.setVisible(true);
     }
 
     public void paint(Graphics g) {
         ImageIcon imageIcon = new ImageIcon("C:\\Users\\yaaco\\Desktop\\bureau\\javaProject\\image\\Carte_France_geo_dep.png");
-        JLabel label = new JLabel(imageIcon);
         g.drawImage(imageIcon.getImage(), 10, 25, 800, 800, null);
         g.setColor(Color.RED);
+
+        //Paris
         g.fillOval(390,200,50,50);
-        add(label);
+
+        //Lille
+        g.fillOval(440,70,25,25);
+
+        //Lyon
+        g.fillOval(550,460,25,25);
+
+        //Marseille
+        g.fillOval(575,660,25,25);
+
+        //Toulouse
+        g.fillOval(355,625,25,25);
+
+        //Nantes
+        g.fillOval(185,340,25,25);
+
+        //Strasbourg
+        g.fillOval(690,240,25,25);
+
+        //Bordeaux
+        g.fillOval(240,510,25,25);
     }
 
     @Override
@@ -47,8 +59,27 @@ public class Maps extends JFrame implements MouseListener {
         if (e.getX() >= 390 && e.getX() <= 440 && e.getY() >= 200 && e.getY() <= 250) {
             new VueAffaires(this.mdl,"Paris");
         }
-        System.out.println(e.getX());
-        System.out.println(e.getY());
+        if (e.getX() >= 440 && e.getX() <= 465 && e.getY() >= 70 && e.getY() <= 95) {
+            new VueAffaires(this.mdl,"Lille");
+        }
+        if (e.getX() >= 550 && e.getX() <= 575 && e.getY() >= 460 && e.getY() <= 485) {
+            new VueAffaires(this.mdl,"Lyon");
+        }
+        if (e.getX() >= 575 && e.getX() <= 600 && e.getY() >= 660 && e.getY() <= 685) {
+            new VueAffaires(this.mdl,"Marseille");
+        }
+        if (e.getX() >= 355 && e.getX() <= 380 && e.getY() >= 625 && e.getY() <= 650) {
+            new VueAffaires(this.mdl,"Toulouse");
+        }
+        if (e.getX() >= 185 && e.getX() <= 205 && e.getY() >= 340 && e.getY() <= 365) {
+            new VueAffaires(this.mdl,"Nantes");
+        }
+        if (e.getX() >= 690 && e.getX() <= 715 && e.getY() >= 240 && e.getY() <= 265) {
+            new VueAffaires(this.mdl,"Strasbourg");
+        }
+        if (e.getX() >= 240 && e.getX() <= 265 && e.getY() >= 510 && e.getY() <= 535) {
+            new VueAffaires(this.mdl,"Bordeaux");
+        }
     }
 
     @Override

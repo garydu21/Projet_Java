@@ -201,6 +201,7 @@ public class VueAffaires extends JFrame {
             Affaire affaire = new Affaire(id, description, lieu, date);
             modele.ajouterAffaire(affaire);
             mettreAJourAffichage();
+            listeAffaires.setSelectedIndex(listeAffaires.getLastVisibleIndex());
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Erreur lors de la création de l'affaire.");
         }
@@ -216,10 +217,16 @@ public class VueAffaires extends JFrame {
 
             affaire.setDescription(desc);
             affaire.setLieu(lieu);
-            affaire.setDate(java.sql.Date.valueOf(dateStr));
-
-            modele.ajouterAffaire(affaire);
+            try {
+                affaire.setDate(java.sql.Date.valueOf(dateStr));
+            } catch (IllegalArgumentException ex) {
+                JOptionPane.showMessageDialog(this, "Format de date invalide. Veuillez entrer la date au format yyyy-MM-dd.");
+            }
+            //modele.ajouterAffaire(affaire);
+            modele.sauvegarderAffaires();
             mettreAJourAffichage();
+
+            listeAffaires.setSelectedIndex(index);
         }
     }
 
