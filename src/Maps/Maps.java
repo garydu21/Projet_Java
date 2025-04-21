@@ -52,10 +52,34 @@ public class Maps extends JFrame implements MouseListener {
 
         //Bordeaux
         g.fillOval(240,510,25,25);
+
+        //Brest
+        g.fillOval(40,240,25,25);
+
+        //Caen
+        g.fillOval(245,185,25,25);
+
+        //Montpellier
+        g.fillOval(495,625,25,25);
+
+        //Tours
+        g.fillOval(315,335,25,25);
     }
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        if (e.getX() >= 245 && e.getX() <= 270 && e.getY() >= 185 && e.getY() <= 205) {
+            new VueAffaires(mdl,"Caen");
+        }
+        if (e.getX() >= 495 && e.getX() <= 520 && e.getY() >= 625 && e.getY() <= 650) {
+            new VueAffaires(mdl,"Montpellier");
+        }
+        if (e.getX() >= 315 && e.getX() <= 340 && e.getY() >= 335 && e.getY() <= 360) {
+            new VueAffaires(mdl,"Tours");
+        }
+        if (e.getX() >= 40 && e.getX() <= 65 && e.getY() >= 240 && e.getY() <= 265) {
+            new VueAffaires(mdl,"Brest");
+        }
         if (e.getX() >= 390 && e.getX() <= 440 && e.getY() >= 200 && e.getY() <= 250) {
             new VueAffaires(this.mdl,"Paris");
         }
