@@ -21,6 +21,7 @@ public class ListeCrime extends JFrame {
         this.view = view;
         this.crimes = crimes;
 
+
         setTitle("Crime");
         setSize(500, 300);
         setLayout(new BorderLayout());
