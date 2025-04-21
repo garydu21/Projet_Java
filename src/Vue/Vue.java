@@ -63,6 +63,13 @@ public class Vue extends JFrame implements Observer {
         panelHaut.add(btnAffaires);
         btnAffaires.addActionListener(e -> new VueAffaires(modele));
 
+        // Dans la classe Vue
+        JButton btnRecherche = new JButton("Recherche");
+        panelHaut.add(btnRecherche);
+
+        // Action pour ouvrir la fenêtre de recherche
+        btnRecherche.addActionListener(e -> new VueRecherche(modele));
+
 
         // Centre : Liste des criminels à gauche + Détails à droite
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));

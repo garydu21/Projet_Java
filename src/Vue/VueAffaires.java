@@ -245,3 +245,4 @@ public class VueAffaires extends JFrame {
         }
     }
 }
+
