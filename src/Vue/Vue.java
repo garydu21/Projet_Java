@@ -57,7 +57,6 @@ public class Vue extends JFrame implements Observer {
         // Haut : Boutons pour navigation
         JPanel panelHaut = new JPanel();
 
-        panelHaut.setBackground(Color.DARK_GRAY);
         ajouterCrime = new JButton("Liste des Crime");
         ajouterCrime.setBorder(new RoundedBorder(10));
         ajouterCrime.setFont(fontButton);
@@ -98,7 +97,7 @@ public class Vue extends JFrame implements Observer {
         panelCentre.add(scrollPane);
 
         detailsCriminel = new JPanel();
-        detailsCriminel.setBackground(Color.DARK_GRAY);
+        detailsCriminel.setBackground(Color.GRAY);
         detailsCriminel.setForeground(Color.WHITE);
         infoCriminel = new JTextArea();
         infoCriminel.setFont(fontDetail);
@@ -113,7 +112,7 @@ public class Vue extends JFrame implements Observer {
 
         // Bas : Boutons d'actions
         JPanel panelBas = new JPanel();
-        panelBas.setBackground(Color.DARK_GRAY);
+        panelBas.setBackground(Color.GRAY);
 
         btnModifier = new JButton("Modifier");
         btnModifier.setBorder(new RoundedBorder(10));

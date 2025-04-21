@@ -25,7 +25,7 @@ public class AfficheCrime extends JFrame {
         setLayout(new BorderLayout());
 
         JPanel panel = new JPanel();
-        panel.setBackground(Color.DARK_GRAY);
+        panel.setBackground(Color.GRAY);
         this.champTexte = new JTextArea();
         champTexte.setPreferredSize(new Dimension(250, 510));
         champTexte.setFont(new Font("Serif", Font.BOLD, 15));
@@ -44,6 +44,7 @@ public class AfficheCrime extends JFrame {
         panel.add(champTexte);
 
         JPanel panelSud = new JPanel();
+        panelSud.setBackground(Color.LIGHT_GRAY);
         panelSud.setLayout(new FlowLayout());
 
         String[] elements = new String[]{};
