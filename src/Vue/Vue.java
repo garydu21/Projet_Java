@@ -2,6 +2,7 @@ package Vue;
 
 import Criminel.Criminel;
 import Controleur.Controleur;
+import Interface.RoundedBorder;
 import Modele.Modele;
 import Criminel.Affaire;
 
@@ -11,14 +12,18 @@ import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.io.File;
 import java.util.*;
-import java.util.List;
+
 import Criminel.Crime;
 
 public class Vue extends JFrame implements Observer {
+
+    private final Font fontButton = new Font("Arial", Font.BOLD, 15);
+    private final Font fontName = new Font("Arial", Font.ITALIC + Font.BOLD, 15);
+    private final Font fontDetail = new Font("Arial", Font.BOLD, 15);
+    private final Font fontDescription = new Font("Bitstream Vera Sans Mono", Font.PLAIN, 15);
+    private final Font fontListe = new Font("Arial", Font.BOLD, 12);
+
     private JList<String> listeCriminels;
     private DefaultListModel<String> listeModel;
     private JPanel detailsCriminel;
@@ -51,28 +56,54 @@ public class Vue extends JFrame implements Observer {
 
         // Haut : Boutons pour navigation
         JPanel panelHaut = new JPanel();
+
+        panelHaut.setBackground(Color.DARK_GRAY);
         ajouterCrime = new JButton("Liste des Crime");
+        ajouterCrime.setBorder(new RoundedBorder(10));
+        ajouterCrime.setFont(fontButton);
+        ajouterCrime.setBackground(Color.LIGHT_GRAY);
+        ajouterCrime.setForeground(Color.BLACK);
         panelHaut.add(ajouterCrime);
+
+
         btnGestionJson = new JButton("Gérer JSON");
+        btnGestionJson.setBorder(new RoundedBorder(10));
+        btnGestionJson.setFont(fontButton);
+        btnGestionJson.setBackground(Color.LIGHT_GRAY);
+        btnGestionJson.setForeground(Color.BLACK);
         panelHaut.add(btnGestionJson);
+
+
         panelHaut.add(new JButton("Base de données"));
         panelHaut.add(new JButton("Maps"));
         add(panelHaut, BorderLayout.NORTH);
 
         JButton btnAffaires = new JButton("Affaires");
+        btnAffaires.setBorder(new RoundedBorder(10));
+        btnAffaires.setFont(fontButton);
+        btnAffaires.setBackground(Color.LIGHT_GRAY);
+        btnAffaires.setForeground(Color.BLACK);
         panelHaut.add(btnAffaires);
-        btnAffaires.addActionListener(e -> new VueAffaires(modele));
-
 
         // Centre : Liste des criminels à gauche + Détails à droite
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));
+        panelCentre.setBackground(Color.DARK_GRAY);
+
         listeModel = new DefaultListModel<>();
         listeCriminels = new JList<>(listeModel);
+        listeCriminels.setFont(fontName);
+        listeCriminels.setBackground(Color.DARK_GRAY);
+        listeCriminels.setForeground(Color.WHITE);
         JScrollPane scrollPane = new JScrollPane(listeCriminels);
         panelCentre.add(scrollPane);
 
         detailsCriminel = new JPanel();
+        detailsCriminel.setBackground(Color.DARK_GRAY);
+        detailsCriminel.setForeground(Color.WHITE);
         infoCriminel = new JTextArea();
+        infoCriminel.setFont(fontDetail);
+        infoCriminel.setBackground(Color.DARK_GRAY);
+        infoCriminel.setForeground(Color.LIGHT_GRAY);
         infoCriminel.setEditable(false);
         detailsCriminel.add(infoCriminel, BorderLayout.NORTH);
 
@@ -82,9 +113,26 @@ public class Vue extends JFrame implements Observer {
 
         // Bas : Boutons d'actions
         JPanel panelBas = new JPanel();
+        panelBas.setBackground(Color.DARK_GRAY);
+
         btnModifier = new JButton("Modifier");
+        btnModifier.setBorder(new RoundedBorder(10));
+        btnModifier.setFont(fontButton);
+        btnModifier.setBackground(Color.LIGHT_GRAY);
+        btnModifier.setForeground(Color.BLACK);
+
         btnAjouter = new JButton("Ajouter");
+        btnAjouter.setBorder(new RoundedBorder(10));
+        btnAjouter.setFont(fontButton);
+        btnAjouter.setBackground(Color.LIGHT_GRAY);
+        btnAjouter.setForeground(Color.BLACK);
+
         btnSupprimer = new JButton("Supprimer");
+        btnSupprimer.setBorder(new RoundedBorder(10));
+        btnSupprimer.setFont(fontButton);
+        btnSupprimer.setBackground(Color.LIGHT_GRAY);
+        btnSupprimer.setForeground(Color.BLACK);
+
         panelBas.add(btnModifier);
         panelBas.add(btnAjouter);
         panelBas.add(btnSupprimer);
@@ -100,6 +148,7 @@ public class Vue extends JFrame implements Observer {
         btnSupprimer.addActionListener(e -> supprimerCriminel());
         btnGestionJson.addActionListener(e -> afficherPopupGestionJson());
         ajouterCrime.addActionListener(e -> fenetreCrime());
+        btnAffaires.addActionListener(e -> new VueAffaires(modele));
 
         setVisible(true);
     }
@@ -156,6 +205,9 @@ public class Vue extends JFrame implements Observer {
         panelDescription.setLayout(new BorderLayout());
 
         ajouterDescription = new JButton("Ajouter Description");
+        ajouterDescription.setBackground(Color.WHITE);
+        ajouterDescription.setForeground(Color.BLACK);
+        ajouterDescription.setFont(fontButton);
         ajouterDescription.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -178,6 +230,7 @@ public class Vue extends JFrame implements Observer {
         });
 
         description = new JTextArea();
+        description.setFont(fontDescription);
         description.setLineWrap(true);
         description.setWrapStyleWord(true);
         description.setBackground(Color.LIGHT_GRAY);
@@ -221,8 +274,9 @@ public class Vue extends JFrame implements Observer {
         });
 
         JPanel panelDetails = new JPanel(new FlowLayout());
+        panelDetails.setBackground(Color.DARK_GRAY);
 
-        elements = new String[]{}; // A modifier lorsque l'Ensemble des crimes est ajouté
+        elements = new String[]{};
         try {
             if (!this.afficheListeCrime.getCrimes().isEmpty()) {
                 elements = new String[this.afficheListeCrime.getCrimes().size()];
@@ -235,16 +289,27 @@ public class Vue extends JFrame implements Observer {
         }catch (Exception expe){}
 
         liste = new JComboBox<>(elements);
+        liste.setFont(fontListe);
         panelDetails.add(liste);
 
-        champTexte = new JTextField(200);
+
         champTexte = new JTextField();
         champTexte.setPreferredSize(new Dimension(200, 20));
         champTexte.setEditable(false);
         panelDetails.add(champTexte);
 
         JButton ajouterCrime = new JButton("Ajouter");
+        ajouterCrime.setBorder(new RoundedBorder(5));
+        ajouterCrime.setFont(fontButton);
+        ajouterCrime.setBackground(Color.LIGHT_GRAY);
+        ajouterCrime.setForeground(Color.BLACK);
+
         JButton supprimerCrime = new JButton("Réinitialiser");
+        supprimerCrime.setBorder(new RoundedBorder(5));
+        supprimerCrime.setFont(fontButton);
+        supprimerCrime.setBackground(Color.LIGHT_GRAY);
+        supprimerCrime.setForeground(Color.BLACK);
+
         panelDetails.add(ajouterCrime,BorderLayout.SOUTH);
         panelDetails.add(supprimerCrime, BorderLayout.SOUTH);
 
@@ -347,8 +412,14 @@ public class Vue extends JFrame implements Observer {
 
     private void afficherPopupGestionJson() {
         JPopupMenu popupMenu = new JPopupMenu();
+
         JMenuItem importer = new JMenuItem("Importer JSON");
+        importer.setBackground(Color.LIGHT_GRAY);
+        importer.setForeground(Color.BLACK);
+
         JMenuItem exporter = new JMenuItem("Exporter JSON");
+        exporter.setBackground(Color.LIGHT_GRAY);
+        exporter.setForeground(Color.BLACK);
 
         importer.addActionListener(e -> importerJson());
         exporter.addActionListener(e -> exporterJson());

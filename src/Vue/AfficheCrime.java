@@ -2,6 +2,7 @@ package Vue;
 
 import Criminel.Crime;
 import Criminel.Criminel;
+import Interface.RoundedBorder;
 
 import javax.swing.*;
 import java.awt.*;
@@ -24,8 +25,9 @@ public class AfficheCrime extends JFrame {
         setLayout(new BorderLayout());
 
         JPanel panel = new JPanel();
+        panel.setBackground(Color.DARK_GRAY);
         this.champTexte = new JTextArea();
-        champTexte.setPreferredSize(new Dimension(200, 450));
+        champTexte.setPreferredSize(new Dimension(250, 510));
         champTexte.setFont(new Font("Serif", Font.BOLD, 15));
         champTexte.setEditable(false);
 
@@ -44,7 +46,7 @@ public class AfficheCrime extends JFrame {
         JPanel panelSud = new JPanel();
         panelSud.setLayout(new FlowLayout());
 
-        String[] elements = new String[]{}; // A modifier lorsque l'Ensemble des crimes est ajouté
+        String[] elements = new String[]{};
         if (!lesCrime.isEmpty()) {
             elements = new String[lesCrime.size()];
             int i = 0;
@@ -60,6 +62,7 @@ public class AfficheCrime extends JFrame {
 
 
         JTextField select = new JTextField();
+        select.setFont(new Font("Serif", Font.BOLD, 15));
         select.setPreferredSize(new Dimension(200, 20));
         select.setEditable(false);
         panelSud.add(select);
@@ -74,6 +77,9 @@ public class AfficheCrime extends JFrame {
 
 
         JButton suppCrime = new JButton("Supprimer");
+        suppCrime.setBorder(new RoundedBorder(10));
+        suppCrime.setBackground(Color.LIGHT_GRAY);
+        suppCrime.setForeground(Color.BLACK);
         panelSud.add(suppCrime);
 
         suppCrime.addActionListener(new ActionListener() {

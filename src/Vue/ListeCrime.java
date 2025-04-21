@@ -1,12 +1,19 @@
 package Vue;
 
 import Criminel.Crime;
+import Interface.RoundedBorder;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
 public class ListeCrime extends JFrame {
+
+    private final Font fontButton = new Font("Arial", Font.BOLD, 15);
+    private final Font fontName = new Font("Arial", Font.ITALIC + Font.BOLD, 15);
+    private final Font fontDetail = new Font("Arial", Font.BOLD, 15);
+    private final Font fontDescription = new Font("Bitstream Vera Sans Mono", Font.PLAIN, 15);
+    private final Font fontListe = new Font("Arial", Font.BOLD, 12);
 
     private JPanel panelHaut, panelCentre, panelGauche, panelDroite, panelBas;
     private JButton buttonAjouter;
@@ -21,32 +28,51 @@ public class ListeCrime extends JFrame {
         this.view = view;
         this.crimes = crimes;
 
-
         setTitle("Crime");
         setSize(500, 300);
         setLayout(new BorderLayout());
 
         panelHaut = new JPanel();
+        panelHaut.setBackground(Color.GRAY);
+
         buttonAjouter = new JButton("Ajouter un Crime");
+        buttonAjouter.setBorder(new RoundedBorder(10));
+        buttonAjouter.setFont(fontButton);
+        buttonAjouter.setBackground(Color.WHITE);
+        buttonAjouter.setForeground(Color.BLACK);
+
         afficherCrime = new JButton("Afficher les crimes");
+        afficherCrime.setBorder(new RoundedBorder(10));
+        afficherCrime.setFont(fontButton);
+        afficherCrime.setBackground(Color.WHITE);
+        afficherCrime.setForeground(Color.BLACK);
+
         panelHaut.add(buttonAjouter);
         panelHaut.add(afficherCrime);
 
         panelCentre = new JPanel(new GridLayout(2, 2, 10, 10));
+        panelCentre.setBackground(Color.LIGHT_GRAY);
 
         panelGauche = new JPanel(new BorderLayout());
+        panelGauche.setBackground(Color.LIGHT_GRAY);
+
         JLabel labelCrime = new JLabel("Nom du Crime :");
+        labelCrime.setFont(fontDetail);
         crime = new JTextArea();
         crime.setPreferredSize(new Dimension(200, 30));
         crime.setText("Ex : Vol, Meurtre, Fraude...");
+        crime.setFont(fontDescription);
         panelGauche.add(labelCrime, BorderLayout.NORTH);
         panelGauche.add(crime, BorderLayout.CENTER);
 
         panelDroite = new JPanel(new BorderLayout());
+        panelDroite.setBackground(Color.LIGHT_GRAY);
         JLabel labelSanction = new JLabel("Peine associée (en années) :");
+        labelSanction.setFont(fontDetail);
         sanction = new JTextArea();
         sanction.setPreferredSize(new Dimension(200, 30));
         sanction.setText("Ex : 5, 10, 20...");
+        sanction.setFont(fontDescription);
         panelDroite.add(labelSanction, BorderLayout.NORTH);
         panelDroite.add(sanction, BorderLayout.CENTER);
 
@@ -55,7 +81,11 @@ public class ListeCrime extends JFrame {
 
 
         panelBas = new JPanel(new BorderLayout());
+        panelBas.setBackground(Color.LIGHT_GRAY);
+
         JLabel labelListeCrime = new JLabel("Crimes enregistrés :");
+        labelListeCrime.setFont(fontName);
+
         lesCrime = new JTextField();
         lesCrime.setEditable(false);
         lesCrime.setText("Aucun crime enregistré.");
@@ -96,11 +126,11 @@ public class ListeCrime extends JFrame {
 
             crime.setText("");
             sanction.setText("");
+            this.view.afficherDetails();
 
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Veuillez entrer un nombre valide pour la peine.", "Erreur de saisie", JOptionPane.ERROR_MESSAGE);
         }
-        this.view.afficherDetails();
     }
 
     public ArrayList<Crime> getCrimes() {
