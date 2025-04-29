@@ -233,10 +233,10 @@ public class Vue extends JFrame implements Observer {
 
         elements = new String[]{}; // A modifier lorsque l'Ensemble des crimes est ajouté
         try {
-            if (!this.afficheListeCrime.getCrimes().isEmpty()) {
-                elements = new String[this.afficheListeCrime.getCrimes().size()];
+            if (!this.modele.getListeCrimes().isEmpty()) {
+                elements = new String[this.modele.getListeCrimes().size()];
                 int i = 0;
-                for (Crime c : this.afficheListeCrime.getCrimes()) {
+                for (Crime c : this.modele.getListeCrimes()) {
                     elements[i] = c.getIntitule();
                     i++;
                 }
@@ -290,9 +290,9 @@ public class Vue extends JFrame implements Observer {
                         Criminel mechant = modele.getListeCriminel().get(index);
 
                         int peine = -1;
-                        for (int i = 0; i < afficheListeCrime.getCrimes().size(); i++) {
-                            if (champTexte.getText().equalsIgnoreCase(afficheListeCrime.getCrimes().get(i).getIntitule())) {
-                                peine = afficheListeCrime.getCrimes().get(i).getPeine();
+                        for (int i = 0; i < modele.getListeCrimes().size(); i++) {
+                            if (champTexte.getText().equalsIgnoreCase(modele.getListeCrimes().get(i).getIntitule())) {
+                                peine = modele.getListeCrimes().get(i).getPeine();
                             }
                         }
                         if (peine != -1) {
@@ -395,7 +395,7 @@ public class Vue extends JFrame implements Observer {
     }
 
     public void fenetreCrime() {
-        this.afficheListeCrime = new ListeCrime(this.str,this);
+        this.afficheListeCrime = new ListeCrime(this.str,this,this.modele);
     }
 
     public ArrayList<Crime> getStr(){

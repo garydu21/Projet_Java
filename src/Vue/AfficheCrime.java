@@ -2,6 +2,7 @@ package Vue;
 
 import Criminel.Crime;
 import Criminel.Criminel;
+import Modele.Modele;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,10 +13,12 @@ import java.util.ArrayList;
 public class AfficheCrime extends JFrame {
 
     private Vue view;
+    private Modele mdl;
     private JPanel panelGlobal;
     private JTextArea champTexte;
 
-    public AfficheCrime(Vue view, ArrayList<Crime> lesCrime,ListeCrime reloadListe){
+    public AfficheCrime(Vue view, ArrayList<Crime> lesCrime,ListeCrime reloadListe, Modele modele){
+        this.mdl = modele;
         this.view = view;
         this.panelGlobal = new JPanel();
 
@@ -30,11 +33,11 @@ public class AfficheCrime extends JFrame {
         champTexte.setEditable(false);
 
         StringBuilder sb = new StringBuilder();
-        if (lesCrime.isEmpty()){
+        if (this.mdl.getListeCrimes().isEmpty()){
             sb.append("Aucun crime existant 😔\n");
         }
         else {
-            for (Crime c : lesCrime) {
+            for (Crime c : this.mdl.getListeCrimes()) {
                 sb.append(c.getIntitule()).append("\n");
             }
         }
@@ -44,11 +47,11 @@ public class AfficheCrime extends JFrame {
         JPanel panelSud = new JPanel();
         panelSud.setLayout(new FlowLayout());
 
-        String[] elements = new String[]{}; // A modifier lorsque l'Ensemble des crimes est ajouté
-        if (!lesCrime.isEmpty()) {
-            elements = new String[lesCrime.size()];
+        String[] elements = new String[]{};
+        if (!this.mdl.getListeCrimes().isEmpty()) {
+            elements = new String[this.mdl.getListeCrimes().size()];
             int i = 0;
-            for (Crime c : lesCrime) {
+            for (Crime c : this.mdl.getListeCrimes()) {
                 elements[i] = c.getIntitule();
                 i++;
             }
@@ -88,7 +91,7 @@ public class AfficheCrime extends JFrame {
                         }
                     }
                     if (existe != -1) {
-                        view.removeStr(existe);
+                        modele.supprimerCrimes(existe);
                         view.afficherDetails();
                         reloadListe.updateAffichageListeCrimes();
                         updateAffichage(lesCrime, liste, champTexte);
@@ -110,10 +113,10 @@ public class AfficheCrime extends JFrame {
     private void updateAffichage(ArrayList<Crime> lesCrime, JComboBox<String> liste, JTextArea champTexte) {
         // Mise à jour de la zone de texte
         StringBuilder sb = new StringBuilder();
-        if (lesCrime.isEmpty()) {
+        if (this.mdl.getListeCrimes().isEmpty()) {
             sb.append("Aucun crime existant 😔\n");
         } else {
-            for (Crime c : lesCrime) {
+            for (Crime c : this.mdl.getListeCrimes()) {
                 sb.append(c.getIntitule()).append("\n");
             }
         }
@@ -121,7 +124,7 @@ public class AfficheCrime extends JFrame {
 
         // Mise à jour de la ComboBox
         liste.removeAllItems();
-        for (Crime c : lesCrime) {
+        for (Crime c : this.mdl.getListeCrimes()) {
             liste.addItem(c.getIntitule());
         }
     }
