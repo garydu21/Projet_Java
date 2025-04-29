@@ -25,7 +25,7 @@ public class Maps extends JFrame implements MouseListener {
     }
 
     public void paint(Graphics g) {
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\yaaco\\Desktop\\bureau\\javaProject\\image\\Carte_France_geo_dep.png");
+        ImageIcon imageIcon = new ImageIcon("image/Carte_France_geo_dep.png");
         g.drawImage(imageIcon.getImage(), 10, 25, 800, 800, null);
         g.setColor(Color.RED);
 
