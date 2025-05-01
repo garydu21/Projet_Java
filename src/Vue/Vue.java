@@ -111,6 +111,29 @@ public class Vue extends JFrame implements Observer {
         setVisible(true);
     }
 
+    public void selectionnerEtAfficherCriminel(Criminel criminel) {
+        if (criminel == null) return;
+        // Trouver l'index du criminel dans la liste modèle
+        for (int i = 0; i < modele.getListeCriminel().size(); i++) {
+            Criminel c = modele.getListeCriminel().get(i);
+            if (c.getId() == criminel.getId()) {
+                // Sélectionner dans JList
+                listeCriminels.setSelectedIndex(i);
+                // Afficher détails
+                afficherDetails();
+                // S'assurer que l'élément est visible
+                listeCriminels.ensureIndexIsVisible(i);
+                // Porter la fenêtre en avant
+                this.toFront();
+                this.repaint();
+                break;
+            }
+        }
+        // Rendre visible la fenêtre si elle était cachée
+        this.setVisible(true);
+    }
+
+
     private void mettreAJourListe() {
         int selectedIndex = listeCriminels.getSelectedIndex();
 
@@ -403,5 +426,6 @@ public class Vue extends JFrame implements Observer {
     public void removeStr(int index){
         this.str.remove(index);
     }
+
 
 }
