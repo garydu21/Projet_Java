@@ -190,6 +190,8 @@ public class VueAffaires extends JFrame {
             sb.append("Description : ").append(affaire.getDescription()).append("\n");
             sb.append("Lieu : ").append(affaire.getLieu()).append("\n");
             sb.append("Date : ").append(affaire.getDate()).append("\n");
+            sb.append("État : ").append(affaire.getEtat()).append("\n");
+            sb.append("Informations supplémentaires : ").append(affaire.getInformationsSupplementaires()).append("\n");
 
             List<Criminel> suspects = affaire.getSuspects();
             if (!suspects.isEmpty()) {
@@ -209,9 +211,17 @@ public class VueAffaires extends JFrame {
             String description = JOptionPane.showInputDialog(this, "Description :");
             String lieu = JOptionPane.showInputDialog(this, "Lieu :");
             String dateStr = JOptionPane.showInputDialog(this, "Date (yyyy-MM-dd) :");
+            String etat = JOptionPane.showInputDialog(this, "État de l'affaire :", "En cours");
+            String infos = JOptionPane.showInputDialog(this, "Informations supplémentaires :", "");
+
+            if (description == null || lieu == null || dateStr == null || etat == null || infos == null) return;
+
             java.sql.Date date = java.sql.Date.valueOf(dateStr);
 
             Affaire affaire = new Affaire(id, description, lieu, date);
+            affaire.setEtat(etat);
+            affaire.setInformationsSupplementaires(infos);
+
             modele.ajouterAffaire(affaire);
             mettreAJourAffichage();
             listeAffaires.setSelectedIndex(listeAffaires.getLastVisibleIndex());
@@ -226,19 +236,22 @@ public class VueAffaires extends JFrame {
             String desc = JOptionPane.showInputDialog(this, "Modifier la description :", affaire.getDescription());
             String lieu = JOptionPane.showInputDialog(this, "Modifier le lieu :", affaire.getLieu());
             String dateStr = JOptionPane.showInputDialog(this, "Modifier la date (yyyy-MM-dd) :", affaire.getDate().toString());
+            String etat = JOptionPane.showInputDialog(this, "Modifier l'état :", affaire.getEtat());
+            String infos = JOptionPane.showInputDialog(this, "Modifier les infos supplémentaires :", affaire.getInformationsSupplementaires());
 
-            affaire.setDescription(desc);
-            affaire.setLieu(lieu);
-            if (desc != null && lieu != null && dateStr != null) {
+            if (desc != null && lieu != null && dateStr != null && etat != null && infos != null) {
                 try {
-
+                    affaire.setDescription(desc);
+                    affaire.setLieu(lieu);
+                    affaire.setEtat(etat);
+                    affaire.setInformationsSupplementaires(infos);
                     affaire.setDate(java.sql.Date.valueOf(dateStr));
+                    modele.sauvegarderAffaires();
+                    mettreAJourAffichage();
                 } catch (IllegalArgumentException ex) {
                     JOptionPane.showMessageDialog(this, "Format de date invalide. Veuillez entrer la date au format yyyy-MM-dd.");
                 }
             }
-            modele.sauvegarderAffaires();
-            mettreAJourAffichage();
         }
     }
 
