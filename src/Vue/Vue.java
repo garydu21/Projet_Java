@@ -56,25 +56,33 @@ public class Vue extends JFrame implements Observer {
 
         // Haut : Boutons pour navigation
         JPanel panelHaut = new JPanel();
+        panelHaut.setLayout(new BorderLayout());
+
+        ImageIcon image = new ImageIcon("images/logo.png");
+        image.setImage(image.getImage().getScaledInstance(64, 64, Image.SCALE_DEFAULT));
+        JLabel logo = new JLabel(image);
+        panelHaut.add(logo, BorderLayout.WEST);
+
+        JPanel boutonsPanel = new JPanel();
+        boutonsPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 
         ajouterCrime = new JButton("Liste des Crime");
         ajouterCrime.setBorder(new RoundedBorder(10));
         ajouterCrime.setFont(fontButton);
         ajouterCrime.setBackground(Color.LIGHT_GRAY);
         ajouterCrime.setForeground(Color.BLACK);
-        panelHaut.add(ajouterCrime);
-
+        boutonsPanel.add(ajouterCrime);
 
         btnGestionJson = new JButton("Gérer JSON");
         btnGestionJson.setBorder(new RoundedBorder(10));
         btnGestionJson.setFont(fontButton);
         btnGestionJson.setBackground(Color.LIGHT_GRAY);
         btnGestionJson.setForeground(Color.BLACK);
-        panelHaut.add(btnGestionJson);
+        boutonsPanel.add(btnGestionJson);
 
 
-        panelHaut.add(new JButton("Base de données"));
-        panelHaut.add(new JButton("Maps"));
+        boutonsPanel.add(new JButton("Base de données"));
+        boutonsPanel.add(new JButton("Maps"));
         add(panelHaut, BorderLayout.NORTH);
 
         JButton btnAffaires = new JButton("Affaires");
@@ -82,7 +90,9 @@ public class Vue extends JFrame implements Observer {
         btnAffaires.setFont(fontButton);
         btnAffaires.setBackground(Color.LIGHT_GRAY);
         btnAffaires.setForeground(Color.BLACK);
-        panelHaut.add(btnAffaires);
+        boutonsPanel.add(btnAffaires);
+
+        panelHaut.add(boutonsPanel, BorderLayout.CENTER);
 
         // Centre : Liste des criminels à gauche + Détails à droite
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));
