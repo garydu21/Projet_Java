@@ -1,14 +1,13 @@
 package Vue;
 
 import Criminel.Crime;
-import Criminel.Criminel;
+import Interface.RoundedBorder;
 import Modele.Modele;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class AfficheCrime extends JFrame {
 
@@ -17,7 +16,7 @@ public class AfficheCrime extends JFrame {
     private JPanel panelGlobal;
     private JTextArea champTexte;
 
-    public AfficheCrime(Vue view, ArrayList<Crime> lesCrime,ListeCrime reloadListe, Modele modele){
+    public AfficheCrime(Vue view, ListeCrime reloadListe, Modele modele) {
         this.mdl = modele;
         this.view = view;
         this.panelGlobal = new JPanel();
@@ -26,17 +25,19 @@ public class AfficheCrime extends JFrame {
         setSize(400, 600);
         setLayout(new BorderLayout());
 
+        // Panel principal
         JPanel panel = new JPanel();
+        panel.setBackground(Color.GRAY);
         this.champTexte = new JTextArea();
-        champTexte.setPreferredSize(new Dimension(200, 450));
+        champTexte.setPreferredSize(new Dimension(250, 510));
         champTexte.setFont(new Font("Serif", Font.BOLD, 15));
         champTexte.setEditable(false);
 
+        // Affichage initial des crimes
         StringBuilder sb = new StringBuilder();
-        if (this.mdl.getListeCrimes().isEmpty()){
+        if (this.mdl.getListeCrimes().isEmpty()) {
             sb.append("Aucun crime existant 😔\n");
-        }
-        else {
+        } else {
             for (Crime c : this.mdl.getListeCrimes()) {
                 sb.append(c.getIntitule()).append("\n");
             }
@@ -44,25 +45,21 @@ public class AfficheCrime extends JFrame {
         champTexte.setText(sb.toString());
         panel.add(champTexte);
 
+        // Panel Sud (combo + champ + bouton)
         JPanel panelSud = new JPanel();
+        panelSud.setBackground(Color.LIGHT_GRAY);
         panelSud.setLayout(new FlowLayout());
 
-        String[] elements = new String[]{};
-        if (!this.mdl.getListeCrimes().isEmpty()) {
-            elements = new String[this.mdl.getListeCrimes().size()];
-            int i = 0;
-            for (Crime c : this.mdl.getListeCrimes()) {
-                elements[i] = c.getIntitule();
-                i++;
-            }
+        String[] elements = new String[this.mdl.getListeCrimes().size()];
+        for (int i = 0; i < mdl.getListeCrimes().size(); i++) {
+            elements[i] = mdl.getListeCrimes().get(i).getIntitule();
         }
 
         JComboBox<String> liste = new JComboBox<>(elements);
         panelSud.add(liste);
 
-
-
         JTextField select = new JTextField();
+        select.setFont(new Font("Serif", Font.BOLD, 15));
         select.setPreferredSize(new Dimension(200, 20));
         select.setEditable(false);
         panelSud.add(select);
@@ -75,33 +72,33 @@ public class AfficheCrime extends JFrame {
             }
         });
 
-
         JButton suppCrime = new JButton("Supprimer");
+        suppCrime.setBorder(new RoundedBorder(10));
+        suppCrime.setBackground(Color.LIGHT_GRAY);
+        suppCrime.setForeground(Color.BLACK);
         panelSud.add(suppCrime);
 
         suppCrime.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (!select.getText().isEmpty()) {
-
                     int existe = -1;
-                    for (int i = 0; i < lesCrime.size(); i++) {
-                        if (lesCrime.get(i).getIntitule().equals(select.getText())) {
+                    for (int i = 0; i < mdl.getListeCrimes().size(); i++) {
+                        if (mdl.getListeCrimes().get(i).getIntitule().equals(select.getText())) {
                             existe = i;
+                            break;
                         }
                     }
                     if (existe != -1) {
-                        modele.supprimerCrimes(existe);
+                        mdl.supprimerCrimes(existe);
                         view.afficherDetails();
                         reloadListe.updateAffichageListeCrimes();
-                        updateAffichage(lesCrime, liste, champTexte);
+                        updateAffichage(liste, champTexte);
                         select.setText("");
                     }
                 }
             }
         });
-
-
 
         add(panel, BorderLayout.CENTER);
         add(panelSud, BorderLayout.SOUTH);
@@ -109,8 +106,7 @@ public class AfficheCrime extends JFrame {
         setVisible(true);
     }
 
-
-    private void updateAffichage(ArrayList<Crime> lesCrime, JComboBox<String> liste, JTextArea champTexte) {
+    private void updateAffichage(JComboBox<String> liste, JTextArea champTexte) {
         // Mise à jour de la zone de texte
         StringBuilder sb = new StringBuilder();
         if (this.mdl.getListeCrimes().isEmpty()) {
