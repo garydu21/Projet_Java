@@ -22,16 +22,22 @@ public class AfficheCrime extends JFrame {
         this.panelGlobal = new JPanel();
 
         setTitle("Information sur les crimes");
-        setSize(400, 600);
+        setSize(500, 700);
         setLayout(new BorderLayout());
 
         // Panel principal
         JPanel panel = new JPanel();
         panel.setBackground(Color.GRAY);
+
         this.champTexte = new JTextArea();
         champTexte.setPreferredSize(new Dimension(250, 510));
         champTexte.setFont(new Font("Serif", Font.BOLD, 15));
         champTexte.setEditable(false);
+
+        // Ajouter un JScrollPane autour du champTexte
+        JScrollPane scrollPane = new JScrollPane(champTexte);
+        scrollPane.setPreferredSize(new Dimension(300, 500)); // Ajuster la taille selon vos besoins
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
         // Affichage initial des crimes
         StringBuilder sb = new StringBuilder();
@@ -43,7 +49,7 @@ public class AfficheCrime extends JFrame {
             }
         }
         champTexte.setText(sb.toString());
-        panel.add(champTexte);
+        panel.add(scrollPane);
 
         // Panel Sud (combo + champ + bouton)
         JPanel panelSud = new JPanel();
@@ -100,8 +106,16 @@ public class AfficheCrime extends JFrame {
             }
         });
 
-        add(panel, BorderLayout.CENTER);
-        add(panelSud, BorderLayout.SOUTH);
+        JPanel container = new JPanel();
+        container.setLayout(new BorderLayout());
+        container.add(panel, BorderLayout.CENTER);
+        container.add(panelSud, BorderLayout.SOUTH);
+
+        JScrollPane scrollPaneGlobal = new JScrollPane(container);
+        scrollPaneGlobal.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+        scrollPaneGlobal.setPreferredSize(new Dimension(400, 600));
+
+        add(scrollPaneGlobal);
 
         setVisible(true);
     }
