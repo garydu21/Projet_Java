@@ -59,7 +59,7 @@ public class Vue extends JFrame implements Observer {
         JPanel panelHaut = new JPanel();
         panelHaut.setLayout(new BorderLayout());
 
-        ImageIcon image = new ImageIcon("images/logo.png");
+        ImageIcon image = new ImageIcon("image/logo.png");
         image.setImage(image.getImage().getScaledInstance(64, 64, Image.SCALE_DEFAULT));
         JLabel logo = new JLabel(image);
         panelHaut.add(logo, BorderLayout.WEST);
@@ -103,6 +103,7 @@ public class Vue extends JFrame implements Observer {
         boutonsPanel.add(btnAffaires);
 
         panelHaut.add(boutonsPanel, BorderLayout.CENTER);
+        add(panelHaut, BorderLayout.NORTH);
 
         // Centre : Liste des criminels à gauche + Détails à droite
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));

@@ -108,7 +108,7 @@ public class ListeCrime extends JFrame {
     }
 
     private void listeCrime(){
-        new AfficheCrime(this.view,this.view.getStr(), this, this.modele);
+        new AfficheCrime(this.view, this, this.modele);
     }
 
     public void ajouterCrime() {
