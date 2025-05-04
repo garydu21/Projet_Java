@@ -2,6 +2,7 @@ package Vue;
 
 import Criminel.Crime;
 import Interface.RoundedBorder;
+import Modele.Modele;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,9 +23,11 @@ public class ListeCrime extends JFrame {
     private JTextField lesCrime;
     private ArrayList<Crime> crimes;
 
+    private Modele modele;
     private Vue view;
 
-    public ListeCrime(ArrayList<Crime> crimes, Vue view) {
+    public ListeCrime(ArrayList<Crime> crimes, Vue view, Modele modele) {
+        this.modele = modele;
         this.view = view;
         this.crimes = crimes;
 
@@ -88,7 +91,7 @@ public class ListeCrime extends JFrame {
 
         lesCrime = new JTextField();
         lesCrime.setEditable(false);
-        lesCrime.setText("Aucun crime enregistré.");
+        lesCrime.setText("Aucun crime enregistré sur cette session.");
         panelBas.add(labelListeCrime, BorderLayout.NORTH);
         panelBas.add(lesCrime, BorderLayout.CENTER);
 
@@ -105,7 +108,7 @@ public class ListeCrime extends JFrame {
     }
 
     private void listeCrime(){
-        new AfficheCrime(this.view,this.view.getStr(), this);
+        new AfficheCrime(this.view,this.view.getStr(), this, this.modele);
     }
 
     public void ajouterCrime() {
@@ -118,9 +121,7 @@ public class ListeCrime extends JFrame {
                 return;
             }
 
-            this.crimes.add(new Crime(peine, str));
-
-
+            this.modele.addListeCrime(new Crime(peine, str));
             updateAffichageListeCrimes();
 
 

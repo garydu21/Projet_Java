@@ -3,6 +3,7 @@ package Vue;
 import Criminel.Criminel;
 import Controleur.Controleur;
 import Interface.RoundedBorder;
+import Maps.Maps;
 import Modele.Modele;
 import Criminel.Affaire;
 
@@ -27,7 +28,7 @@ public class Vue extends JFrame implements Observer {
     private JList<String> listeCriminels;
     private DefaultListModel<String> listeModel;
     private JPanel detailsCriminel;
-    private JButton btnModifier, btnAjouter, btnSupprimer, btnGestionJson;
+    private JButton btnModifier, btnAjouter, btnSupprimer, btnGestionJson,btnMap;
     private Modele modele;
     private JTextArea infoCriminel;
     private JButton ajouterCrime;
@@ -80,10 +81,19 @@ public class Vue extends JFrame implements Observer {
         btnGestionJson.setForeground(Color.BLACK);
         boutonsPanel.add(btnGestionJson);
 
+        JButton btnBDD = new JButton("Base de données");
+        btnBDD.setBorder(new RoundedBorder(10));
+        btnBDD.setFont(fontButton);
+        btnBDD.setBackground(Color.LIGHT_GRAY);
+        btnBDD.setForeground(Color.BLACK);
+        boutonsPanel.add(btnBDD);
 
-        boutonsPanel.add(new JButton("Base de données"));
-        boutonsPanel.add(new JButton("Maps"));
-        add(panelHaut, BorderLayout.NORTH);
+        btnMap = new JButton("Maps");
+        btnMap.setBorder(new RoundedBorder(10));
+        btnMap.setFont(fontButton);
+        btnMap.setBackground(Color.LIGHT_GRAY);
+        btnMap.setForeground(Color.BLACK);
+        boutonsPanel.add(btnMap);
 
         JButton btnAffaires = new JButton("Affaires");
         btnAffaires.setBorder(new RoundedBorder(10));
@@ -154,12 +164,19 @@ public class Vue extends JFrame implements Observer {
         listeCriminels.addListSelectionListener(e -> afficherDetails());
         btnModifier.addActionListener(e -> modifierCriminel());
         btnAjouter.addActionListener(e -> ajouterCriminel());
+
         btnSupprimer.addActionListener(e -> supprimerCriminel());
         btnGestionJson.addActionListener(e -> afficherPopupGestionJson());
         ajouterCrime.addActionListener(e -> fenetreCrime());
         btnAffaires.addActionListener(e -> new VueAffaires(modele));
 
+        btnMap.addActionListener(e -> ouvrirMap());
+
         setVisible(true);
+    }
+
+    private void ouvrirMap() {
+        new Maps(this.modele);
     }
 
     private void mettreAJourListe() {
@@ -175,7 +192,7 @@ public class Vue extends JFrame implements Observer {
         }
     }
 
-      public void afficherDetails() {
+    public void afficherDetails() {
 
     int index = listeCriminels.getSelectedIndex();
     if (index >= 0) {
@@ -287,10 +304,10 @@ public class Vue extends JFrame implements Observer {
 
         elements = new String[]{};
         try {
-            if (!this.afficheListeCrime.getCrimes().isEmpty()) {
-                elements = new String[this.afficheListeCrime.getCrimes().size()];
+            if (!this.modele.getListeCrimes().isEmpty()) {
+                elements = new String[this.modele.getListeCrimes().size()];
                 int i = 0;
-                for (Crime c : this.afficheListeCrime.getCrimes()) {
+                for (Crime c : this.modele.getListeCrimes()) {
                     elements[i] = c.getIntitule();
                     i++;
                 }
@@ -355,9 +372,9 @@ public class Vue extends JFrame implements Observer {
                         Criminel mechant = modele.getListeCriminel().get(index);
 
                         int peine = -1;
-                        for (int i = 0; i < afficheListeCrime.getCrimes().size(); i++) {
-                            if (champTexte.getText().equalsIgnoreCase(afficheListeCrime.getCrimes().get(i).getIntitule())) {
-                                peine = afficheListeCrime.getCrimes().get(i).getPeine();
+                        for (int i = 0; i < modele.getListeCrimes().size(); i++) {
+                            if (champTexte.getText().equalsIgnoreCase(modele.getListeCrimes().get(i).getIntitule())) {
+                                peine = modele.getListeCrimes().get(i).getPeine();
                             }
                         }
                         if (peine != -1) {
@@ -466,7 +483,7 @@ public class Vue extends JFrame implements Observer {
     }
 
     public void fenetreCrime() {
-        this.afficheListeCrime = new ListeCrime(this.str,this);
+        this.afficheListeCrime = new ListeCrime(this.str,this,this.modele);
     }
 
     public ArrayList<Crime> getStr(){

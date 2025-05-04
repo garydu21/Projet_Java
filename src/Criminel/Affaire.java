@@ -13,6 +13,9 @@ public class Affaire {
     @Expose private String lieu;
     @Expose private Date date;
 
+    @Expose private String etat = "En cours"; //
+    @Expose private String informationsSupplementaires = "";
+
     @Expose private List<Integer> idCriminels = new ArrayList<>(); // pour la sauvegarde
 
     private transient List<Criminel> suspects = new ArrayList<>(); // non sauvegardé
@@ -38,6 +41,22 @@ public class Affaire {
 
     public Date getDate() {
         return date;
+    }
+
+    public String getEtat() {
+        return etat;
+    }
+
+    public void setEtat(String etat) {
+        this.etat = etat;
+    }
+
+    public String getInformationsSupplementaires() {
+        return informationsSupplementaires;
+    }
+
+    public void setInformationsSupplementaires(String informationsSupplementaires) {
+        this.informationsSupplementaires = informationsSupplementaires;
     }
 
     public List<Criminel> getSuspects() {

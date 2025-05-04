@@ -13,13 +13,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.*;
+import Criminel.Crime;
 
 public class Modele extends Observable {
     private static final String FICHIER_JSON = "criminels.json";
     private static final String FICHIER_AFFAIRES = "affaires.json";
+    private static final String FICHIER_CRIMES = "crimes.json";
 
     private List<Criminel> listeCriminel;
     private List<Affaire> listeAffaires;
+    private ArrayList<Crime> listeCrimes;
 
     private static final Gson gson = new GsonBuilder()
             .setDateFormat("dd-MM-yyyy") //Format ISO : yyyy-MM-dd, je n'ai pas encore regardé comment la passer en français - Angel
@@ -30,8 +33,14 @@ public class Modele extends Observable {
     public Modele() {
         this.listeCriminel = new ArrayList<>();
         this.listeAffaires = new ArrayList<>();
+        this.listeCrimes = new ArrayList<>();
         chargerDonnees();
         chargerAffaires();
+        chargerCrimes();
+    }
+
+    public ArrayList<Crime> getListeCrimes() {
+        return this.listeCrimes;
     }
 
     public List<Criminel> getListeCriminel() {
@@ -41,6 +50,23 @@ public class Modele extends Observable {
     public List<Affaire> getListeAffaires() {
         return listeAffaires;
     }
+
+    public void addListeCrime(Crime c){
+        this.listeCrimes.add(c);
+        sauvegarderCrimes();
+        setChanged();
+        notifyObservers();
+    }
+
+    public void supprimerCrimes(int index) {
+        if (index >= 0 && index < listeCrimes.size()) {
+            listeCrimes.remove(index);
+            sauvegarderCrimes();
+            setChanged();
+            notifyObservers();
+        }
+    }
+
 
     public void addListeCriminel(Criminel c) {
         this.listeCriminel.add(c);
@@ -115,6 +141,14 @@ public class Modele extends Observable {
         exporterJson(new File(FICHIER_JSON));
     }
 
+    private void sauvegarderCrimes() {
+        try (FileWriter writer = new FileWriter(FICHIER_CRIMES)) {
+            gson.toJson(listeCrimes, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void chargerDonnees() {
         File fichier = new File(FICHIER_JSON);
         if (fichier.exists()) {
@@ -122,7 +156,20 @@ public class Modele extends Observable {
         }
     }
 
-    private void sauvegarderAffaires() {
+    private void chargerCrimes() {
+        File fichier = new File(FICHIER_CRIMES);
+        if (fichier.exists()) {
+            try (FileReader reader = new FileReader(fichier)) {
+                Type listType = new TypeToken<ArrayList<Crime>>() {}.getType();
+                listeCrimes = gson.fromJson(reader, listType); // Charger les crimes à partir du fichier JSON
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    public void sauvegarderAffaires() {
         try (FileWriter writer = new FileWriter(FICHIER_AFFAIRES)) {
             gson.toJson(listeAffaires, writer);
         } catch (IOException e) {
