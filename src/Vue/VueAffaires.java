@@ -21,7 +21,7 @@ public class VueAffaires extends JFrame {
     private JList<String> listeAffaires;
     private DefaultListModel<String> listeModel;
     private JTextArea detailsAffaire;
-    private JButton btnAjouter, btnModifier, btnSupprimer, btnAssocierCriminel;
+    private JButton btnAjouter, btnModifier, btnSupprimer, btnAssocierCriminel, btnGraphe;
     private Modele modele;
 
 
@@ -36,7 +36,8 @@ public class VueAffaires extends JFrame {
         // Haut
         JPanel panelHaut = new JPanel();
         JLabel label = new JLabel("Base des affaires criminelles");
-        label.setFont(fontTitre);
+        btnGraphe = new JButton("Graphe");
+        panelHaut.add(btnGraphe, BorderLayout.WEST);
         panelHaut.add(label);
         add(panelHaut, BorderLayout.NORTH);
 
@@ -116,8 +117,19 @@ public class VueAffaires extends JFrame {
         btnAssocierCriminel.addActionListener(e -> associerCriminel());
         btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
         btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
+        btnGraphe.addActionListener(e -> genererUnGraphe());
 
         setVisible(true);
+    }
+
+    private void genererUnGraphe(){
+        int index = listeAffaires.getSelectedIndex();
+        if (index >= 0) {
+            new VueGraphe(this.modele, index);
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Veuillez selectionner une affaire","Erreur",JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     public VueAffaires(Modele modele, String lieu) {
