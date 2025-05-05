@@ -2,6 +2,7 @@ package Vue;
 
 import Criminel.Affaire;
 import Criminel.Criminel;
+import Interface.RoundedBorder;
 import Modele.Modele;
 
 import javax.swing.*;
@@ -10,6 +11,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VueAffaires extends JFrame {
+
+    private final Font fontButton = new Font("Arial", Font.BOLD, 15);
+    private final Font fontName = new Font("Arial", Font.ITALIC + Font.BOLD, 15);
+    private final Font fontDetail = new Font("Arial", Font.BOLD, 15);
+    private final Font fontTitre = new Font("Arial", Font.BOLD, 30);
+
+
     private JList<String> listeAffaires;
     private DefaultListModel<String> listeModel;
     private JTextArea detailsAffaire;
@@ -25,7 +33,6 @@ public class VueAffaires extends JFrame {
         setTitle("Gestion des Affaires");
         setSize(800, 600);
         setLayout(new BorderLayout());
-
         // Haut
         JPanel panelHaut = new JPanel();
         JLabel label = new JLabel("Base des affaires criminelles");
@@ -38,22 +45,58 @@ public class VueAffaires extends JFrame {
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));
         listeModel = new DefaultListModel<>();
         listeAffaires = new JList<>(listeModel);
+        listeAffaires.setBackground(Color.DARK_GRAY);
+        listeAffaires.setFont(fontName);
+        listeAffaires.setForeground(Color.WHITE);
         panelCentre.add(new JScrollPane(listeAffaires));
 
         detailsAffaire = new JTextArea();
+        detailsAffaire.setFont(fontDetail);
+        detailsAffaire.setBackground(Color.DARK_GRAY);
+        detailsAffaire.setForeground(Color.LIGHT_GRAY);
         detailsAffaire.setEditable(false);
         panelCentre.add(new JScrollPane(detailsAffaire));
         add(panelCentre, BorderLayout.CENTER);
 
         // Bas
         JPanel panelBas = new JPanel();
+        panelBas.setBackground(Color.LIGHT_GRAY);
+
         btnAjouter = new JButton("Ajouter");
+        btnAjouter.setBorder(new RoundedBorder(10));
+        btnAjouter.setFont(fontButton);
+        btnAjouter.setBackground(Color.LIGHT_GRAY);
+        btnAjouter.setForeground(Color.BLACK);
+
         btnModifier = new JButton("Modifier");
+        btnModifier.setBorder(new RoundedBorder(10));
+        btnModifier.setFont(fontButton);
+        btnModifier.setBackground(Color.LIGHT_GRAY);
+        btnModifier.setForeground(Color.BLACK);
+
         btnSupprimer = new JButton("Supprimer");
+        btnSupprimer.setBorder(new RoundedBorder(10));
+        btnSupprimer.setFont(fontButton);
+        btnSupprimer.setBackground(Color.LIGHT_GRAY);
+        btnSupprimer.setForeground(Color.BLACK);
 
         btnAssocierCriminel = new JButton("Associer Criminel");
+        btnAssocierCriminel.setBorder(new RoundedBorder(10));
+        btnAssocierCriminel.setFont(fontButton);
+        btnAssocierCriminel.setBackground(Color.LIGHT_GRAY);
+        btnAssocierCriminel.setForeground(Color.BLACK);
+
         JButton btnDissocierCriminel = new JButton("Retirer Criminel");
+        btnDissocierCriminel.setBorder(new RoundedBorder(10));
+        btnDissocierCriminel.setFont(fontButton);
+        btnDissocierCriminel.setBackground(Color.LIGHT_GRAY);
+        btnDissocierCriminel.setForeground(Color.BLACK);
+
         JButton btnAjouterPlusieurs = new JButton("Associer plusieurs");
+        btnAjouterPlusieurs.setBorder(new RoundedBorder(10));
+        btnAjouterPlusieurs.setFont(fontButton);
+        btnAjouterPlusieurs.setBackground(Color.LIGHT_GRAY);
+        btnAjouterPlusieurs.setForeground(Color.BLACK);
 
         panelBas.add(btnAjouter);
         panelBas.add(btnModifier);
@@ -203,6 +246,8 @@ public class VueAffaires extends JFrame {
             sb.append("Description : ").append(affaire.getDescription()).append("\n");
             sb.append("Lieu : ").append(affaire.getLieu()).append("\n");
             sb.append("Date : ").append(affaire.getDate()).append("\n");
+            sb.append("État : ").append(affaire.getEtat()).append("\n");
+            sb.append("Informations supplémentaires : ").append(affaire.getInformationsSupplementaires()).append("\n");
 
             List<Criminel> suspects = affaire.getSuspects();
             if (!suspects.isEmpty()) {
@@ -222,9 +267,17 @@ public class VueAffaires extends JFrame {
             String description = JOptionPane.showInputDialog(this, "Description :");
             String lieu = JOptionPane.showInputDialog(this, "Lieu :");
             String dateStr = JOptionPane.showInputDialog(this, "Date (yyyy-MM-dd) :");
+            String etat = JOptionPane.showInputDialog(this, "État de l'affaire :", "En cours");
+            String infos = JOptionPane.showInputDialog(this, "Informations supplémentaires :", "");
+
+            if (description == null || lieu == null || dateStr == null || etat == null || infos == null) return;
+
             java.sql.Date date = java.sql.Date.valueOf(dateStr);
 
             Affaire affaire = new Affaire(id, description, lieu, date);
+            affaire.setEtat(etat);
+            affaire.setInformationsSupplementaires(infos);
+
             modele.ajouterAffaire(affaire);
             mettreAJourAffichage();
             listeAffaires.setSelectedIndex(listeAffaires.getLastVisibleIndex());
@@ -239,19 +292,22 @@ public class VueAffaires extends JFrame {
             String desc = JOptionPane.showInputDialog(this, "Modifier la description :", affaire.getDescription());
             String lieu = JOptionPane.showInputDialog(this, "Modifier le lieu :", affaire.getLieu());
             String dateStr = JOptionPane.showInputDialog(this, "Modifier la date (yyyy-MM-dd) :", affaire.getDate().toString());
+            String etat = JOptionPane.showInputDialog(this, "Modifier l'état :", affaire.getEtat());
+            String infos = JOptionPane.showInputDialog(this, "Modifier les infos supplémentaires :", affaire.getInformationsSupplementaires());
 
-            affaire.setDescription(desc);
-            affaire.setLieu(lieu);
-            if (desc != null && lieu != null && dateStr != null) {
+            if (desc != null && lieu != null && dateStr != null && etat != null && infos != null) {
                 try {
-
+                    affaire.setDescription(desc);
+                    affaire.setLieu(lieu);
+                    affaire.setEtat(etat);
+                    affaire.setInformationsSupplementaires(infos);
                     affaire.setDate(java.sql.Date.valueOf(dateStr));
+                    modele.sauvegarderAffaires();
+                    mettreAJourAffichage();
                 } catch (IllegalArgumentException ex) {
                     JOptionPane.showMessageDialog(this, "Format de date invalide. Veuillez entrer la date au format yyyy-MM-dd.");
                 }
             }
-            modele.sauvegarderAffaires();
-            mettreAJourAffichage();
         }
     }
 
