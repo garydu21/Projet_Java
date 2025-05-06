@@ -4,7 +4,6 @@ import Modele.Modele;
 import Vue.Vue;
 
 import javax.swing.*;
-import java.util.Observer;
 
 public class Controleur {
     private Modele modele;

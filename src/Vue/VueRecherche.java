@@ -2,6 +2,7 @@ package Vue;
 
 import Criminel.Affaire;
 import Criminel.Criminel;
+import Interface.RoundedBorder;
 import Modele.Modele;
 
 import javax.swing.*;
@@ -12,6 +13,13 @@ import java.awt.event.MouseEvent;
 import java.util.List;
 
 public class VueRecherche extends JFrame {
+
+    private final Font fontButton = new Font("Arial", Font.BOLD, 15);
+    private final Font fontName = new Font("Arial", Font.ITALIC + Font.BOLD, 15);
+    private final Font fontDetail = new Font("Arial", Font.BOLD, 15);
+    private final Font fontDescription = new Font("Bitstream Vera Sans Mono", Font.PLAIN, 15);
+    private final Font fontListe = new Font("Arial", Font.BOLD, 12);
+
     private JTextField champRecherche;
     private JButton btnRechercher;
     private JTable tableResultats;
@@ -23,15 +31,26 @@ public class VueRecherche extends JFrame {
         this.modele = modele;
 
         setTitle("Recherche");
-        setSize(700, 400);
+        setSize(1000, 600);
         setLayout(new BorderLayout());
 
         // Combobox du type de recherche
         comboType = new JComboBox<>(new String[]{"Tous", "Criminel", "Affaire"});
+        comboType.setFont(fontListe);
+        comboType.setBackground(Color.WHITE);
+        comboType.setForeground(Color.BLACK);
 
         // Champ de recherche
         champRecherche = new JTextField();
+        champRecherche.setFont(fontDescription);
+        champRecherche.setBackground(Color.WHITE);
+        champRecherche.setForeground(Color.BLACK);
+
         btnRechercher = new JButton("Rechercher");
+        btnRechercher.setBorder(new RoundedBorder(0));
+        btnRechercher.setFont(fontButton);
+        btnRechercher.setBackground(Color.LIGHT_GRAY);
+        btnRechercher.setForeground(Color.BLACK);
 
         JPanel panelHaut = new JPanel(new BorderLayout());
         panelHaut.add(comboType, BorderLayout.WEST);
@@ -47,7 +66,12 @@ public class VueRecherche extends JFrame {
                 return false;
             }
         };
+
         tableResultats = new JTable(tableModel);
+        tableResultats.setFont(fontListe);
+        tableResultats.setBackground(Color.DARK_GRAY);
+        tableResultats.setForeground(Color.WHITE);
+
         tableResultats.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         add(new JScrollPane(tableResultats), BorderLayout.CENTER);
 

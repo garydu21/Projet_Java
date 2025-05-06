@@ -50,7 +50,7 @@ public class Vue extends JFrame implements Observer {
         this.modele = modele;
         this.modele.addObserver(this);
         setTitle("Gestion des Criminels");
-        setSize(1200, 600);
+        setSize(1200, 800);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
