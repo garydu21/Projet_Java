@@ -21,7 +21,7 @@ public class VueAffaires extends JFrame {
     private JList<String> listeAffaires;
     private DefaultListModel<String> listeModel;
     private JTextArea detailsAffaire;
-    private JButton btnAjouter, btnModifier, btnSupprimer, btnAssocierCriminel, btnGraphe;
+    private JButton btnAjouter, btnModifier, btnSupprimer, btnAssocierCriminel, btnPrediciton, btnGraphe;
     private Modele modele;
 
 
@@ -45,6 +45,8 @@ public class VueAffaires extends JFrame {
 
         panelHaut.add(btnGraphe, BorderLayout.WEST);
         panelHaut.add(label);
+        JButton btnPrediction = new JButton("Predire une affaire");
+        panelHaut.add(btnPrediction);
         add(panelHaut, BorderLayout.NORTH);
 
         // Centre
@@ -123,6 +125,7 @@ public class VueAffaires extends JFrame {
         btnAssocierCriminel.addActionListener(e -> associerCriminel());
         btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
         btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
+        btnPrediction.addActionListener(e -> predireAffaire());
         btnGraphe.addActionListener(e -> genererUnGraphe());
 
         setVisible(true);
@@ -157,6 +160,7 @@ public class VueAffaires extends JFrame {
 
         panelHaut.add(btnGraphe, BorderLayout.WEST);
         panelHaut.add(label);
+        JButton btnPrediction = new JButton("Predire une affaire");
         add(panelHaut, BorderLayout.NORTH);
 
         // Centre
@@ -235,9 +239,20 @@ public class VueAffaires extends JFrame {
         btnAssocierCriminel.addActionListener(e -> associerCriminel());
         btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
         btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
+        btnPrediction.addActionListener(e -> predireAffaire());
         btnGraphe.addActionListener(e -> genererUnGraphe());
 
         setVisible(true);
+    }
+
+    public void predireAffaire() {
+        Affaire affaire = getAffaireSelectionnee();
+        if (affaire != null) {
+            new VuePrediction(affaire, this.modele);
+        }
+        else {
+            JOptionPane.showMessageDialog(this, "Veuillez selectionner une affaire", "Erreur", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     private Affaire getAffaireSelectionnee() {
