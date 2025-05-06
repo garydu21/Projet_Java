@@ -32,7 +32,7 @@ public class VueAffaires extends JFrame {
         this.modele = modele;
 
         setTitle("Gestion des Affaires");
-        setSize(800, 600);
+        setSize(1000, 800);
         setLayout(new BorderLayout());
         // Haut
         JPanel panelHaut = new JPanel();
@@ -164,7 +164,7 @@ public class VueAffaires extends JFrame {
         this.modele = modele;
 
         setTitle("Gestion des Affaires");
-        setSize(800, 600);
+        setSize(1000, 800);
         setLayout(new BorderLayout());
         // Haut
         JPanel panelHaut = new JPanel();
@@ -183,6 +183,7 @@ public class VueAffaires extends JFrame {
         btnPrediction.setFont(fontButton);
         btnPrediction.setBackground(Color.LIGHT_GRAY);
         btnPrediction.setForeground(Color.BLACK);
+        panelHaut.add(btnPrediction);
         add(panelHaut, BorderLayout.NORTH);
 
         // Centre
