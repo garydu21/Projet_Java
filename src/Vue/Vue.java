@@ -113,7 +113,11 @@ public class Vue extends JFrame implements Observer {
         boutonsPanel.add(btnAffaires);
 
         JButton btnRecherche = new JButton("Recherche");
-        panelHaut.add(btnRecherche);
+        btnRecherche.setBorder(new RoundedBorder(10));
+        btnRecherche.setFont(fontButton);
+        btnRecherche.setBackground(Color.LIGHT_GRAY);
+        btnRecherche.setForeground(Color.BLACK);
+        boutonsPanel.add(btnRecherche);
 
         btnRecherche.addActionListener(e -> new VueRecherche(modele));
 
