@@ -106,20 +106,13 @@ public class VueGestionEnqueteurs extends JFrame {
     private void chargerListeEnqueteurs() {
         modeleListeEnqueteurs.clear();
 
-        // Débugger - vérifier combien d'enquêteurs sont chargés
-        System.out.println("Nombre d'enquêteurs: " + modele.getListeEnqueteurs().size());
-
         for (Enqueteur e : modele.getListeEnqueteurs()) {
-            // Débugger - afficher les données de chaque enquêteur
-            System.out.println("Enquêteur: " + e.getNom() + " " + e.getPrenom() + " (" + e.getGrade() + ")");
 
             String nom = e.getNom() != null ? e.getNom() : "Sans nom";
             String prenom = e.getPrenom() != null ? e.getPrenom() : "Sans prénom";
             String grade = e.getGrade() != null ? e.getGrade() : "Sans grade";
 
-            // Créer un texte descriptif
             String texteAffichage = grade + " " + nom + " " + prenom;
-            System.out.println("Ajout de l'élément: " + texteAffichage);
 
             modeleListeEnqueteurs.addElement(texteAffichage);
         }

@@ -95,8 +95,12 @@ public class Vue extends JFrame implements Observer {
         btnMap.setForeground(Color.BLACK);
         boutonsPanel.add(btnMap);
 
-        btnGestionEnquetes = new JButton("Gestion Enquêtes");
-        panelHaut.add(btnGestionEnquetes);
+        btnGestionEnquetes = new JButton("Enquêteurs");
+        btnGestionEnquetes.setBorder(new RoundedBorder(10));
+        btnGestionEnquetes.setFont(fontButton);
+        btnGestionEnquetes.setBackground(Color.LIGHT_GRAY);
+        btnGestionEnquetes.setForeground(Color.BLACK);
+        boutonsPanel.add(btnGestionEnquetes);
 
         add(panelHaut, BorderLayout.NORTH);
 

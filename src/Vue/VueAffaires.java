@@ -118,13 +118,19 @@ public class VueAffaires extends JFrame {
         panelBas.add(btnAssocierCriminel);
         panelBas.add(btnAjouterPlusieurs);
         panelBas.add(btnDissocierCriminel);
-        add(panelBas, BorderLayout.SOUTH);
 
         JButton btnGererEnqueteurs = new JButton("Gérer Enquêteurs");
         btnGererEnqueteurs.setBorder(new RoundedBorder(10));
         btnGererEnqueteurs.setBackground(Color.LIGHT_GRAY);
         btnGererEnqueteurs.setForeground(Color.BLACK);
+        btnGererEnqueteurs.setFont(fontButton);
         panelBas.add(btnGererEnqueteurs);
+
+        JScrollPane scrollBas = new JScrollPane(panelBas,
+                JScrollPane.VERTICAL_SCROLLBAR_NEVER,
+                JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        scrollBas.setPreferredSize(new Dimension(100, 60));
+        add(scrollBas, BorderLayout.SOUTH);
 
         // Actions
         mettreAJourListe();
@@ -243,13 +249,19 @@ public class VueAffaires extends JFrame {
         panelBas.add(btnAssocierCriminel);
         panelBas.add(btnAjouterPlusieurs);
         panelBas.add(btnDissocierCriminel);
-        add(panelBas, BorderLayout.SOUTH);
 
         JButton btnGererEnqueteurs = new JButton("Gérer Enquêteurs");
         btnGererEnqueteurs.setBorder(new RoundedBorder(10));
         btnGererEnqueteurs.setBackground(Color.LIGHT_GRAY);
         btnGererEnqueteurs.setForeground(Color.BLACK);
+        btnGererEnqueteurs.setFont(fontButton);
         panelBas.add(btnGererEnqueteurs);
+
+        JScrollPane scrollBas = new JScrollPane(panelBas,
+                JScrollPane.VERTICAL_SCROLLBAR_NEVER,
+                JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        scrollBas.setPreferredSize(new Dimension(100, 60));
+        add(scrollBas, BorderLayout.SOUTH);
 
 
         // Actions
@@ -263,7 +275,7 @@ public class VueAffaires extends JFrame {
         btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
         btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
         btnGererEnqueteurs.addActionListener(e -> gererEnqueteurs());
-        bnPrediction.addActionListener(e -> predireAffaire());
+        btnPrediction.addActionListener(e -> predireAffaire());
         btnGraphe.addActionListener(e -> genererUnGraphe());
 
         setVisible(true);
