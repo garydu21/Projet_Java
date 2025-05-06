@@ -1,5 +1,6 @@
-package Criminel;
+package Enqueteur;
 
+import Criminel.Affaire;
 import com.google.gson.annotations.Expose;
 
 import java.util.ArrayList;

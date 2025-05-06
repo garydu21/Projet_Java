@@ -1,4 +1,4 @@
-package Vue;
+package Vue.Affaire;
 
 import Criminel.Affaire;
 import Criminel.Criminel;
@@ -8,7 +8,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.List; // Import explicite de java.util.List
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class VuePrediction extends JFrame {
 

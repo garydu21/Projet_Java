@@ -1,4 +1,4 @@
-package Vue;
+package Vue.Main;
 
 import Criminel.Crime;
 import Interface.RoundedBorder;

@@ -1,7 +1,7 @@
 package Controleur;
 
 import Modele.Modele;
-import Vue.Vue;
+import Vue.Main.Vue;
 
 import javax.swing.*;
 

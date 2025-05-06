@@ -1,7 +1,7 @@
-package Vue;
+package Vue.Affaire;
 
 import Criminel.Affaire;
-import Criminel.Enqueteur;
+import Enqueteur.Enqueteur;
 import Interface.RoundedBorder;
 import Modele.Modele;
 

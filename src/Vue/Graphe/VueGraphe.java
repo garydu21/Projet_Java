@@ -1,11 +1,10 @@
-package Vue;
+package Vue.Graphe;
 
 import javax.swing.*;
 import Criminel.Affaire;
 import Modele.Modele;
 import Criminel.Criminel;
 
-import java.awt.*;
 import java.util.*;
 import java.util.List;
 

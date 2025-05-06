@@ -1,4 +1,4 @@
-package Vue;
+package Vue.Main;
 
 import Criminel.Criminel;
 import Controleur.Controleur;
@@ -16,6 +16,8 @@ import java.awt.event.ActionListener;
 import java.util.*;
 
 import Criminel.Crime;
+import Vue.Enqueteur.VueGestionEnqueteurs;
+import Vue.Affaire.VueAffaires;
 
 public class Vue extends JFrame implements Observer {
 

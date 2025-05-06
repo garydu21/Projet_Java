@@ -1,15 +1,12 @@
-package Vue;
+package Vue.Graphe;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Line2D;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

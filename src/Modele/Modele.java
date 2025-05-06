@@ -2,8 +2,7 @@ package Modele;
 
 import Criminel.Criminel;
 import Criminel.Affaire;
-import Criminel.Affaire;
-import Criminel.Enqueteur;
+import Enqueteur.Enqueteur;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;

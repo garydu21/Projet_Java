@@ -1,14 +1,14 @@
-package Vue;
+package Vue.Affaire;
 
 import Criminel.Affaire;
 import Criminel.Criminel;
-import Criminel.Enqueteur;
+import Enqueteur.Enqueteur;
 import Interface.RoundedBorder;
 import Modele.Modele;
+import Vue.Graphe.VueGraphe;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class VueAffaires extends JFrame {
