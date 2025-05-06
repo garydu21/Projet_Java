@@ -1,10 +1,9 @@
 package Controleur;
 
 import Modele.Modele;
-import Vue.Vue;
+import Vue.Main.Vue;
 
 import javax.swing.*;
-import java.util.Observer;
 
 public class Controleur {
     private Modele modele;

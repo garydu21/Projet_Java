@@ -1,904 +1,1910 @@
 [
   {
-    "id": 670,
+    "id": 1,
     "nom": "Dupont",
-    "prenom": "Arthur",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
+    "prenom": "Jean",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Vol à main armée"
+      },
+      {
+        "peine": 8,
+        "intitule": "Recel"
+      },
+      {
+        "peine": 5,
+        "intitule": "Agression"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 28,
     "idAffaires": [
-      20
+      12,
+      45,
+      89
     ]
   },
   {
-    "id": 483,
-    "nom": "Gauthier",
-    "prenom": "Chloé",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 169,
-    "nom": "Muller",
-    "prenom": "Pierre",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 673,
-    "nom": "Fernandez",
-    "prenom": "Lucas",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 192,
-    "nom": "Martinez",
-    "prenom": "Arthur",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 250,
-    "nom": "Perez",
-    "prenom": "Lola",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 527,
-    "nom": "Leroy",
-    "prenom": "Eva",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 660,
-    "nom": "Bertrand",
-    "prenom": "Marie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 506,
-    "nom": "Adam",
-    "prenom": "Antoine",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 238,
-    "nom": "Moreau",
-    "prenom": "Louis",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 933,
-    "nom": "Weber",
-    "prenom": "Liam",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 870,
-    "nom": "Martinez",
-    "prenom": "Enzo",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 410,
-    "nom": "Lambert",
-    "prenom": "Nina",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 444,
-    "nom": "Benoit",
-    "prenom": "Jade",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 168,
-    "nom": "Richard",
-    "prenom": "Théo",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 369,
-    "nom": "Gauthier",
-    "prenom": "Maxime",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 524,
-    "nom": "Lambert",
-    "prenom": "Marie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 956,
-    "nom": "Bertrand",
-    "prenom": "Chloé",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 517,
-    "nom": "Benoit",
-    "prenom": "Hugo",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 895,
-    "nom": "Garcia",
-    "prenom": "Anaïs",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 116,
-    "nom": "Barbier",
-    "prenom": "Julie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 529,
-    "nom": "Fernandez",
-    "prenom": "Mia",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 120,
-    "nom": "Benoit",
-    "prenom": "Inès",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 781,
-    "nom": "Lopez",
-    "prenom": "Ethan",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 629,
-    "nom": "Moreau",
-    "prenom": "Thomas",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 445,
-    "nom": "Marchand",
-    "prenom": "Jean",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 691,
-    "nom": "Dupont",
-    "prenom": "Camille",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 330,
-    "nom": "Lemoine",
-    "prenom": "Léa",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 641,
-    "nom": "Morin",
-    "prenom": "Théo",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 873,
-    "nom": "Barbier",
-    "prenom": "Kylian",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 633,
-    "nom": "Sanchez",
-    "prenom": "Nina",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 136,
-    "nom": "Fernandez",
-    "prenom": "Maxime",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 474,
-    "nom": "Garcia",
-    "prenom": "Thomas",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 311,
-    "nom": "Aubry",
-    "prenom": "Amélie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 771,
-    "nom": "Gilbert",
-    "prenom": "Arthur",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 600,
-    "nom": "Gauthier",
-    "prenom": "Maxime",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 681,
-    "nom": "Girard",
-    "prenom": "Julien",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 479,
-    "nom": "Henry",
-    "prenom": "Lucas",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 350,
-    "nom": "Faure",
-    "prenom": "Claire",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 989,
-    "nom": "Bourdon",
-    "prenom": "Noah",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 312,
-    "nom": "Girard",
-    "prenom": "Pierre",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 118,
-    "nom": "Marchand",
-    "prenom": "Inès",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 765,
-    "nom": "Gauthier",
-    "prenom": "Lucie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 542,
-    "nom": "Aubry",
-    "prenom": "Nina",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 167,
-    "nom": "Lemoine",
-    "prenom": "Lucie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 946,
-    "nom": "Bourdon",
-    "prenom": "Yanis",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 869,
-    "nom": "Rolland",
-    "prenom": "Nicolas",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 762,
-    "nom": "Faure",
-    "prenom": "Lucie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 159,
-    "nom": "Aubry",
-    "prenom": "Louis",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 502,
-    "nom": "Andre",
-    "prenom": "Inès",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 919,
-    "nom": "Roux",
-    "prenom": "Axel",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 351,
-    "nom": "Bertrand",
-    "prenom": "Inès",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 288,
-    "nom": "Garcia",
-    "prenom": "Jean",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 304,
-    "nom": "Sanchez",
-    "prenom": "Marie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 271,
-    "nom": "Girard",
-    "prenom": "Lola",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 419,
-    "nom": "Lemoine",
-    "prenom": "Kylian",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 477,
-    "nom": "Morin",
-    "prenom": "Julie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 741,
-    "nom": "Baron",
-    "prenom": "Liam",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 149,
-    "nom": "Lopez",
-    "prenom": "Arthur",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 843,
-    "nom": "Francois",
-    "prenom": "Ethan",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 827,
-    "nom": "Henry",
-    "prenom": "Eva",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 412,
-    "nom": "Sanchez",
-    "prenom": "Jean",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 462,
-    "nom": "Weber",
-    "prenom": "Luc",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 140,
-    "nom": "Girard",
-    "prenom": "Ethan",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 488,
-    "nom": "Moreau",
-    "prenom": "Yanis",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 865,
-    "nom": "Joly",
-    "prenom": "Liam",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 563,
-    "nom": "Gilbert",
-    "prenom": "Julie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 835,
-    "nom": "Dupont",
-    "prenom": "Kylian",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 551,
-    "nom": "Henry",
-    "prenom": "Inès",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 812,
-    "nom": "Martinez",
-    "prenom": "Thomas",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 622,
-    "nom": "Gonzalez",
-    "prenom": "Antoine",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 986,
-    "nom": "Andre",
-    "prenom": "Milan",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 215,
-    "nom": "Girard",
-    "prenom": "Jean",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 554,
-    "nom": "Richard",
-    "prenom": "Léa",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 979,
-    "nom": "Robin",
-    "prenom": "Mia",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 848,
-    "nom": "Renaud",
-    "prenom": "Axel",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 794,
-    "nom": "Durand",
-    "prenom": "Anaïs",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 973,
-    "nom": "Benoit",
-    "prenom": "Nicolas",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 963,
-    "nom": "Martinez",
-    "prenom": "Jean",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 682,
-    "nom": "Clement",
-    "prenom": "Léa",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 561,
-    "nom": "Faure",
-    "prenom": "Julien",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 417,
-    "nom": "Leroy",
-    "prenom": "Sarah",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 381,
-    "nom": "Weber",
-    "prenom": "Manon",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 158,
-    "nom": "Lemoine",
-    "prenom": "Lucie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 415,
-    "nom": "Martinez",
-    "prenom": "Anaïs",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 130,
-    "nom": "Gonzalez",
-    "prenom": "Zoé",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 165,
-    "nom": "Benoit",
-    "prenom": "Julien",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 544,
-    "nom": "Lemoine",
-    "prenom": "Maël",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 776,
-    "nom": "Durand",
-    "prenom": "Nathan",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 971,
-    "nom": "Francois",
-    "prenom": "Axel",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 218,
-    "nom": "Garcia",
-    "prenom": "Zoé",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 257,
-    "nom": "Henry",
-    "prenom": "Alice",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 128,
-    "nom": "Andre",
-    "prenom": "Nina",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 709,
-    "nom": "Renaud",
-    "prenom": "Nathan",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
-  },
-  {
-    "id": 439,
-    "nom": "Moreau",
+    "id": 2,
+    "nom": "Martin",
     "prenom": "Sophie",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Fraude fiscale"
+      },
+      {
+        "peine": 10,
+        "intitule": "Blanchiment d\u0027argent"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 22,
+    "idAffaires": [
+      23,
+      67
+    ]
   },
   {
-    "id": 831,
-    "nom": "Fernandez",
-    "prenom": "Arthur",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
+    "id": 3,
+    "nom": "Durand",
+    "prenom": "Pierre",
+    "crimes": [
+      {
+        "peine": 20,
+        "intitule": "Meurtre"
+      },
+      {
+        "peine": 7,
+        "intitule": "Entrave à la justice"
+      },
+      {
+        "peine": 5,
+        "intitule": "Possession d\u0027arme illégale"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 32,
+    "idAffaires": [
+      34,
+      78,
+      156
+    ]
   },
   {
-    "id": 656,
-    "nom": "Renard",
-    "prenom": "Mathis",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
+    "id": 4,
+    "nom": "Lefebvre",
+    "prenom": "Marie",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Détournement de fonds"
+      },
+      {
+        "peine": 4,
+        "intitule": "Abus de confiance"
+      },
+      {
+        "peine": 2,
+        "intitule": "Usage de faux"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      56,
+      91,
+      123
+    ]
   },
   {
-    "id": 296,
-    "nom": "Girard",
-    "prenom": "Julien",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
+    "id": 5,
+    "nom": "Leroy",
+    "prenom": "Thomas",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Trafic de stupéfiants"
+      },
+      {
+        "peine": 5,
+        "intitule": "Association de malfaiteurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      102,
+      198
+    ]
   },
   {
-    "id": 809,
-    "nom": "Henry",
+    "id": 6,
+    "nom": "Moreau",
+    "prenom": "Julie",
+    "crimes": [
+      {
+        "peine": 4,
+        "intitule": "Cybercriminalité"
+      },
+      {
+        "peine": 2,
+        "intitule": "Vol de données"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 6,
+    "idAffaires": [
+      112,
+      245
+    ]
+  },
+  {
+    "id": 7,
+    "nom": "Simon",
+    "prenom": "Nicolas",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Enlèvement"
+      },
+      {
+        "peine": 10,
+        "intitule": "Séquestration"
+      },
+      {
+        "peine": 8,
+        "intitule": "Violences aggravées"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 33,
+    "idAffaires": [
+      45,
+      167,
+      203
+    ]
+  },
+  {
+    "id": 8,
+    "nom": "Laurent",
+    "prenom": "Camille",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Escroquerie"
+      },
+      {
+        "peine": 5,
+        "intitule": "Usurpation d\u0027identité"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      67,
+      134
+    ]
+  },
+  {
+    "id": 9,
+    "nom": "Petit",
+    "prenom": "Alexandre",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Cambriolage"
+      },
+      {
+        "peine": 3,
+        "intitule": "Dégradation de biens"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 11,
+    "idAffaires": [
+      89,
+      178
+    ]
+  },
+  {
+    "id": 10,
+    "nom": "Fournier",
+    "prenom": "Isabelle",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Incendie volontaire"
+      },
+      {
+        "peine": 7,
+        "intitule": "Mise en danger d\u0027autrui"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 16,
+    "idAffaires": [
+      56,
+      198
+    ]
+  },
+  {
+    "id": 11,
+    "nom": "Michel",
     "prenom": "Antoine",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
+    "crimes": [
+      {
+        "peine": 4,
+        "intitule": "Vol simple"
+      },
+      {
+        "peine": 2,
+        "intitule": "Menaces"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 6,
+    "idAffaires": [
+      45,
+      212
+    ]
   },
   {
-    "id": 621,
-    "nom": "Marchand",
-    "prenom": "Nathan",
-    "crimes": [],
-    "preuves": [],
-    "peineTotale": 0,
-    "idAffaires": []
+    "id": 12,
+    "nom": "Bertrand",
+    "prenom": "Élodie",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Fraude aux prestations sociales"
+      },
+      {
+        "peine": 3,
+        "intitule": "Faux et usage de faux"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 11,
+    "idAffaires": [
+      123,
+      245
+    ]
+  },
+  {
+    "id": 13,
+    "nom": "Garcia",
+    "prenom": "David",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Proxénétisme"
+      },
+      {
+        "peine": 4,
+        "intitule": "Traite des êtres humains"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      78,
+      156
+    ]
+  },
+  {
+    "id": 14,
+    "nom": "Blanc",
+    "prenom": "François",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Homicide involontaire"
+      },
+      {
+        "peine": 5,
+        "intitule": "Conduite en état d\u0027ivresse"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 17,
+    "idAffaires": [
+      91,
+      167
+    ]
+  },
+  {
+    "id": 15,
+    "nom": "Legrand",
+    "prenom": "Aurélie",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Harcèlement"
+      },
+      {
+        "peine": 3,
+        "intitule": "Chantage"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      112,
+      178
+    ]
+  },
+  {
+    "id": 16,
+    "nom": "Faure",
+    "prenom": "Sébastien",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Corruption"
+      },
+      {
+        "peine": 10,
+        "intitule": "Trafic d\u0027influence"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 25,
+    "idAffaires": [
+      34,
+      203
+    ]
+  },
+  {
+    "id": 17,
+    "nom": "Andre",
+    "prenom": "Nathalie",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Extorsion"
+      },
+      {
+        "peine": 6,
+        "intitule": "Violence en réunion"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      23,
+      212
+    ]
+  },
+  {
+    "id": 18,
+    "nom": "Mercier",
+    "prenom": "Laurent",
+    "crimes": [
+      {
+        "peine": 20,
+        "intitule": "Terrorisme"
+      },
+      {
+        "peine": 15,
+        "intitule": "Association de malfaiteurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 35,
+    "idAffaires": [
+      102,
+      134
+    ]
+  },
+  {
+    "id": 19,
+    "nom": "Roux",
+    "prenom": "Patricia",
+    "crimes": [
+      {
+        "peine": 5,
+        "intitule": "Délit d\u0027initié"
+      },
+      {
+        "peine": 3,
+        "intitule": "Manipulation de marché"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 8,
+    "idAffaires": [
+      67,
+      123
+    ]
+  },
+  {
+    "id": 20,
+    "nom": "Bonnet",
+    "prenom": "Stéphane",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Contrefaçon"
+      },
+      {
+        "peine": 4,
+        "intitule": "Atteinte à la propriété intellectuelle"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      56,
+      167
+    ]
+  },
+  {
+    "id": 21,
+    "nom": "Lambert",
+    "prenom": "Christine",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Abus de faiblesse"
+      },
+      {
+        "peine": 5,
+        "intitule": "Escroquerie en bande organisée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      91,
+      245
+    ]
+  },
+  {
+    "id": 22,
+    "nom": "Fontaine",
+    "prenom": "Philippe",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Trafic d\u0027armes"
+      },
+      {
+        "peine": 6,
+        "intitule": "Importation illégale"
+      },
+      {
+        "peine": 4,
+        "intitule": "Association de malfaiteurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 18,
+    "idAffaires": [
+      78,
+      134,
+      212
+    ]
+  },
+  {
+    "id": 23,
+    "nom": "Rousseau",
+    "prenom": "Caroline",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Prise d\u0027otage"
+      },
+      {
+        "peine": 7,
+        "intitule": "Vol à main armée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 16,
+    "idAffaires": [
+      102,
+      178
+    ]
+  },
+  {
+    "id": 24,
+    "nom": "Vincent",
+    "prenom": "Bruno",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Infractions environnementales"
+      },
+      {
+        "peine": 8,
+        "intitule": "Mise en danger d\u0027autrui"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 18,
+    "idAffaires": [
+      34,
+      156
+    ]
+  },
+  {
+    "id": 25,
+    "nom": "Muller",
+    "prenom": "Sylvie",
+    "crimes": [
+      {
+        "peine": 5,
+        "intitule": "Malversation"
+      },
+      {
+        "peine": 3,
+        "intitule": "Abus de biens sociaux"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 8,
+    "idAffaires": [
+      12,
+      203
+    ]
+  },
+  {
+    "id": 26,
+    "nom": "Lefevre",
+    "prenom": "Jérôme",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Viol"
+      },
+      {
+        "peine": 10,
+        "intitule": "Agression sexuelle"
+      },
+      {
+        "peine": 5,
+        "intitule": "Menaces de mort"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 30,
+    "idAffaires": [
+      23,
+      112,
+      198
+    ]
+  },
+  {
+    "id": 27,
+    "nom": "Fabre",
+    "prenom": "Catherine",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Diffusion de contenus illicites"
+      },
+      {
+        "peine": 5,
+        "intitule": "Atteinte à la vie privée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      89,
+      123
+    ]
+  },
+  {
+    "id": 28,
+    "nom": "Aubert",
+    "prenom": "Olivier",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Infanticide"
+      },
+      {
+        "peine": 6,
+        "intitule": "Dissimulation de cadavre"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      45,
+      167
+    ]
+  },
+  {
+    "id": 29,
+    "nom": "Lemoine",
+    "prenom": "Valérie",
+    "crimes": [
+      {
+        "peine": 4,
+        "intitule": "Tromperie commerciale"
+      },
+      {
+        "peine": 2,
+        "intitule": "Mise en danger du consommateur"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 6,
+    "idAffaires": [
+      56,
+      245
+    ]
+  },
+  {
+    "id": 30,
+    "nom": "Renaud",
+    "prenom": "Christian",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Trafic d\u0027êtres humains"
+      },
+      {
+        "peine": 9,
+        "intitule": "Proxénétisme aggravé"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 21,
+    "idAffaires": [
+      78,
+      212
+    ]
+  },
+  {
+    "id": 31,
+    "nom": "Dumas",
+    "prenom": "Véronique",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Organisation criminelle"
+      },
+      {
+        "peine": 8,
+        "intitule": "Blanchiment d\u0027argent"
+      },
+      {
+        "peine": 5,
+        "intitule": "Extorsion"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 23,
+    "idAffaires": [
+      91,
+      134,
+      203
+    ]
+  },
+  {
+    "id": 32,
+    "nom": "Lacroix",
+    "prenom": "Frédéric",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Assassinat"
+      },
+      {
+        "peine": 10,
+        "intitule": "Préméditation"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 25,
+    "idAffaires": [
+      12,
+      178
+    ]
+  },
+  {
+    "id": 33,
+    "nom": "Olivier",
+    "prenom": "Sandrine",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Non-assistance à personne en danger"
+      },
+      {
+        "peine": 4,
+        "intitule": "Entrave aux secours"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      67,
+      156
+    ]
+  },
+  {
+    "id": 34,
+    "nom": "Philippe",
+    "prenom": "Michel",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Utilisation frauduleuse de documents"
+      },
+      {
+        "peine": 7,
+        "intitule": "Usurpation d\u0027identité"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 16,
+    "idAffaires": [
+      34,
+      123
+    ]
+  },
+  {
+    "id": 35,
+    "nom": "Bourgeois",
+    "prenom": "Monique",
+    "crimes": [
+      {
+        "peine": 11,
+        "intitule": "Empoisonnement"
+      },
+      {
+        "peine": 8,
+        "intitule": "Tentative de meurtre"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 19,
+    "idAffaires": [
+      102,
+      198
+    ]
+  },
+  {
+    "id": 36,
+    "nom": "Pierre",
+    "prenom": "Daniel",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Détournement de mineurs"
+      },
+      {
+        "peine": 5,
+        "intitule": "Corruption de mineurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      23,
+      212
+    ]
+  },
+  {
+    "id": 37,
+    "nom": "Benoit",
+    "prenom": "Florence",
+    "crimes": [
+      {
+        "peine": 14,
+        "intitule": "Braquage de banque"
+      },
+      {
+        "peine": 10,
+        "intitule": "Prise d\u0027otages"
+      },
+      {
+        "peine": 6,
+        "intitule": "Violence aggravée"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 30,
+    "idAffaires": [
+      45,
+      112,
+      167
+    ]
+  },
+  {
+    "id": 38,
+    "nom": "Rey",
+    "prenom": "Alain",
+    "crimes": [
+      {
+        "peine": 5,
+        "intitule": "Corruption de fonctionnaire"
+      },
+      {
+        "peine": 3,
+        "intitule": "Abus de pouvoir"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 8,
+    "idAffaires": [
+      56,
+      89
+    ]
+  },
+  {
+    "id": 39,
+    "nom": "Leclerc",
+    "prenom": "Cécile",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Falsification de documents"
+      },
+      {
+        "peine": 6,
+        "intitule": "Escroquerie aux assurances"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      91,
+      245
+    ]
+  },
+  {
+    "id": 40,
+    "nom": "Payet",
+    "prenom": "Bernard",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Trafic de faux documents"
+      },
+      {
+        "peine": 7,
+        "intitule": "Association de malfaiteurs"
+      },
+      {
+        "peine": 4,
+        "intitule": "Corruption"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 21,
+    "idAffaires": [
+      12,
+      134,
+      203
+    ]
+  },
+  {
+    "id": 41,
+    "nom": "Rolland",
+    "prenom": "Corinne",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Détournement de fonds publics"
+      },
+      {
+        "peine": 4,
+        "intitule": "Abus de confiance"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      67,
+      178
+    ]
+  },
+  {
+    "id": 42,
+    "nom": "Leclercq",
+    "prenom": "Patrick",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Violences conjugales"
+      },
+      {
+        "peine": 7,
+        "intitule": "Harcèlement moral"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 16,
+    "idAffaires": [
+      34,
+      156
+    ]
+  },
+  {
+    "id": 43,
+    "nom": "Guillaume",
+    "prenom": "Jacqueline",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Complicité de meurtre"
+      },
+      {
+        "peine": 8,
+        "intitule": "Recel de malfaiteur"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 20,
+    "idAffaires": [
+      102,
+      212
+    ]
+  },
+  {
+    "id": 44,
+    "nom": "Lecomte",
+    "prenom": "Pascal",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Trafic international de stupéfiants"
+      },
+      {
+        "peine": 10,
+        "intitule": "Blanchiment d\u0027argent"
+      },
+      {
+        "peine": 5,
+        "intitule": "Association de malfaiteurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 30,
+    "idAffaires": [
+      23,
+      123,
+      198
+    ]
+  },
+  {
+    "id": 45,
+    "nom": "Lopez",
+    "prenom": "Sylvie",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Piratage informatique"
+      },
+      {
+        "peine": 5,
+        "intitule": "Vol de données sensibles"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      45,
+      167
+    ]
+  },
+  {
+    "id": 46,
+    "nom": "Jean",
+    "prenom": "Dominique",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Incendie criminel"
+      },
+      {
+        "peine": 6,
+        "intitule": "Dégradation de biens publics"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      56,
+      245
+    ]
+  },
+  {
+    "id": 47,
+    "nom": "Dupuy",
+    "prenom": "Nicole",
+    "crimes": [
+      {
+        "peine": 11,
+        "intitule": "Séquestration"
+      },
+      {
+        "peine": 9,
+        "intitule": "Violence aggravée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 20,
+    "idAffaires": [
+      78,
+      178
+    ]
+  },
+  {
+    "id": 48,
+    "nom": "Guillot",
+    "prenom": "Robert",
+    "crimes": [
+      {
+        "peine": 14,
+        "intitule": "Vol à main armée"
+      },
+      {
+        "peine": 8,
+        "intitule": "Possession d\u0027arme prohibée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 22,
+    "idAffaires": [
+      91,
+      134
+    ]
+  },
+  {
+    "id": 49,
+    "nom": "Hubert",
+    "prenom": "Françoise",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Agression sexuelle"
+      },
+      {
+        "peine": 7,
+        "intitule": "Atteinte à la pudeur"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 17,
+    "idAffaires": [
+      12,
+      203
+    ]
+  },
+  {
+    "id": 50,
+    "nom": "Berger",
+    "prenom": "Jacques",
+    "crimes": [
+      {
+        "peine": 16,
+        "intitule": "Trafic d\u0027armes"
+      },
+      {
+        "peine": 12,
+        "intitule": "Association de malfaiteurs"
+      },
+      {
+        "peine": 5,
+        "intitule": "Recel"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 33,
+    "idAffaires": [
+      67,
+      156,
+      212
+    ]
+  },
+  {
+    "id": 51,
+    "nom": "Carpentier",
+    "prenom": "Madeleine",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Extorsion"
+      },
+      {
+        "peine": 5,
+        "intitule": "Chantage"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 13,
+    "idAffaires": [
+      34,
+      198
+    ]
+  },
+  {
+    "id": 52,
+    "nom": "Sanchez",
+    "prenom": "Gérard",
+    "crimes": [
+      {
+        "peine": 25,
+        "intitule": "Meurtre"
+      },
+      {
+        "peine": 15,
+        "intitule": "Violence ayant entraîné la mort"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 40,
+    "idAffaires": [
+      102,
+      245
+    ]
+  },
+  {
+    "id": 53,
+    "nom": "Dupuis",
+    "prenom": "Annie",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Escroquerie en ligne"
+      },
+      {
+        "peine": 4,
+        "intitule": "Usurpation d\u0027identité numérique"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      23,
+      123
+    ]
+  },
+  {
+    "id": 54,
+    "nom": "Moulin",
+    "prenom": "Roger",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Harcèlement en ligne"
+      },
+      {
+        "peine": 6,
+        "intitule": "Cyberharcèlement"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      45,
+      178
+    ]
+  },
+  {
+    "id": 55,
+    "nom": "Louis",
+    "prenom": "Jeanne",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Proxénétisme"
+      },
+      {
+        "peine": 8,
+        "intitule": "Traite des êtres humains"
+      },
+      {
+        "peine": 4,
+        "intitule": "Séquestration"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 24,
+    "idAffaires": [
+      56,
+      112,
+      167
+    ]
+  },
+  {
+    "id": 56,
+    "nom": "Deschamps",
+    "prenom": "André",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Homicide par imprudence"
+      },
+      {
+        "peine": 5,
+        "intitule": "Délit de fuite"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      89,
+      212
+    ]
+  },
+  {
+    "id": 57,
+    "nom": "Huet",
+    "prenom": "Chantal",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Détournement de fonds"
+      },
+      {
+        "peine": 8,
+        "intitule": "Fraude fiscale"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 18,
+    "idAffaires": [
+      134,
+      203
+    ]
+  },
+  {
+    "id": 58,
+    "nom": "Vasseur",
+    "prenom": "Maurice",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Tentative d\u0027assassinat"
+      },
+      {
+        "peine": 10,
+        "intitule": "Coups et blessures volontaires"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 25,
+    "idAffaires": [
+      78,
+      245
+    ]
+  },
+  {
+    "id": 59,
+    "nom": "Perez",
+    "prenom": "Simone",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Trafic de médicaments"
+      },
+      {
+        "peine": 6,
+        "intitule": "Exercice illégal de la médecine"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      12,
+      156
+    ]
+  },
+  {
+    "id": 60,
+    "nom": "Boucher",
+    "prenom": "Gilbert",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Maltraitance d\u0027animaux"
+      },
+      {
+        "peine": 5,
+        "intitule": "Cruauté envers les animaux"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      67,
+      212
+    ]
+  },
+  {
+    "id": 61,
+    "nom": "Fleury",
+    "prenom": "Suzanne",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Faux en écriture"
+      },
+      {
+        "peine": 5,
+        "intitule": "Usage de faux"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      34,
+      198
+    ]
+  },
+  {
+    "id": 62,
+    "nom": "Royer",
+    "prenom": "Henri",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Sabotage"
+      },
+      {
+        "peine": 8,
+        "intitule": "Dégradation de biens"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 18,
+    "idAffaires": [
+      102,
+      178
+    ]
+  },
+  {
+    "id": 63,
+    "nom": "Klein",
+    "prenom": "Renée",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Fraude en ligne"
+      },
+      {
+        "peine": 8,
+        "intitule": "Vol d\u0027identité"
+      },
+      {
+        "peine": 5,
+        "intitule": "Escroquerie"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 25,
+    "idAffaires": [
+      23,
+      112,
+      167
+    ]
+  },
+  {
+    "id": 64,
+    "nom": "Jacquet",
+    "prenom": "Raymond",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Harcèlement moral"
+      },
+      {
+        "peine": 6,
+        "intitule": "Menaces de mort"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      56,
+      123
+    ]
+  },
+  {
+    "id": 65,
+    "nom": "Adam",
+    "prenom": "Marguerite",
+    "crimes": [
+      {
+        "peine": 14,
+        "intitule": "Empoisonnement"
+      },
+      {
+        "peine": 10,
+        "intitule": "Tentative de meurtre"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 24,
+    "idAffaires": [
+      45,
+      245
+    ]
+  },
+  {
+    "id": 66,
+    "nom": "Paris",
+    "prenom": "Marcel",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Vol qualifié"
+      },
+      {
+        "peine": 5,
+        "intitule": "Effraction"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 13,
+    "idAffaires": [
+      89,
+      134
+    ]
+  },
+  {
+    "id": 67,
+    "nom": "Poirier",
+    "prenom": "Thérèse",
+    "crimes": [
+      {
+        "peine": 11,
+        "intitule": "Détournement de mineurs"
+      },
+      {
+        "peine": 8,
+        "intitule": "Abus de faiblesse"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 19,
+    "idAffaires": [
+      78,
+      203
+    ]
+  },
+  {
+    "id": 68,
+    "nom": "Marty",
+    "prenom": "Lucien",
+    "crimes": [
+      {
+        "peine": 13,
+        "intitule": "Blanchiment d\u0027argent"
+      },
+      {
+        "peine": 9,
+        "intitule": "Association de malfaiteurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 22,
+    "idAffaires": [
+      12,
+      212
+    ]
+  },
+  {
+    "id": 69,
+    "nom": "Aubry",
+    "prenom": "Marcelle",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Homicide volontaire"
+      },
+      {
+        "peine": 7,
+        "intitule": "Coups mortels"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 17,
+    "idAffaires": [
+      67,
+      156
+    ]
+  },
+  {
+    "id": 70,
+    "nom": "Guyot",
+    "prenom": "Paul",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Atteinte à la vie privée"
+      },
+      {
+        "peine": 5,
+        "intitule": "Enregistrement illicite"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 13,
+    "idAffaires": [
+      34,
+      245
+    ]
+  },
+  {
+    "id": 71,
+    "nom": "Carre",
+    "prenom": "Germaine",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Trafic de médicaments"
+      },
+      {
+        "peine": 8,
+        "intitule": "Contrefaçon de produits pharmaceutiques"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 20,
+    "idAffaires": [
+      102,
+      198
+    ]
+  },
+  {
+    "id": 72,
+    "nom": "Charles",
+    "prenom": "Georges",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Viol"
+      },
+      {
+        "peine": 10,
+        "intitule": "Agression sexuelle"
+      },
+      {
+        "peine": 5,
+        "intitule": "Atteinte à la pudeur"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 30,
+    "idAffaires": [
+      23,
+      123,
+      167
+    ]
+  },
+  {
+    "id": 73,
+    "nom": "Renault",
+    "prenom": "Paulette",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Chantage"
+      },
+      {
+        "peine": 6,
+        "intitule": "Extorsion"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      56,
+      178
+    ]
+  },
+  {
+    "id": 74,
+    "nom": "Charpentier",
+    "prenom": "Léon",
+    "crimes": [
+      {
+        "peine": 11,
+        "intitule": "Faux-monnayage"
+      },
+      {
+        "peine": 8,
+        "intitule": "Mise en circulation de fausse monnaie"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 19,
+    "idAffaires": [
+      45,
+      112
+    ]
+  },
+  {
+    "id": 75,
+    "nom": "Menard",
+    "prenom": "Denise",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Cyberharcèlement"
+      },
+      {
+        "peine": 5,
+        "intitule": "Usurpation d\u0027identité numérique"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      89,
+      212
+    ]
+  },
+  {
+    "id": 76,
+    "nom": "Maillard",
+    "prenom": "René",
+    "crimes": [
+      {
+        "peine": 14,
+        "intitule": "Trafic d\u0027influence"
+      },
+      {
+        "peine": 10,
+        "intitule": "Corruption"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 24,
+    "idAffaires": [
+      134,
+      203
+    ]
   }
 ]

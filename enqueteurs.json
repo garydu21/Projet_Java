@@ -1,0 +1,72 @@
+[
+  {
+    "nom": "Dupont",
+    "prenom": "Jean",
+    "id": "E001",
+    "grade": "Inspecteur Principal",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Martin",
+    "prenom": "Sophie",
+    "id": "E002",
+    "grade": "Lieutenant",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Dubois",
+    "prenom": "Michel",
+    "id": "E003",
+    "grade": "Capitaine",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Leroy",
+    "prenom": "Claire",
+    "id": "E004",
+    "grade": "Inspecteur",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Moreau",
+    "prenom": "Thomas",
+    "id": "E005",
+    "grade": "Lieutenant",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Rousseau",
+    "prenom": "Marie",
+    "id": "E006",
+    "grade": "Inspecteur",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Lefevre",
+    "prenom": "Paul",
+    "id": "E007",
+    "grade": "Agent",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Bernard",
+    "prenom": "Lucie",
+    "id": "E008",
+    "grade": "Commissaire",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Richard",
+    "prenom": "Antoine",
+    "id": "E009",
+    "grade": "Inspecteur",
+    "affairesAssignees": []
+  },
+  {
+    "nom": "Simon",
+    "prenom": "Nathalie",
+    "id": "E010",
+    "grade": "Lieutenant",
+    "affairesAssignees": []
+  }
+]
