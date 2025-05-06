@@ -2,6 +2,7 @@ package Vue;
 
 import Criminel.Affaire;
 import Criminel.Criminel;
+import Interface.RoundedBorder;
 import Modele.Modele;
 
 import javax.swing.*;
@@ -10,10 +11,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VueAffaires extends JFrame {
+
+    private final Font fontButton = new Font("Arial", Font.BOLD, 15);
+    private final Font fontName = new Font("Arial", Font.ITALIC + Font.BOLD, 15);
+    private final Font fontDetail = new Font("Arial", Font.BOLD, 15);
+    private final Font fontTitre = new Font("Arial", Font.BOLD, 30);
+
+
     private JList<String> listeAffaires;
     private DefaultListModel<String> listeModel;
     private JTextArea detailsAffaire;
-    private JButton btnAjouter, btnModifier, btnSupprimer, btnAssocierCriminel, btnPrediciton;
+    private JButton btnAjouter, btnModifier, btnSupprimer, btnAssocierCriminel, btnPrediciton, btnGraphe;
     private Modele modele;
 
 
@@ -25,10 +33,17 @@ public class VueAffaires extends JFrame {
         setTitle("Gestion des Affaires");
         setSize(800, 600);
         setLayout(new BorderLayout());
-
         // Haut
         JPanel panelHaut = new JPanel();
         JLabel label = new JLabel("Base des affaires criminelles");
+        label.setFont(fontTitre);
+        btnGraphe = new JButton("Graphe");
+        btnGraphe.setBorder(new RoundedBorder(10));
+        btnGraphe.setFont(fontButton);
+        btnGraphe.setBackground(Color.LIGHT_GRAY);
+        btnGraphe.setForeground(Color.BLACK);
+
+        panelHaut.add(btnGraphe, BorderLayout.WEST);
         panelHaut.add(label);
         JButton btnPrediction = new JButton("Predire une affaire");
         panelHaut.add(btnPrediction);
@@ -38,22 +53,58 @@ public class VueAffaires extends JFrame {
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));
         listeModel = new DefaultListModel<>();
         listeAffaires = new JList<>(listeModel);
+        listeAffaires.setBackground(Color.DARK_GRAY);
+        listeAffaires.setFont(fontName);
+        listeAffaires.setForeground(Color.WHITE);
         panelCentre.add(new JScrollPane(listeAffaires));
 
         detailsAffaire = new JTextArea();
+        detailsAffaire.setFont(fontDetail);
+        detailsAffaire.setBackground(Color.DARK_GRAY);
+        detailsAffaire.setForeground(Color.LIGHT_GRAY);
         detailsAffaire.setEditable(false);
         panelCentre.add(new JScrollPane(detailsAffaire));
         add(panelCentre, BorderLayout.CENTER);
 
         // Bas
         JPanel panelBas = new JPanel();
+        panelBas.setBackground(Color.LIGHT_GRAY);
+
         btnAjouter = new JButton("Ajouter");
+        btnAjouter.setBorder(new RoundedBorder(10));
+        btnAjouter.setFont(fontButton);
+        btnAjouter.setBackground(Color.LIGHT_GRAY);
+        btnAjouter.setForeground(Color.BLACK);
+
         btnModifier = new JButton("Modifier");
+        btnModifier.setBorder(new RoundedBorder(10));
+        btnModifier.setFont(fontButton);
+        btnModifier.setBackground(Color.LIGHT_GRAY);
+        btnModifier.setForeground(Color.BLACK);
+
         btnSupprimer = new JButton("Supprimer");
+        btnSupprimer.setBorder(new RoundedBorder(10));
+        btnSupprimer.setFont(fontButton);
+        btnSupprimer.setBackground(Color.LIGHT_GRAY);
+        btnSupprimer.setForeground(Color.BLACK);
 
         btnAssocierCriminel = new JButton("Associer Criminel");
+        btnAssocierCriminel.setBorder(new RoundedBorder(10));
+        btnAssocierCriminel.setFont(fontButton);
+        btnAssocierCriminel.setBackground(Color.LIGHT_GRAY);
+        btnAssocierCriminel.setForeground(Color.BLACK);
+
         JButton btnDissocierCriminel = new JButton("Retirer Criminel");
+        btnDissocierCriminel.setBorder(new RoundedBorder(10));
+        btnDissocierCriminel.setFont(fontButton);
+        btnDissocierCriminel.setBackground(Color.LIGHT_GRAY);
+        btnDissocierCriminel.setForeground(Color.BLACK);
+
         JButton btnAjouterPlusieurs = new JButton("Associer plusieurs");
+        btnAjouterPlusieurs.setBorder(new RoundedBorder(10));
+        btnAjouterPlusieurs.setFont(fontButton);
+        btnAjouterPlusieurs.setBackground(Color.LIGHT_GRAY);
+        btnAjouterPlusieurs.setForeground(Color.BLACK);
 
         panelBas.add(btnAjouter);
         panelBas.add(btnModifier);
@@ -75,8 +126,19 @@ public class VueAffaires extends JFrame {
         btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
         btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
         btnPrediction.addActionListener(e -> predireAffaire());
+        btnGraphe.addActionListener(e -> genererUnGraphe());
 
         setVisible(true);
+    }
+
+    private void genererUnGraphe(){
+        int index = listeAffaires.getSelectedIndex();
+        if (index >= 0) {
+            new VueGraphe(this.modele, index);
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Veuillez selectionner une affaire","Erreur",JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     public VueAffaires(Modele modele, String lieu) {
@@ -86,10 +148,17 @@ public class VueAffaires extends JFrame {
         setTitle("Gestion des Affaires");
         setSize(800, 600);
         setLayout(new BorderLayout());
-
         // Haut
         JPanel panelHaut = new JPanel();
         JLabel label = new JLabel("Base des affaires criminelles");
+        label.setFont(fontTitre);
+        btnGraphe = new JButton("Graphe");
+        btnGraphe.setBorder(new RoundedBorder(10));
+        btnGraphe.setFont(fontButton);
+        btnGraphe.setBackground(Color.LIGHT_GRAY);
+        btnGraphe.setForeground(Color.BLACK);
+
+        panelHaut.add(btnGraphe, BorderLayout.WEST);
         panelHaut.add(label);
         JButton btnPrediction = new JButton("Predire une affaire");
         add(panelHaut, BorderLayout.NORTH);
@@ -98,22 +167,58 @@ public class VueAffaires extends JFrame {
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));
         listeModel = new DefaultListModel<>();
         listeAffaires = new JList<>(listeModel);
+        listeAffaires.setBackground(Color.DARK_GRAY);
+        listeAffaires.setFont(fontName);
+        listeAffaires.setForeground(Color.WHITE);
         panelCentre.add(new JScrollPane(listeAffaires));
 
         detailsAffaire = new JTextArea();
+        detailsAffaire.setFont(fontDetail);
+        detailsAffaire.setBackground(Color.DARK_GRAY);
+        detailsAffaire.setForeground(Color.LIGHT_GRAY);
         detailsAffaire.setEditable(false);
         panelCentre.add(new JScrollPane(detailsAffaire));
         add(panelCentre, BorderLayout.CENTER);
 
         // Bas
         JPanel panelBas = new JPanel();
+        panelBas.setBackground(Color.LIGHT_GRAY);
+
         btnAjouter = new JButton("Ajouter");
+        btnAjouter.setBorder(new RoundedBorder(10));
+        btnAjouter.setFont(fontButton);
+        btnAjouter.setBackground(Color.LIGHT_GRAY);
+        btnAjouter.setForeground(Color.BLACK);
+
         btnModifier = new JButton("Modifier");
+        btnModifier.setBorder(new RoundedBorder(10));
+        btnModifier.setFont(fontButton);
+        btnModifier.setBackground(Color.LIGHT_GRAY);
+        btnModifier.setForeground(Color.BLACK);
+
         btnSupprimer = new JButton("Supprimer");
+        btnSupprimer.setBorder(new RoundedBorder(10));
+        btnSupprimer.setFont(fontButton);
+        btnSupprimer.setBackground(Color.LIGHT_GRAY);
+        btnSupprimer.setForeground(Color.BLACK);
 
         btnAssocierCriminel = new JButton("Associer Criminel");
+        btnAssocierCriminel.setBorder(new RoundedBorder(10));
+        btnAssocierCriminel.setFont(fontButton);
+        btnAssocierCriminel.setBackground(Color.LIGHT_GRAY);
+        btnAssocierCriminel.setForeground(Color.BLACK);
+
         JButton btnDissocierCriminel = new JButton("Retirer Criminel");
+        btnDissocierCriminel.setBorder(new RoundedBorder(10));
+        btnDissocierCriminel.setFont(fontButton);
+        btnDissocierCriminel.setBackground(Color.LIGHT_GRAY);
+        btnDissocierCriminel.setForeground(Color.BLACK);
+
         JButton btnAjouterPlusieurs = new JButton("Associer plusieurs");
+        btnAjouterPlusieurs.setBorder(new RoundedBorder(10));
+        btnAjouterPlusieurs.setFont(fontButton);
+        btnAjouterPlusieurs.setBackground(Color.LIGHT_GRAY);
+        btnAjouterPlusieurs.setForeground(Color.BLACK);
 
         panelBas.add(btnAjouter);
         panelBas.add(btnModifier);
@@ -125,7 +230,7 @@ public class VueAffaires extends JFrame {
         add(panelBas, BorderLayout.SOUTH);
 
         // Actions
-        mettreAJourAffichage();
+        mettreAJourListe();
 
         listeAffaires.addListSelectionListener(e -> afficherDetails());
         btnAjouter.addActionListener(e -> ajouterAffaire());
@@ -135,6 +240,7 @@ public class VueAffaires extends JFrame {
         btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
         btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
         btnPrediction.addActionListener(e -> predireAffaire());
+        btnGraphe.addActionListener(e -> genererUnGraphe());
 
         setVisible(true);
     }
