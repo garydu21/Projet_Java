@@ -28,7 +28,7 @@ public class Vue extends JFrame implements Observer {
     private JList<String> listeCriminels;
     private DefaultListModel<String> listeModel;
     private JPanel detailsCriminel;
-    private JButton btnModifier, btnAjouter, btnSupprimer, btnGestionJson,btnMap;
+    private JButton btnModifier, btnAjouter, btnSupprimer, btnGestionJson,btnMap,btnGestionEnquetes;;
     private Modele modele;
     private JTextArea infoCriminel;
     private JButton ajouterCrime;
@@ -94,6 +94,12 @@ public class Vue extends JFrame implements Observer {
         btnMap.setBackground(Color.LIGHT_GRAY);
         btnMap.setForeground(Color.BLACK);
         boutonsPanel.add(btnMap);
+
+        btnGestionEnquetes = new JButton("Gestion Enquêtes");
+        panelHaut.add(btnGestionEnquetes);
+
+        add(panelHaut, BorderLayout.NORTH);
+
 
         JButton btnAffaires = new JButton("Affaires");
         btnAffaires.setBorder(new RoundedBorder(10));
@@ -171,9 +177,15 @@ public class Vue extends JFrame implements Observer {
         ajouterCrime.addActionListener(e -> fenetreCrime());
         btnAffaires.addActionListener(e -> new VueAffaires(modele));
 
+        btnGestionEnquetes.addActionListener(e -> ouvrirGestionEnquetes());
+
         btnMap.addActionListener(e -> ouvrirMap());
 
         setVisible(true);
+    }
+
+    private void ouvrirGestionEnquetes() {
+        new VueGestionEnqueteurs(modele);
     }
 
     private void ouvrirMap() {
