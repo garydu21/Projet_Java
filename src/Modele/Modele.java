@@ -3,6 +3,7 @@ package Modele;
 import Criminel.Criminel;
 import Criminel.Affaire;
 import Criminel.Affaire;
+import Criminel.Enqueteur;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -13,13 +14,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.*;
+import Criminel.Crime;
 
 public class Modele extends Observable {
     private static final String FICHIER_JSON = "criminels.json";
     private static final String FICHIER_AFFAIRES = "affaires.json";
+    private static final String FICHIER_CRIMES = "crimes.json";
 
     private List<Criminel> listeCriminel;
     private List<Affaire> listeAffaires;
+    private ArrayList<Crime> listeCrimes;
+    private List<Enqueteur> listeEnqueteurs;
+    private static final String FICHIER_ENQUETEURS = "enqueteurs.json";
 
     private static final Gson gson = new GsonBuilder()
             .setDateFormat("dd-MM-yyyy") //Format ISO : yyyy-MM-dd, je n'ai pas encore regardé comment la passer en français - Angel
@@ -30,8 +36,16 @@ public class Modele extends Observable {
     public Modele() {
         this.listeCriminel = new ArrayList<>();
         this.listeAffaires = new ArrayList<>();
+        this.listeCrimes = new ArrayList<>();
+        this.listeEnqueteurs = new ArrayList<>();
         chargerDonnees();
         chargerAffaires();
+        chargerCrimes();
+        chargerEnqueteurs();
+    }
+
+    public ArrayList<Crime> getListeCrimes() {
+        return this.listeCrimes;
     }
 
     public List<Criminel> getListeCriminel() {
@@ -41,6 +55,27 @@ public class Modele extends Observable {
     public List<Affaire> getListeAffaires() {
         return listeAffaires;
     }
+
+    public List<Enqueteur> getListeEnqueteurs() {
+        return listeEnqueteurs;
+    }
+
+    public void addListeCrime(Crime c){
+        this.listeCrimes.add(c);
+        sauvegarderCrimes();
+        setChanged();
+        notifyObservers();
+    }
+
+    public void supprimerCrimes(int index) {
+        if (index >= 0 && index < listeCrimes.size()) {
+            listeCrimes.remove(index);
+            sauvegarderCrimes();
+            setChanged();
+            notifyObservers();
+        }
+    }
+
 
     public void addListeCriminel(Criminel c) {
         this.listeCriminel.add(c);
@@ -67,6 +102,42 @@ public class Modele extends Observable {
             setChanged();
             notifyObservers();
         }
+    }
+
+    public void sauvegarderEnqueteurs() {
+        try (FileWriter writer = new FileWriter(FICHIER_ENQUETEURS)) {
+            gson.toJson(listeEnqueteurs, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void chargerEnqueteurs() {
+        File fichier = new File(FICHIER_ENQUETEURS);
+        if (fichier.exists()) {
+            try (FileReader reader = new FileReader(fichier)) {
+                Type listType = new TypeToken<ArrayList<Enqueteur>>() {}.getType();
+                listeEnqueteurs = gson.fromJson(reader, listType);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void assignerEnqueteurAffaire(Enqueteur enqueteur, Affaire affaire) {
+        affaire.assignerEnqueteur(enqueteur);
+        sauvegarderAffaires();
+        sauvegarderEnqueteurs();
+        setChanged();
+        notifyObservers();
+    }
+
+    public void retirerEnqueteurAffaire(Enqueteur enqueteur, Affaire affaire) {
+        affaire.retirerEnqueteur(enqueteur);
+        sauvegarderAffaires();
+        sauvegarderEnqueteurs();
+        setChanged();
+        notifyObservers();
     }
 
     public void exporterJson(File fichier) {
@@ -115,6 +186,14 @@ public class Modele extends Observable {
         exporterJson(new File(FICHIER_JSON));
     }
 
+    private void sauvegarderCrimes() {
+        try (FileWriter writer = new FileWriter(FICHIER_CRIMES)) {
+            gson.toJson(listeCrimes, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void chargerDonnees() {
         File fichier = new File(FICHIER_JSON);
         if (fichier.exists()) {
@@ -122,7 +201,20 @@ public class Modele extends Observable {
         }
     }
 
-    private void sauvegarderAffaires() {
+    private void chargerCrimes() {
+        File fichier = new File(FICHIER_CRIMES);
+        if (fichier.exists()) {
+            try (FileReader reader = new FileReader(fichier)) {
+                Type listType = new TypeToken<ArrayList<Crime>>() {}.getType();
+                listeCrimes = gson.fromJson(reader, listType); // Charger les crimes à partir du fichier JSON
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    public void sauvegarderAffaires() {
         try (FileWriter writer = new FileWriter(FICHIER_AFFAIRES)) {
             gson.toJson(listeAffaires, writer);
         } catch (IOException e) {
@@ -131,19 +223,30 @@ public class Modele extends Observable {
     }
 
     private void reconstruireLiens() {
-        // Créer une map des criminels par ID
         Map<Integer, Criminel> mapCriminels = new HashMap<>();
         for (Criminel c : listeCriminel) {
             mapCriminels.put(c.getId(), c);
         }
 
-        // Relier les suspects aux affaires, et vice-versa
+        Map<String, Enqueteur> mapEnqueteurs = new HashMap<>();
+        for (Enqueteur e : listeEnqueteurs) {
+            mapEnqueteurs.put(e.getId(), e);
+        }
+
         for (Affaire a : listeAffaires) {
             for (int id : a.getIdCriminels()) {
                 Criminel c = mapCriminels.get(id);
                 if (c != null) {
                     a.getSuspects().add(c);
                     c.getAffaires().add(a);
+                }
+            }
+
+            for (String id : a.getIdEnqueteurs()) {
+                Enqueteur e = mapEnqueteurs.get(id);
+                if (e != null) {
+                    a.getEnqueteurs().add(e);
+                    e.getAffairesAssignees().add(a);
                 }
             }
         }
@@ -179,6 +282,11 @@ public class Modele extends Observable {
 
         sauvegarderAffaires();
         sauvegarderDonnees();
+        setChanged();
+        notifyObservers();
+    }
+    // Notify observers helper method (public wrapper)
+    public void notifierChangement() {
         setChanged();
         notifyObservers();
     }

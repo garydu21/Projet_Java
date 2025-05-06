@@ -13,9 +13,14 @@ public class Affaire {
     @Expose private String lieu;
     @Expose private Date date;
 
+    @Expose private String etat = "En cours"; //
+    @Expose private String informationsSupplementaires = "";
+
     @Expose private List<Integer> idCriminels = new ArrayList<>(); // pour la sauvegarde
+    @Expose private List<String> idEnqueteurs = new ArrayList<>(); // pour la sauvegarde
 
     private transient List<Criminel> suspects = new ArrayList<>(); // non sauvegardé
+    private transient List<Enqueteur> enqueteurs = new ArrayList<>(); // non sauvegardé
 
     public Affaire(int id, String description, String lieu, Date date) {
         this.id = id;
@@ -40,6 +45,22 @@ public class Affaire {
         return date;
     }
 
+    public String getEtat() {
+        return etat;
+    }
+
+    public void setEtat(String etat) {
+        this.etat = etat;
+    }
+
+    public String getInformationsSupplementaires() {
+        return informationsSupplementaires;
+    }
+
+    public void setInformationsSupplementaires(String informationsSupplementaires) {
+        this.informationsSupplementaires = informationsSupplementaires;
+    }
+
     public List<Criminel> getSuspects() {
         if (suspects == null)
             suspects = new ArrayList<>();
@@ -50,11 +71,46 @@ public class Affaire {
         return idCriminels;
     }
 
+    public List<Enqueteur> getEnqueteurs() {
+        if (enqueteurs == null)
+            enqueteurs = new ArrayList<>();
+        return enqueteurs;
+    }
+
+    public List<String> getIdEnqueteurs() {
+        if (idEnqueteurs == null)
+            idEnqueteurs = new ArrayList<>();
+        return idEnqueteurs;
+    }
+
     public void ajouterSuspect(Criminel c) {
         if (!suspects.contains(c)) {
             suspects.add(c);
             if (!idCriminels.contains(c.getId()))
                 idCriminels.add(c.getId());
+        }
+    }
+
+    public void assignerEnqueteur(Enqueteur e) {
+        if (!enqueteurs.contains(e)) {
+            enqueteurs.add(e);
+            if (!idEnqueteurs.contains(e.getId()))
+                idEnqueteurs.add(e.getId());
+
+            // Assignation réciproque (l'enquêteur contient l'affaire)
+            if (!e.getAffairesAssignees().contains(this)) {
+                e.assignerAffaire(this);
+            }
+        }
+    }
+
+    public void retirerEnqueteur(Enqueteur e) {
+        enqueteurs.remove(e);
+        idEnqueteurs.remove(e.getId());
+
+        // Retrait réciproque (l'enquêteur ne contient plus l'affaire)
+        if (e.getAffairesAssignees().contains(this)) {
+            e.retirerAffaire(this);
         }
     }
 
@@ -72,6 +128,14 @@ public class Affaire {
 
     @Override
     public String toString() {
-        return "Affaire #" + id + " - " + description + " (" + lieu + ", " + date + ")";
+        StringBuilder sb = new StringBuilder("Affaire #" + id + " - " + description + " (" + lieu + ", " + date + ")");
+        if (!enqueteurs.isEmpty()) {
+            sb.append(" Enquêteurs: ");
+            for (Enqueteur e : enqueteurs) {
+                sb.append(e.getNom()).append(" ").append(e.getPrenom()).append(", ");
+            }
+            sb.setLength(sb.length() - 2); // Remove last comma
+        }
+        return sb.toString();
     }
 }
