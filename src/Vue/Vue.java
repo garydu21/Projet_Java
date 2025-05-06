@@ -112,9 +112,14 @@ public class Vue extends JFrame implements Observer {
         btnAffaires.setForeground(Color.BLACK);
         boutonsPanel.add(btnAffaires);
 
+        JButton btnRecherche = new JButton("Recherche");
+        panelHaut.add(btnRecherche);
+
+        btnRecherche.addActionListener(e -> new VueRecherche(modele));
+
         panelHaut.add(boutonsPanel, BorderLayout.CENTER);
         add(panelHaut, BorderLayout.NORTH);
-
+      
         // Centre : Liste des criminels à gauche + Détails à droite
         JPanel panelCentre = new JPanel(new GridLayout(1, 2));
         panelCentre.setBackground(Color.DARK_GRAY);
@@ -186,6 +191,27 @@ public class Vue extends JFrame implements Observer {
         btnMap.addActionListener(e -> ouvrirMap());
 
         setVisible(true);
+    }
+
+    public void selectionnerEtAfficherCriminel(Criminel criminel) {
+        if (criminel == null) return;
+        // Trouver l'index du criminel dans la liste modèle
+        for (int i = 0; i < modele.getListeCriminel().size(); i++) {
+            Criminel c = modele.getListeCriminel().get(i);
+            if (c.getId() == criminel.getId()) {
+                // Sélectionner dans JList
+                listeCriminels.setSelectedIndex(i);
+                // Afficher détails
+                afficherDetails();
+                // S'assurer que l'élément est visible
+                listeCriminels.ensureIndexIsVisible(i);
+                // Porter la fenêtre en avant
+                this.toFront();
+                this.repaint();
+                break;
+            }
+        }
+        this.setVisible(true);
     }
 
     private void ouvrirGestionEnquetes() {
@@ -510,5 +536,6 @@ public class Vue extends JFrame implements Observer {
     public void removeStr(int index){
         this.str.remove(index);
     }
+
 
 }
