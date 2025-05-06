@@ -1,126 +1,157 @@
 [
   {
     "peine": 3,
-    "intitule": "Vol simple"
+    "intitule": "Vol simple",
+    "id": 1
   },
   {
     "peine": 5,
-    "intitule": "Cambriolage"
+    "intitule": "Cambriolage",
+    "id": 2
   },
   {
     "peine": 30,
-    "intitule": "Meurtre"
+    "intitule": "Meurtre",
+    "id": 3
   },
   {
     "peine": 20,
-    "intitule": "Enlèvement"
+    "intitule": "Enlèvement",
+    "id": 4
   },
   {
     "peine": 4,
-    "intitule": "Escroquerie"
+    "intitule": "Escroquerie",
+    "id": 5
   },
   {
     "peine": 10,
-    "intitule": "Corruption"
+    "intitule": "Corruption",
+    "id": 6
   },
   {
     "peine": 10,
-    "intitule": "Homicide involontaire"
+    "intitule": "Homicide involontaire",
+    "id": 7
   },
   {
     "peine": 15,
-    "intitule": "Incendie criminel"
+    "intitule": "Incendie criminel",
+    "id": 8
   },
   {
     "peine": 25,
-    "intitule": "Trafic de drogues"
+    "intitule": "Trafic de drogues",
+    "id": 9
   },
   {
     "peine": 3,
-    "intitule": "Faux en écriture"
+    "intitule": "Faux en écriture",
+    "id": 10
   },
   {
     "peine": 30,
-    "intitule": "Viol"
+    "intitule": "Viol",
+    "id": 11
   },
   {
     "peine": 7,
-    "intitule": "Fraude fiscale"
+    "intitule": "Fraude fiscale",
+    "id": 12
   },
   {
     "peine": 5,
-    "intitule": "Agression"
+    "intitule": "Agression",
+    "id": 13
   },
   {
     "peine": 12,
-    "intitule": "Détournement de fonds"
+    "intitule": "Détournement de fonds",
+    "id": 14
   },
   {
     "peine": 8,
-    "intitule": "Contrebande"
+    "intitule": "Contrebande",
+    "id": 15
   },
   {
     "peine": 6,
-    "intitule": "Piratage informatique"
+    "intitule": "Piratage informatique",
+    "id": 16
   },
   {
     "peine": 2,
-    "intitule": "Menaces"
+    "intitule": "Menaces",
+    "id": 17
   },
   {
     "peine": 18,
-    "intitule": "Séquestration"
+    "intitule": "Séquestration",
+    "id": 18
   },
   {
     "peine": 15,
-    "intitule": "Proxénétisme"
+    "intitule": "Proxénétisme",
+    "id": 19
   },
   {
     "peine": 4,
-    "intitule": "Vol de voiture"
+    "intitule": "Vol de voiture",
+    "id": 20
   },
   {
     "peine": 2,
-    "intitule": "Harcèlement"
+    "intitule": "Harcèlement",
+    "id": 21
   },
   {
     "peine": 10,
-    "intitule": "Violences conjugales"
+    "intitule": "Violences conjugales",
+    "id": 22
   },
   {
     "peine": 3,
-    "intitule": "Délit de fuite"
+    "intitule": "Délit de fuite",
+    "id": 23
   },
   {
     "peine": 2,
-    "intitule": "Conduite en état d’ivresse"
+    "intitule": "Conduite en état d’ivresse",
+    "id": 24
   },
   {
     "peine": 5,
-    "intitule": "Braconnage"
+    "intitule": "Braconnage",
+    "id": 25
   },
   {
     "peine": 6,
-    "intitule": "Extorsion"
+    "intitule": "Extorsion",
+    "id": 26
   },
   {
     "peine": 4,
-    "intitule": "Usurpation d'identité"
+    "intitule": "Usurpation d'identité",
+    "id": 27
   },
   {
     "peine": 3,
-    "intitule": "Recel"
+    "intitule": "Recel",
+    "id": 28
   },
   {
     "peine": 10,
-    "intitule": "Blanchiment d'argent"
+    "intitule": "Blanchiment d'argent",
+    "id": 29
   },
   {
     "peine": 15,
-    "intitule": "Espionnage"
+    "intitule": "Espionnage",
+    "id": 30
   },
   {
     "peine": 5,
-    "intitule": "Entrave à la justice"
+    "intitule": "Entrave à la justice",
+    "id": 31
   }
 ]

@@ -1,6858 +1,1910 @@
 [
   {
-    "id": 483,
-    "nom": "Gauthier",
-    "prenom": "Chloé",
-    "crimes": [
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 155,
-    "idAffaires": [
-      27,
-      53,
-      69,
-      85,
-      91,
-      102,
-      123,
-      141,
-      171,
-      178,
-      203,
-      228,
-      259,
-      302
-    ]
-  },
-  {
-    "id": 169,
-    "nom": "Muller",
-    "prenom": "Pierre",
-    "crimes": [
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 88,
-    "idAffaires": [
-      53,
-      79,
-      104,
-      194,
-      345,
-      374,
-      385
-    ]
-  },
-  {
-    "id": 673,
-    "nom": "Fernandez",
-    "prenom": "Lucas",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 95,
-    "idAffaires": [
-      87,
-      126,
-      206,
-      243,
-      255,
-      283,
-      312,
-      333,
-      387
-    ]
-  },
-  {
-    "id": 192,
-    "nom": "Martinez",
-    "prenom": "Arthur",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 93,
-    "idAffaires": [
-      22,
-      171,
-      180,
-      188,
-      210,
-      285,
-      303,
-      308,
-      349
-    ]
-  },
-  {
-    "id": 250,
-    "nom": "Perez",
-    "prenom": "Lola",
-    "crimes": [
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 101,
-    "idAffaires": [
-      43,
-      64,
-      83,
-      122,
-      168,
-      189,
-      244,
-      260,
-      263,
-      288,
-      335,
-      367,
-      418,
-      419
-    ]
-  },
-  {
-    "id": 527,
-    "nom": "Leroy",
-    "prenom": "Eva",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 138,
-    "idAffaires": [
-      32,
-      39,
-      63,
-      170,
-      193,
-      225,
-      231,
-      274,
-      299,
-      327,
-      345,
-      361,
-      392
-    ]
-  },
-  {
-    "id": 660,
-    "nom": "Bertrand",
-    "prenom": "Marie",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 35,
-    "idAffaires": [
-      28,
-      37,
-      86,
-      237,
-      273,
-      338
-    ]
-  },
-  {
-    "id": 506,
-    "nom": "Adam",
-    "prenom": "Antoine",
-    "crimes": [
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 59,
-    "idAffaires": [
-      190,
-      229,
-      361,
-      364,
-      387
-    ]
-  },
-  {
-    "id": 238,
-    "nom": "Moreau",
-    "prenom": "Louis",
-    "crimes": [
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 92,
-    "idAffaires": [
-      24,
-      36,
-      56,
-      155,
-      185,
-      201,
-      253,
-      262,
-      279,
-      358
-    ]
-  },
-  {
-    "id": 933,
-    "nom": "Weber",
-    "prenom": "Liam",
-    "crimes": [
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 68,
-    "idAffaires": [
-      94,
-      152,
-      223,
-      230,
-      231,
-      267,
-      310,
-      322,
-      400
-    ]
-  },
-  {
-    "id": 870,
-    "nom": "Martinez",
-    "prenom": "Enzo",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 62,
-    "idAffaires": [
-      178,
-      224,
-      227,
-      250,
-      251,
-      308,
-      315
-    ]
-  },
-  {
-    "id": 410,
-    "nom": "Lambert",
-    "prenom": "Nina",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 70,
-    "idAffaires": [
-      90,
-      214,
-      296,
-      365,
-      383,
-      400,
-      404,
-      414
-    ]
-  },
-  {
-    "id": 444,
-    "nom": "Benoit",
-    "prenom": "Jade",
-    "crimes": [
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 168,
-    "idAffaires": [
-      39,
-      64,
-      71,
-      90,
-      108,
-      116,
-      179,
-      204,
-      207,
-      216,
-      225,
-      236,
-      253,
-      304,
-      309
-    ]
-  },
-  {
-    "id": 168,
-    "nom": "Richard",
-    "prenom": "Théo",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 98,
-    "idAffaires": [
-      40,
-      95,
-      102,
-      104,
-      169,
-      254,
-      263,
-      266,
-      283,
-      375,
-      377
-    ]
-  },
-  {
-    "id": 369,
-    "nom": "Gauthier",
-    "prenom": "Maxime",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 95,
-    "idAffaires": [
-      51,
-      52,
-      141,
-      238,
-      260,
-      380,
-      402
-    ]
-  },
-  {
-    "id": 524,
-    "nom": "Lambert",
-    "prenom": "Marie",
-    "crimes": [
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 157,
-    "idAffaires": [
-      41,
-      82,
-      99,
-      108,
-      123,
-      155,
-      194,
-      247,
-      252,
-      311,
-      325,
-      328,
-      381
-    ]
-  },
-  {
-    "id": 956,
-    "nom": "Bertrand",
-    "prenom": "Chloé",
-    "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 124,
-    "idAffaires": [
-      29,
-      31,
-      33,
-      41,
-      236,
-      257,
-      304,
-      307,
-      383,
-      399
-    ]
-  },
-  {
-    "id": 517,
-    "nom": "Benoit",
-    "prenom": "Hugo",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 40,
-    "idAffaires": [
-      42,
-      88,
-      156,
-      239,
-      259,
-      319
-    ]
-  },
-  {
-    "id": 895,
-    "nom": "Garcia",
-    "prenom": "Anaïs",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 126,
-    "idAffaires": [
-      44,
-      149,
-      156,
-      196,
-      203,
-      207,
-      227,
-      271,
-      280,
-      293,
-      362,
-      409
-    ]
-  },
-  {
-    "id": 116,
-    "nom": "Barbier",
-    "prenom": "Julie",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 195,
-    "idAffaires": [
-      22,
-      35,
-      54,
-      69,
-      112,
-      114,
-      128,
-      130,
-      152,
-      157,
-      172,
-      264,
-      296,
-      329,
-      386
-    ]
-  },
-  {
-    "id": 529,
-    "nom": "Fernandez",
-    "prenom": "Mia",
-    "crimes": [
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 77,
-    "idAffaires": [
-      27,
-      103,
-      139,
-      142,
-      163,
-      395
-    ]
-  },
-  {
-    "id": 120,
-    "nom": "Benoit",
-    "prenom": "Inès",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 102,
-    "idAffaires": [
-      21,
-      24,
-      97,
-      118,
-      131,
-      227,
-      310,
-      329,
-      345
-    ]
-  },
-  {
-    "id": 781,
-    "nom": "Lopez",
-    "prenom": "Ethan",
-    "crimes": [
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 66,
-    "idAffaires": [
-      159,
-      170,
-      275,
-      323,
-      363,
-      387,
-      398
-    ]
-  },
-  {
-    "id": 629,
-    "nom": "Moreau",
-    "prenom": "Thomas",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 50,
-    "idAffaires": [
-      74,
-      96,
-      249,
-      297,
-      298
-    ]
-  },
-  {
-    "id": 445,
-    "nom": "Marchand",
+    "id": 1,
+    "nom": "Dupont",
     "prenom": "Jean",
     "crimes": [
       {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
         "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 107,
-    "idAffaires": [
-      57,
-      68,
-      86,
-      93,
-      99,
-      208,
-      219,
-      306,
-      319,
-      332,
-      388
-    ]
-  },
-  {
-    "id": 691,
-    "nom": "Dupont",
-    "prenom": "Camille",
-    "crimes": [
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 73,
-    "idAffaires": [
-      127,
-      138,
-      139,
-      175,
-      202,
-      209,
-      306,
-      334,
-      351,
-      370
-    ]
-  },
-  {
-    "id": 330,
-    "nom": "Lemoine",
-    "prenom": "Léa",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
+        "intitule": "Vol à main armée"
       },
       {
         "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 60,
-    "idAffaires": [
-      57,
-      86,
-      136,
-      214,
-      225,
-      274,
-      329,
-      339,
-      410
-    ]
-  },
-  {
-    "id": 641,
-    "nom": "Morin",
-    "prenom": "Théo",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 156,
-    "idAffaires": [
-      34,
-      54,
-      63,
-      71,
-      109,
-      123,
-      182,
-      223,
-      238,
-      271,
-      307,
-      366,
-      385,
-      398,
-      401
-    ]
-  },
-  {
-    "id": 873,
-    "nom": "Barbier",
-    "prenom": "Kylian",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 3,
         "intitule": "Recel"
       },
       {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
         "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
+        "intitule": "Agression"
       }
     ],
     "preuves": [
       {},
       {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
       {}
     ],
-    "peineTotale": 91,
+    "peineTotale": 28,
     "idAffaires": [
-      34,
-      148,
-      160,
-      172,
-      185,
-      213,
-      313,
-      329,
-      354,
-      373,
-      396
+      12,
+      45,
+      89
     ]
   },
   {
-    "id": 633,
-    "nom": "Sanchez",
-    "prenom": "Nina",
+    "id": 2,
+    "nom": "Martin",
+    "prenom": "Sophie",
     "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 58,
-    "idAffaires": [
-      35,
-      153,
-      196,
-      250,
-      319,
-      387
-    ]
-  },
-  {
-    "id": 136,
-    "nom": "Fernandez",
-    "prenom": "Maxime",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
       {
         "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 94,
-    "idAffaires": [
-      22,
-      91,
-      182,
-      183,
-      246,
-      282,
-      321,
-      338,
-      345,
-      388
-    ]
-  },
-  {
-    "id": 474,
-    "nom": "Garcia",
-    "prenom": "Thomas",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 76,
-    "idAffaires": [
-      37,
-      109,
-      129,
-      164,
-      167,
-      211,
-      228,
-      292,
-      324
-    ]
-  },
-  {
-    "id": 311,
-    "nom": "Aubry",
-    "prenom": "Amélie",
-    "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 115,
-    "idAffaires": [
-      116,
-      195,
-      231,
-      262,
-      266,
-      311,
-      364,
-      371,
-      403
-    ]
-  },
-  {
-    "id": 771,
-    "nom": "Gilbert",
-    "prenom": "Arthur",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 93,
-    "idAffaires": [
-      32,
-      150,
-      195,
-      254,
-      275,
-      373,
-      388,
-      407
-    ]
-  },
-  {
-    "id": 600,
-    "nom": "Gauthier",
-    "prenom": "Maxime",
-    "crimes": [
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 78,
-    "idAffaires": [
-      67,
-      76,
-      244,
-      306,
-      347,
-      404,
-      412
-    ]
-  },
-  {
-    "id": 681,
-    "nom": "Girard",
-    "prenom": "Julien",
-    "crimes": [
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 7,
         "intitule": "Fraude fiscale"
       },
       {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 87,
-    "idAffaires": [
-      125,
-      157,
-      195,
-      256,
-      270,
-      326,
-      358
-    ]
-  },
-  {
-    "id": 479,
-    "nom": "Henry",
-    "prenom": "Lucas",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 145,
-    "idAffaires": [
-      48,
-      82,
-      89,
-      91,
-      188,
-      199,
-      217,
-      248,
-      279,
-      382
-    ]
-  },
-  {
-    "id": 350,
-    "nom": "Faure",
-    "prenom": "Claire",
-    "crimes": [
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
         "peine": 10,
         "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
       }
     ],
     "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 135,
-    "idAffaires": [
-      31,
-      42,
-      44,
-      59,
-      92,
-      145,
-      201,
-      240,
-      242,
-      274,
-      298,
-      307,
-      374,
-      416
-    ]
-  },
-  {
-    "id": 989,
-    "nom": "Bourdon",
-    "prenom": "Noah",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
       {},
       {}
     ],
     "peineTotale": 22,
     "idAffaires": [
-      160,
-      202,
-      259,
-      305,
-      396
+      23,
+      67
     ]
   },
   {
-    "id": 312,
-    "nom": "Girard",
+    "id": 3,
+    "nom": "Durand",
     "prenom": "Pierre",
     "crimes": [
       {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
         "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 126,
-    "idAffaires": [
-      41,
-      88,
-      119,
-      179,
-      191,
-      252,
-      260,
-      281,
-      282,
-      315,
-      326,
-      336,
-      369
-    ]
-  },
-  {
-    "id": 118,
-    "nom": "Marchand",
-    "prenom": "Inès",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 54,
-    "idAffaires": [
-      255,
-      273,
-      351,
-      400,
-      403
-    ]
-  },
-  {
-    "id": 765,
-    "nom": "Gauthier",
-    "prenom": "Lucie",
-    "crimes": [
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 30,
         "intitule": "Meurtre"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 186,
-    "idAffaires": [
-      73,
-      133,
-      135,
-      183,
-      190,
-      195,
-      199,
-      244,
-      289,
-      292,
-      299,
-      306,
-      331,
-      359,
-      397
-    ]
-  },
-  {
-    "id": 542,
-    "nom": "Aubry",
-    "prenom": "Nina",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 112,
-    "idAffaires": [
-      23,
-      24,
-      87,
-      111,
-      140,
-      142,
-      161,
-      223,
-      278,
-      340,
-      384,
-      414,
-      418
-    ]
-  },
-  {
-    "id": 167,
-    "nom": "Lemoine",
-    "prenom": "Lucie",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
       },
       {
         "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 156,
-    "idAffaires": [
-      28,
-      76,
-      121,
-      176,
-      187,
-      216,
-      217,
-      227,
-      265,
-      371,
-      385,
-      391,
-      399,
-      417
-    ]
-  },
-  {
-    "id": 946,
-    "nom": "Bourdon",
-    "prenom": "Yanis",
-    "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 110,
-    "idAffaires": [
-      29,
-      52,
-      57,
-      80,
-      84,
-      105,
-      121,
-      151,
-      243,
-      277,
-      282,
-      286,
-      342
-    ]
-  },
-  {
-    "id": 869,
-    "nom": "Rolland",
-    "prenom": "Nicolas",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 5,
         "intitule": "Entrave à la justice"
       },
       {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 56,
-    "idAffaires": [
-      38,
-      64,
-      86,
-      90,
-      250,
-      254,
-      314,
-      370,
-      396,
-      405
-    ]
-  },
-  {
-    "id": 762,
-    "nom": "Faure",
-    "prenom": "Lucie",
-    "crimes": [
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 51,
-    "idAffaires": [
-      110,
-      207,
-      263,
-      336,
-      382
-    ]
-  },
-  {
-    "id": 159,
-    "nom": "Aubry",
-    "prenom": "Louis",
-    "crimes": [
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 161,
-    "idAffaires": [
-      33,
-      44,
-      65,
-      74,
-      149,
-      179,
-      248,
-      275,
-      284,
-      316,
-      390
-    ]
-  },
-  {
-    "id": 502,
-    "nom": "Andre",
-    "prenom": "Inès",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
         "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
+        "intitule": "Possession d\u0027arme illégale"
       }
     ],
     "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 110,
-    "idAffaires": [
-      101,
-      107,
-      184,
-      203,
-      230,
-      250,
-      264,
-      303,
-      316,
-      349,
-      390
-    ]
-  },
-  {
-    "id": 919,
-    "nom": "Roux",
-    "prenom": "Axel",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 124,
-    "idAffaires": [
-      51,
-      55,
-      58,
-      183,
-      194,
-      197,
-      246,
-      291,
-      336,
-      389
-    ]
-  },
-  {
-    "id": 351,
-    "nom": "Bertrand",
-    "prenom": "Inès",
-    "crimes": [
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 96,
-    "idAffaires": [
-      103,
-      111,
-      212,
-      241,
-      253,
-      269,
-      276,
-      305,
-      338,
-      348,
-      368
-    ]
-  },
-  {
-    "id": 288,
-    "nom": "Garcia",
-    "prenom": "Jean",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 115,
-    "idAffaires": [
-      25,
-      56,
-      62,
-      78,
-      138,
-      140,
-      162,
-      165,
-      177,
-      294,
-      320,
-      375
-    ]
-  },
-  {
-    "id": 304,
-    "nom": "Sanchez",
-    "prenom": "Marie",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 53,
-    "idAffaires": [
-      55,
-      65,
-      78,
-      115,
-      196,
-      228,
-      241,
-      301,
-      335,
-      384,
-      407
-    ]
-  },
-  {
-    "id": 271,
-    "nom": "Girard",
-    "prenom": "Lola",
-    "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 145,
-    "idAffaires": [
-      75,
-      100,
-      107,
-      147,
-      148,
-      219,
-      242,
-      257,
-      314,
-      337,
-      353,
-      354
-    ]
-  },
-  {
-    "id": 419,
-    "nom": "Lemoine",
-    "prenom": "Kylian",
-    "crimes": [
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 80,
-    "idAffaires": [
-      43,
-      64,
-      106,
-      130,
-      153,
-      171,
-      303,
-      322,
-      420
-    ]
-  },
-  {
-    "id": 477,
-    "nom": "Morin",
-    "prenom": "Julie",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 81,
-    "idAffaires": [
-      90,
-      107,
-      128,
-      151,
-      238,
-      295,
-      355,
-      393,
-      400
-    ]
-  },
-  {
-    "id": 741,
-    "nom": "Baron",
-    "prenom": "Liam",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 67,
-    "idAffaires": [
-      45,
-      117,
-      183,
-      211,
-      287,
-      346,
-      370,
-      407,
-      409,
-      418
-    ]
-  },
-  {
-    "id": 149,
-    "nom": "Lopez",
-    "prenom": "Arthur",
-    "crimes": [
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 51,
-    "idAffaires": [
-      67,
-      131,
-      181,
-      189,
-      326,
-      379,
-      410
-    ]
-  },
-  {
-    "id": 843,
-    "nom": "Francois",
-    "prenom": "Ethan",
-    "crimes": [
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 83,
-    "idAffaires": [
-      56,
-      68,
-      88,
-      113,
-      136,
-      146,
-      226,
-      233,
-      237,
-      249,
-      289,
-      315,
-      393
-    ]
-  },
-  {
-    "id": 827,
-    "nom": "Henry",
-    "prenom": "Eva",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 119,
-    "idAffaires": [
-      48,
-      95,
-      117,
-      189,
-      197,
-      209,
-      291,
-      316,
-      391,
-      420
-    ]
-  },
-  {
-    "id": 412,
-    "nom": "Sanchez",
-    "prenom": "Jean",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 115,
-    "idAffaires": [
-      40,
-      61,
-      122,
-      124,
-      235,
-      237,
-      339,
-      346,
-      353,
-      356,
-      365,
-      380,
-      410,
-      413
-    ]
-  },
-  {
-    "id": 462,
-    "nom": "Weber",
-    "prenom": "Luc",
-    "crimes": [
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 135,
-    "idAffaires": [
-      47,
-      157,
-      180,
-      199,
-      271,
-      279,
-      304,
-      308,
-      321,
-      327,
-      406
-    ]
-  },
-  {
-    "id": 140,
-    "nom": "Girard",
-    "prenom": "Ethan",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 152,
-    "idAffaires": [
-      51,
-      85,
-      148,
-      184,
-      185,
-      187,
-      194,
-      264,
-      268,
-      286,
-      309,
-      332
-    ]
-  },
-  {
-    "id": 488,
-    "nom": "Moreau",
-    "prenom": "Yanis",
-    "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 153,
-    "idAffaires": [
-      98,
-      105,
-      107,
-      137,
-      143,
-      204,
-      224,
-      230,
-      276,
-      323,
-      343,
-      378
-    ]
-  },
-  {
-    "id": 865,
-    "nom": "Joly",
-    "prenom": "Liam",
-    "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 131,
-    "idAffaires": [
-      98,
-      135,
-      140,
-      164,
-      203,
-      220,
-      296,
-      337,
-      397
-    ]
-  },
-  {
-    "id": 563,
-    "nom": "Gilbert",
-    "prenom": "Julie",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 101,
-    "idAffaires": [
-      37,
-      62,
-      82,
-      85,
-      135,
-      145,
-      323,
-      368,
-      381,
-      408,
-      415
-    ]
-  },
-  {
-    "id": 835,
-    "nom": "Dupont",
-    "prenom": "Kylian",
-    "crimes": [
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 146,
-    "idAffaires": [
-      43,
-      106,
-      111,
-      137,
-      201,
-      212,
-      229,
-      231,
-      290,
-      336,
-      371,
-      413
-    ]
-  },
-  {
-    "id": 551,
-    "nom": "Henry",
-    "prenom": "Inès",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 177,
-    "idAffaires": [
-      40,
-      42,
-      66,
-      102,
-      122,
-      129,
-      149,
-      150,
-      166,
-      211,
-      223,
-      246,
-      275,
-      291,
-      378
-    ]
-  },
-  {
-    "id": 812,
-    "nom": "Martinez",
-    "prenom": "Thomas",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 96,
-    "idAffaires": [
-      77,
-      134,
-      152,
-      158,
-      204,
-      215,
-      258,
-      282,
-      286,
-      325,
-      331,
-      352,
-      358
-    ]
-  },
-  {
-    "id": 622,
-    "nom": "Gonzalez",
-    "prenom": "Antoine",
-    "crimes": [
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 105,
-    "idAffaires": [
-      134,
-      141,
-      198,
-      218,
-      293,
-      299,
-      317,
-      332,
-      354,
-      395,
-      403
-    ]
-  },
-  {
-    "id": 986,
-    "nom": "Andre",
-    "prenom": "Milan",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 150,
-    "idAffaires": [
-      23,
-      81,
-      97,
-      121,
-      163,
-      173,
-      178,
-      238,
-      266,
-      305,
-      318,
-      327,
-      346,
-      348,
-      394,
-      403
-    ]
-  },
-  {
-    "id": 215,
-    "nom": "Girard",
-    "prenom": "Jean",
-    "crimes": [
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 94,
-    "idAffaires": [
-      46,
-      53,
-      186,
-      255,
-      310,
-      324,
-      392
-    ]
-  },
-  {
-    "id": 554,
-    "nom": "Richard",
-    "prenom": "Léa",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 92,
-    "idAffaires": [
-      91,
-      118,
-      165,
-      184,
-      205,
-      218,
-      266,
-      391,
-      399
-    ]
-  },
-  {
-    "id": 979,
-    "nom": "Robin",
-    "prenom": "Mia",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 125,
-    "idAffaires": [
-      30,
-      34,
-      52,
-      54,
-      56,
-      69,
-      101,
-      119,
-      173,
-      187,
-      202,
-      222,
-      314,
-      334,
-      408
-    ]
-  },
-  {
-    "id": 848,
-    "nom": "Renaud",
-    "prenom": "Axel",
-    "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 116,
-    "idAffaires": [
-      29,
-      67,
-      83,
-      95,
-      211,
-      212,
-      272,
-      386
-    ]
-  },
-  {
-    "id": 794,
-    "nom": "Durand",
-    "prenom": "Anaïs",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 105,
-    "idAffaires": [
-      26,
-      74,
-      92,
-      112,
-      127,
-      132,
-      134,
-      144,
-      224,
-      304,
-      357
-    ]
-  },
-  {
-    "id": 973,
-    "nom": "Benoit",
-    "prenom": "Nicolas",
-    "crimes": [
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 38,
-    "idAffaires": [
-      139,
-      165,
-      409
-    ]
-  },
-  {
-    "id": 963,
-    "nom": "Martinez",
-    "prenom": "Jean",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 23,
-    "idAffaires": [
-      25,
-      50,
-      270,
-      344,
-      395
-    ]
-  },
-  {
-    "id": 682,
-    "nom": "Clement",
-    "prenom": "Léa",
-    "crimes": [
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 104,
-    "idAffaires": [
-      45,
-      72,
-      149,
-      161,
-      184,
-      200,
-      237,
-      268,
-      273,
-      281,
-      303,
-      366,
-      376,
-      383
-    ]
-  },
-  {
-    "id": 561,
-    "nom": "Faure",
-    "prenom": "Julien",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 84,
-    "idAffaires": [
-      108,
-      141,
-      152,
-      178,
-      188,
-      220,
-      225,
-      281,
-      292,
-      328,
-      372,
-      381
-    ]
-  },
-  {
-    "id": 417,
-    "nom": "Leroy",
-    "prenom": "Sarah",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 153,
-    "idAffaires": [
-      55,
-      87,
-      98,
-      145,
-      167,
-      197,
-      216,
-      255,
-      271,
-      286,
-      308,
-      328,
-      341,
-      420
-    ]
-  },
-  {
-    "id": 381,
-    "nom": "Weber",
-    "prenom": "Manon",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 88,
-    "idAffaires": [
-      38,
-      102,
-      116,
-      174,
-      200,
-      201,
-      209,
-      253,
-      330,
-      341,
-      358,
-      402
-    ]
-  },
-  {
-    "id": 158,
-    "nom": "Lemoine",
-    "prenom": "Lucie",
-    "crimes": [
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 119,
-    "idAffaires": [
-      28,
-      35,
-      45,
-      78,
-      111,
-      154,
-      156,
-      208,
-      242,
-      249,
-      361,
-      372,
-      384,
-      391,
-      410
-    ]
-  },
-  {
-    "id": 415,
-    "nom": "Martinez",
-    "prenom": "Anaïs",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
       {},
       {},
       {}
     ],
     "peineTotale": 32,
     "idAffaires": [
-      112,
-      214,
-      241,
-      269,
-      323,
-      353,
-      362
+      34,
+      78,
+      156
     ]
   },
   {
-    "id": 130,
-    "nom": "Gonzalez",
-    "prenom": "Zoé",
-    "crimes": [
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 187,
-    "idAffaires": [
-      35,
-      63,
-      71,
-      93,
-      134,
-      151,
-      187,
-      190,
-      215,
-      230,
-      268,
-      312,
-      330,
-      350,
-      365,
-      381,
-      396
-    ]
-  },
-  {
-    "id": 165,
-    "nom": "Benoit",
-    "prenom": "Julien",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 84,
-    "idAffaires": [
-      22,
-      82,
-      122,
-      173,
-      221,
-      244,
-      269,
-      353,
-      363,
-      370,
-      378,
-      413
-    ]
-  },
-  {
-    "id": 544,
-    "nom": "Lemoine",
-    "prenom": "Maël",
-    "crimes": [
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 144,
-    "idAffaires": [
-      49,
-      69,
-      80,
-      96,
-      97,
-      136,
-      140,
-      148,
-      200,
-      241,
-      262,
-      265,
-      280,
-      311,
-      325,
-      368,
-      411
-    ]
-  },
-  {
-    "id": 776,
-    "nom": "Durand",
-    "prenom": "Nathan",
-    "crimes": [
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 18,
-        "intitule": "Séquestration"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 117,
-    "idAffaires": [
-      31,
-      68,
-      155,
-      173,
-      198,
-      240,
-      261,
-      276,
-      346,
-      355,
-      369,
-      402
-    ]
-  },
-  {
-    "id": 971,
-    "nom": "Francois",
-    "prenom": "Axel",
+    "id": 4,
+    "nom": "Lefebvre",
+    "prenom": "Marie",
     "crimes": [
       {
         "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 10,
-        "intitule": "Violences conjugales"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 100,
-    "idAffaires": [
-      24,
-      38,
-      39,
-      42,
-      116,
-      232,
-      285,
-      298,
-      333,
-      392,
-      395
-    ]
-  },
-  {
-    "id": 218,
-    "nom": "Garcia",
-    "prenom": "Zoé",
-    "crimes": [
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 84,
-    "idAffaires": [
-      59,
-      87,
-      97,
-      108,
-      150,
-      210,
-      263,
-      280,
-      301
-    ]
-  },
-  {
-    "id": 257,
-    "nom": "Henry",
-    "prenom": "Alice",
-    "crimes": [
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
-      },
-      {
-        "peine": 5,
-        "intitule": "Cambriolage"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 128,
-    "idAffaires": [
-      65,
-      75,
-      120,
-      180,
-      192,
-      234,
-      251,
-      276,
-      289,
-      300,
-      312,
-      366
-    ]
-  },
-  {
-    "id": 128,
-    "nom": "Andre",
-    "prenom": "Nina",
-    "crimes": [
-      {
-        "peine": 8,
-        "intitule": "Contrebande"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 12,
         "intitule": "Détournement de fonds"
       },
       {
-        "peine": 3,
-        "intitule": "Délit de fuite"
+        "peine": 4,
+        "intitule": "Abus de confiance"
       },
       {
-        "peine": 3,
-        "intitule": "Faux en écriture"
+        "peine": 2,
+        "intitule": "Usage de faux"
       }
     ],
     "preuves": [
       {},
       {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
       {}
     ],
-    "peineTotale": 166,
+    "peineTotale": 12,
     "idAffaires": [
-      41,
-      52,
-      73,
-      96,
-      105,
-      114,
-      142,
-      157,
-      164,
-      188,
-      210,
-      279,
-      352,
-      355,
-      415
+      56,
+      91,
+      123
     ]
   },
   {
-    "id": 709,
-    "nom": "Renaud",
-    "prenom": "Nathan",
+    "id": 5,
+    "nom": "Leroy",
+    "prenom": "Thomas",
     "crimes": [
       {
-        "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 20,
-        "intitule": "Enlèvement"
-      },
-      {
-        "peine": 4,
-        "intitule": "Vol de voiture"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
+        "peine": 10,
+        "intitule": "Trafic de stupéfiants"
       },
       {
         "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 3,
-        "intitule": "Faux en écriture"
+        "intitule": "Association de malfaiteurs"
       }
     ],
     "preuves": [
       {},
-      {},
-      {},
-      {},
-      {},
       {}
     ],
-    "peineTotale": 43,
+    "peineTotale": 15,
     "idAffaires": [
-      32,
-      79,
-      92,
-      119,
-      287,
-      301
+      102,
+      198
     ]
   },
   {
-    "id": 439,
+    "id": 6,
     "nom": "Moreau",
-    "prenom": "Sophie",
+    "prenom": "Julie",
     "crimes": [
       {
-        "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
         "peine": 4,
-        "intitule": "Vol de voiture"
+        "intitule": "Cybercriminalité"
       },
       {
         "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
+        "intitule": "Vol de données"
       }
     ],
     "preuves": [
       {},
-      {},
-      {},
-      {},
-      {},
-      {},
       {}
     ],
-    "peineTotale": 75,
+    "peineTotale": 6,
     "idAffaires": [
-      59,
-      92,
-      147,
-      298,
-      310,
-      383,
-      413
+      112,
+      245
     ]
   },
   {
-    "id": 831,
-    "nom": "Fernandez",
-    "prenom": "Arthur",
+    "id": 7,
+    "nom": "Simon",
+    "prenom": "Nicolas",
     "crimes": [
       {
         "peine": 15,
-        "intitule": "Espionnage"
-      },
-      {
-        "peine": 3,
-        "intitule": "Délit de fuite"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 20,
         "intitule": "Enlèvement"
       },
       {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
         "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 3,
-        "intitule": "Recel"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 164,
-    "idAffaires": [
-      27,
-      40,
-      88,
-      109,
-      137,
-      154,
-      156,
-      158,
-      182,
-      206,
-      226,
-      245,
-      280,
-      293,
-      314,
-      382,
-      412
-    ]
-  },
-  {
-    "id": 656,
-    "nom": "Renard",
-    "prenom": "Mathis",
-    "crimes": [
-      {
-        "peine": 18,
         "intitule": "Séquestration"
       },
       {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 15,
-        "intitule": "Proxénétisme"
-      },
-      {
-        "peine": 3,
-        "intitule": "Vol simple"
-      },
-      {
-        "peine": 2,
-        "intitule": "Menaces"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 10,
-        "intitule": "Blanchiment d\u0027argent"
-      },
-      {
-        "peine": 4,
-        "intitule": "Usurpation d\u0027identité"
-      },
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
+        "peine": 8,
+        "intitule": "Violences aggravées"
       }
     ],
     "preuves": [
       {},
       {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
       {}
     ],
-    "peineTotale": 97,
+    "peineTotale": 33,
     "idAffaires": [
-      61,
-      70,
-      110,
-      144,
-      205,
-      233,
-      290,
-      299,
-      305,
-      307,
-      326,
-      327,
-      360,
-      417,
-      419
+      45,
+      167,
+      203
     ]
   },
   {
-    "id": 296,
-    "nom": "Girard",
-    "prenom": "Julien",
+    "id": 8,
+    "nom": "Laurent",
+    "prenom": "Camille",
     "crimes": [
       {
-        "peine": 3,
-        "intitule": "Recel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Harcèlement"
-      },
-      {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
-      },
-      {
-        "peine": 10,
-        "intitule": "Homicide involontaire"
-      },
-      {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
-        "peine": 30,
-        "intitule": "Viol"
-      },
-      {
-        "peine": 30,
-        "intitule": "Meurtre"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
+        "peine": 7,
+        "intitule": "Escroquerie"
       },
       {
         "peine": 5,
-        "intitule": "Entrave à la justice"
-      },
-      {
-        "peine": 6,
-        "intitule": "Extorsion"
-      },
-      {
-        "peine": 5,
-        "intitule": "Agression"
-      },
-      {
-        "peine": 10,
-        "intitule": "Corruption"
+        "intitule": "Usurpation d\u0027identité"
       }
     ],
     "preuves": [
       {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
       {}
     ],
-    "peineTotale": 187,
+    "peineTotale": 12,
     "idAffaires": [
-      25,
-      48,
-      73,
-      114,
-      159,
-      165,
-      167,
-      176,
-      222,
-      229,
-      249,
-      322,
-      325,
-      384,
-      420
+      67,
+      134
     ]
   },
   {
-    "id": 809,
-    "nom": "Henry",
+    "id": 9,
+    "nom": "Petit",
+    "prenom": "Alexandre",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Cambriolage"
+      },
+      {
+        "peine": 3,
+        "intitule": "Dégradation de biens"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 11,
+    "idAffaires": [
+      89,
+      178
+    ]
+  },
+  {
+    "id": 10,
+    "nom": "Fournier",
+    "prenom": "Isabelle",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Incendie volontaire"
+      },
+      {
+        "peine": 7,
+        "intitule": "Mise en danger d\u0027autrui"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 16,
+    "idAffaires": [
+      56,
+      198
+    ]
+  },
+  {
+    "id": 11,
+    "nom": "Michel",
     "prenom": "Antoine",
     "crimes": [
       {
-        "peine": 12,
-        "intitule": "Détournement de fonds"
-      },
-      {
         "peine": 4,
-        "intitule": "Escroquerie"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
-      },
-      {
-        "peine": 5,
-        "intitule": "Braconnage"
-      }
-    ],
-    "preuves": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    "peineTotale": 65,
-    "idAffaires": [
-      60,
-      127,
-      217,
-      269,
-      332,
-      340,
-      374,
-      411
-    ]
-  },
-  {
-    "id": 621,
-    "nom": "Marchand",
-    "prenom": "Nathan",
-    "crimes": [
-      {
-        "peine": 6,
-        "intitule": "Piratage informatique"
-      },
-      {
-        "peine": 15,
-        "intitule": "Incendie criminel"
+        "intitule": "Vol simple"
       },
       {
         "peine": 2,
-        "intitule": "Conduite en état d’ivresse"
+        "intitule": "Menaces"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 6,
+    "idAffaires": [
+      45,
+      212
+    ]
+  },
+  {
+    "id": 12,
+    "nom": "Bertrand",
+    "prenom": "Élodie",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Fraude aux prestations sociales"
       },
       {
-        "peine": 7,
-        "intitule": "Fraude fiscale"
+        "peine": 3,
+        "intitule": "Faux et usage de faux"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 11,
+    "idAffaires": [
+      123,
+      245
+    ]
+  },
+  {
+    "id": 13,
+    "nom": "Garcia",
+    "prenom": "David",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Proxénétisme"
+      },
+      {
+        "peine": 4,
+        "intitule": "Traite des êtres humains"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      78,
+      156
+    ]
+  },
+  {
+    "id": 14,
+    "nom": "Blanc",
+    "prenom": "François",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Homicide involontaire"
       },
       {
         "peine": 5,
-        "intitule": "Agression"
+        "intitule": "Conduite en état d\u0027ivresse"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 17,
+    "idAffaires": [
+      91,
+      167
+    ]
+  },
+  {
+    "id": 15,
+    "nom": "Legrand",
+    "prenom": "Aurélie",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Harcèlement"
       },
       {
-        "peine": 25,
-        "intitule": "Trafic de drogues"
+        "peine": 3,
+        "intitule": "Chantage"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      112,
+      178
+    ]
+  },
+  {
+    "id": 16,
+    "nom": "Faure",
+    "prenom": "Sébastien",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Corruption"
+      },
+      {
+        "peine": 10,
+        "intitule": "Trafic d\u0027influence"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 25,
+    "idAffaires": [
+      34,
+      203
+    ]
+  },
+  {
+    "id": 17,
+    "nom": "Andre",
+    "prenom": "Nathalie",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Extorsion"
+      },
+      {
+        "peine": 6,
+        "intitule": "Violence en réunion"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      23,
+      212
+    ]
+  },
+  {
+    "id": 18,
+    "nom": "Mercier",
+    "prenom": "Laurent",
+    "crimes": [
+      {
+        "peine": 20,
+        "intitule": "Terrorisme"
+      },
+      {
+        "peine": 15,
+        "intitule": "Association de malfaiteurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 35,
+    "idAffaires": [
+      102,
+      134
+    ]
+  },
+  {
+    "id": 19,
+    "nom": "Roux",
+    "prenom": "Patricia",
+    "crimes": [
+      {
+        "peine": 5,
+        "intitule": "Délit d\u0027initié"
+      },
+      {
+        "peine": 3,
+        "intitule": "Manipulation de marché"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 8,
+    "idAffaires": [
+      67,
+      123
+    ]
+  },
+  {
+    "id": 20,
+    "nom": "Bonnet",
+    "prenom": "Stéphane",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Contrefaçon"
+      },
+      {
+        "peine": 4,
+        "intitule": "Atteinte à la propriété intellectuelle"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      56,
+      167
+    ]
+  },
+  {
+    "id": 21,
+    "nom": "Lambert",
+    "prenom": "Christine",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Abus de faiblesse"
+      },
+      {
+        "peine": 5,
+        "intitule": "Escroquerie en bande organisée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      91,
+      245
+    ]
+  },
+  {
+    "id": 22,
+    "nom": "Fontaine",
+    "prenom": "Philippe",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Trafic d\u0027armes"
+      },
+      {
+        "peine": 6,
+        "intitule": "Importation illégale"
+      },
+      {
+        "peine": 4,
+        "intitule": "Association de malfaiteurs"
       }
     ],
     "preuves": [
       {},
       {},
+      {}
+    ],
+    "peineTotale": 18,
+    "idAffaires": [
+      78,
+      134,
+      212
+    ]
+  },
+  {
+    "id": 23,
+    "nom": "Rousseau",
+    "prenom": "Caroline",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Prise d\u0027otage"
+      },
+      {
+        "peine": 7,
+        "intitule": "Vol à main armée"
+      }
+    ],
+    "preuves": [
       {},
+      {}
+    ],
+    "peineTotale": 16,
+    "idAffaires": [
+      102,
+      178
+    ]
+  },
+  {
+    "id": 24,
+    "nom": "Vincent",
+    "prenom": "Bruno",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Infractions environnementales"
+      },
+      {
+        "peine": 8,
+        "intitule": "Mise en danger d\u0027autrui"
+      }
+    ],
+    "preuves": [
       {},
+      {}
+    ],
+    "peineTotale": 18,
+    "idAffaires": [
+      34,
+      156
+    ]
+  },
+  {
+    "id": 25,
+    "nom": "Muller",
+    "prenom": "Sylvie",
+    "crimes": [
+      {
+        "peine": 5,
+        "intitule": "Malversation"
+      },
+      {
+        "peine": 3,
+        "intitule": "Abus de biens sociaux"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 8,
+    "idAffaires": [
+      12,
+      203
+    ]
+  },
+  {
+    "id": 26,
+    "nom": "Lefevre",
+    "prenom": "Jérôme",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Viol"
+      },
+      {
+        "peine": 10,
+        "intitule": "Agression sexuelle"
+      },
+      {
+        "peine": 5,
+        "intitule": "Menaces de mort"
+      }
+    ],
+    "preuves": [
       {},
       {},
       {}
     ],
-    "peineTotale": 75,
+    "peineTotale": 30,
     "idAffaires": [
-      115,
-      171,
-      180,
-      192,
-      197,
-      287,
-      293
+      23,
+      112,
+      198
+    ]
+  },
+  {
+    "id": 27,
+    "nom": "Fabre",
+    "prenom": "Catherine",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Diffusion de contenus illicites"
+      },
+      {
+        "peine": 5,
+        "intitule": "Atteinte à la vie privée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      89,
+      123
+    ]
+  },
+  {
+    "id": 28,
+    "nom": "Aubert",
+    "prenom": "Olivier",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Infanticide"
+      },
+      {
+        "peine": 6,
+        "intitule": "Dissimulation de cadavre"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      45,
+      167
+    ]
+  },
+  {
+    "id": 29,
+    "nom": "Lemoine",
+    "prenom": "Valérie",
+    "crimes": [
+      {
+        "peine": 4,
+        "intitule": "Tromperie commerciale"
+      },
+      {
+        "peine": 2,
+        "intitule": "Mise en danger du consommateur"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 6,
+    "idAffaires": [
+      56,
+      245
+    ]
+  },
+  {
+    "id": 30,
+    "nom": "Renaud",
+    "prenom": "Christian",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Trafic d\u0027êtres humains"
+      },
+      {
+        "peine": 9,
+        "intitule": "Proxénétisme aggravé"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 21,
+    "idAffaires": [
+      78,
+      212
+    ]
+  },
+  {
+    "id": 31,
+    "nom": "Dumas",
+    "prenom": "Véronique",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Organisation criminelle"
+      },
+      {
+        "peine": 8,
+        "intitule": "Blanchiment d\u0027argent"
+      },
+      {
+        "peine": 5,
+        "intitule": "Extorsion"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 23,
+    "idAffaires": [
+      91,
+      134,
+      203
+    ]
+  },
+  {
+    "id": 32,
+    "nom": "Lacroix",
+    "prenom": "Frédéric",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Assassinat"
+      },
+      {
+        "peine": 10,
+        "intitule": "Préméditation"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 25,
+    "idAffaires": [
+      12,
+      178
+    ]
+  },
+  {
+    "id": 33,
+    "nom": "Olivier",
+    "prenom": "Sandrine",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Non-assistance à personne en danger"
+      },
+      {
+        "peine": 4,
+        "intitule": "Entrave aux secours"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      67,
+      156
+    ]
+  },
+  {
+    "id": 34,
+    "nom": "Philippe",
+    "prenom": "Michel",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Utilisation frauduleuse de documents"
+      },
+      {
+        "peine": 7,
+        "intitule": "Usurpation d\u0027identité"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 16,
+    "idAffaires": [
+      34,
+      123
+    ]
+  },
+  {
+    "id": 35,
+    "nom": "Bourgeois",
+    "prenom": "Monique",
+    "crimes": [
+      {
+        "peine": 11,
+        "intitule": "Empoisonnement"
+      },
+      {
+        "peine": 8,
+        "intitule": "Tentative de meurtre"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 19,
+    "idAffaires": [
+      102,
+      198
+    ]
+  },
+  {
+    "id": 36,
+    "nom": "Pierre",
+    "prenom": "Daniel",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Détournement de mineurs"
+      },
+      {
+        "peine": 5,
+        "intitule": "Corruption de mineurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      23,
+      212
+    ]
+  },
+  {
+    "id": 37,
+    "nom": "Benoit",
+    "prenom": "Florence",
+    "crimes": [
+      {
+        "peine": 14,
+        "intitule": "Braquage de banque"
+      },
+      {
+        "peine": 10,
+        "intitule": "Prise d\u0027otages"
+      },
+      {
+        "peine": 6,
+        "intitule": "Violence aggravée"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 30,
+    "idAffaires": [
+      45,
+      112,
+      167
+    ]
+  },
+  {
+    "id": 38,
+    "nom": "Rey",
+    "prenom": "Alain",
+    "crimes": [
+      {
+        "peine": 5,
+        "intitule": "Corruption de fonctionnaire"
+      },
+      {
+        "peine": 3,
+        "intitule": "Abus de pouvoir"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 8,
+    "idAffaires": [
+      56,
+      89
+    ]
+  },
+  {
+    "id": 39,
+    "nom": "Leclerc",
+    "prenom": "Cécile",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Falsification de documents"
+      },
+      {
+        "peine": 6,
+        "intitule": "Escroquerie aux assurances"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      91,
+      245
+    ]
+  },
+  {
+    "id": 40,
+    "nom": "Payet",
+    "prenom": "Bernard",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Trafic de faux documents"
+      },
+      {
+        "peine": 7,
+        "intitule": "Association de malfaiteurs"
+      },
+      {
+        "peine": 4,
+        "intitule": "Corruption"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 21,
+    "idAffaires": [
+      12,
+      134,
+      203
+    ]
+  },
+  {
+    "id": 41,
+    "nom": "Rolland",
+    "prenom": "Corinne",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Détournement de fonds publics"
+      },
+      {
+        "peine": 4,
+        "intitule": "Abus de confiance"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      67,
+      178
+    ]
+  },
+  {
+    "id": 42,
+    "nom": "Leclercq",
+    "prenom": "Patrick",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Violences conjugales"
+      },
+      {
+        "peine": 7,
+        "intitule": "Harcèlement moral"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 16,
+    "idAffaires": [
+      34,
+      156
+    ]
+  },
+  {
+    "id": 43,
+    "nom": "Guillaume",
+    "prenom": "Jacqueline",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Complicité de meurtre"
+      },
+      {
+        "peine": 8,
+        "intitule": "Recel de malfaiteur"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 20,
+    "idAffaires": [
+      102,
+      212
+    ]
+  },
+  {
+    "id": 44,
+    "nom": "Lecomte",
+    "prenom": "Pascal",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Trafic international de stupéfiants"
+      },
+      {
+        "peine": 10,
+        "intitule": "Blanchiment d\u0027argent"
+      },
+      {
+        "peine": 5,
+        "intitule": "Association de malfaiteurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 30,
+    "idAffaires": [
+      23,
+      123,
+      198
+    ]
+  },
+  {
+    "id": 45,
+    "nom": "Lopez",
+    "prenom": "Sylvie",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Piratage informatique"
+      },
+      {
+        "peine": 5,
+        "intitule": "Vol de données sensibles"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      45,
+      167
+    ]
+  },
+  {
+    "id": 46,
+    "nom": "Jean",
+    "prenom": "Dominique",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Incendie criminel"
+      },
+      {
+        "peine": 6,
+        "intitule": "Dégradation de biens publics"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      56,
+      245
+    ]
+  },
+  {
+    "id": 47,
+    "nom": "Dupuy",
+    "prenom": "Nicole",
+    "crimes": [
+      {
+        "peine": 11,
+        "intitule": "Séquestration"
+      },
+      {
+        "peine": 9,
+        "intitule": "Violence aggravée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 20,
+    "idAffaires": [
+      78,
+      178
+    ]
+  },
+  {
+    "id": 48,
+    "nom": "Guillot",
+    "prenom": "Robert",
+    "crimes": [
+      {
+        "peine": 14,
+        "intitule": "Vol à main armée"
+      },
+      {
+        "peine": 8,
+        "intitule": "Possession d\u0027arme prohibée"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 22,
+    "idAffaires": [
+      91,
+      134
+    ]
+  },
+  {
+    "id": 49,
+    "nom": "Hubert",
+    "prenom": "Françoise",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Agression sexuelle"
+      },
+      {
+        "peine": 7,
+        "intitule": "Atteinte à la pudeur"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 17,
+    "idAffaires": [
+      12,
+      203
+    ]
+  },
+  {
+    "id": 50,
+    "nom": "Berger",
+    "prenom": "Jacques",
+    "crimes": [
+      {
+        "peine": 16,
+        "intitule": "Trafic d\u0027armes"
+      },
+      {
+        "peine": 12,
+        "intitule": "Association de malfaiteurs"
+      },
+      {
+        "peine": 5,
+        "intitule": "Recel"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 33,
+    "idAffaires": [
+      67,
+      156,
+      212
+    ]
+  },
+  {
+    "id": 51,
+    "nom": "Carpentier",
+    "prenom": "Madeleine",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Extorsion"
+      },
+      {
+        "peine": 5,
+        "intitule": "Chantage"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 13,
+    "idAffaires": [
+      34,
+      198
+    ]
+  },
+  {
+    "id": 52,
+    "nom": "Sanchez",
+    "prenom": "Gérard",
+    "crimes": [
+      {
+        "peine": 25,
+        "intitule": "Meurtre"
+      },
+      {
+        "peine": 15,
+        "intitule": "Violence ayant entraîné la mort"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 40,
+    "idAffaires": [
+      102,
+      245
+    ]
+  },
+  {
+    "id": 53,
+    "nom": "Dupuis",
+    "prenom": "Annie",
+    "crimes": [
+      {
+        "peine": 6,
+        "intitule": "Escroquerie en ligne"
+      },
+      {
+        "peine": 4,
+        "intitule": "Usurpation d\u0027identité numérique"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 10,
+    "idAffaires": [
+      23,
+      123
+    ]
+  },
+  {
+    "id": 54,
+    "nom": "Moulin",
+    "prenom": "Roger",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Harcèlement en ligne"
+      },
+      {
+        "peine": 6,
+        "intitule": "Cyberharcèlement"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      45,
+      178
+    ]
+  },
+  {
+    "id": 55,
+    "nom": "Louis",
+    "prenom": "Jeanne",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Proxénétisme"
+      },
+      {
+        "peine": 8,
+        "intitule": "Traite des êtres humains"
+      },
+      {
+        "peine": 4,
+        "intitule": "Séquestration"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 24,
+    "idAffaires": [
+      56,
+      112,
+      167
+    ]
+  },
+  {
+    "id": 56,
+    "nom": "Deschamps",
+    "prenom": "André",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Homicide par imprudence"
+      },
+      {
+        "peine": 5,
+        "intitule": "Délit de fuite"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      89,
+      212
+    ]
+  },
+  {
+    "id": 57,
+    "nom": "Huet",
+    "prenom": "Chantal",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Détournement de fonds"
+      },
+      {
+        "peine": 8,
+        "intitule": "Fraude fiscale"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 18,
+    "idAffaires": [
+      134,
+      203
+    ]
+  },
+  {
+    "id": 58,
+    "nom": "Vasseur",
+    "prenom": "Maurice",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Tentative d\u0027assassinat"
+      },
+      {
+        "peine": 10,
+        "intitule": "Coups et blessures volontaires"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 25,
+    "idAffaires": [
+      78,
+      245
+    ]
+  },
+  {
+    "id": 59,
+    "nom": "Perez",
+    "prenom": "Simone",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Trafic de médicaments"
+      },
+      {
+        "peine": 6,
+        "intitule": "Exercice illégal de la médecine"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      12,
+      156
+    ]
+  },
+  {
+    "id": 60,
+    "nom": "Boucher",
+    "prenom": "Gilbert",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Maltraitance d\u0027animaux"
+      },
+      {
+        "peine": 5,
+        "intitule": "Cruauté envers les animaux"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 14,
+    "idAffaires": [
+      67,
+      212
+    ]
+  },
+  {
+    "id": 61,
+    "nom": "Fleury",
+    "prenom": "Suzanne",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Faux en écriture"
+      },
+      {
+        "peine": 5,
+        "intitule": "Usage de faux"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      34,
+      198
+    ]
+  },
+  {
+    "id": 62,
+    "nom": "Royer",
+    "prenom": "Henri",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Sabotage"
+      },
+      {
+        "peine": 8,
+        "intitule": "Dégradation de biens"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 18,
+    "idAffaires": [
+      102,
+      178
+    ]
+  },
+  {
+    "id": 63,
+    "nom": "Klein",
+    "prenom": "Renée",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Fraude en ligne"
+      },
+      {
+        "peine": 8,
+        "intitule": "Vol d\u0027identité"
+      },
+      {
+        "peine": 5,
+        "intitule": "Escroquerie"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 25,
+    "idAffaires": [
+      23,
+      112,
+      167
+    ]
+  },
+  {
+    "id": 64,
+    "nom": "Jacquet",
+    "prenom": "Raymond",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Harcèlement moral"
+      },
+      {
+        "peine": 6,
+        "intitule": "Menaces de mort"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      56,
+      123
+    ]
+  },
+  {
+    "id": 65,
+    "nom": "Adam",
+    "prenom": "Marguerite",
+    "crimes": [
+      {
+        "peine": 14,
+        "intitule": "Empoisonnement"
+      },
+      {
+        "peine": 10,
+        "intitule": "Tentative de meurtre"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 24,
+    "idAffaires": [
+      45,
+      245
+    ]
+  },
+  {
+    "id": 66,
+    "nom": "Paris",
+    "prenom": "Marcel",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Vol qualifié"
+      },
+      {
+        "peine": 5,
+        "intitule": "Effraction"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 13,
+    "idAffaires": [
+      89,
+      134
+    ]
+  },
+  {
+    "id": 67,
+    "nom": "Poirier",
+    "prenom": "Thérèse",
+    "crimes": [
+      {
+        "peine": 11,
+        "intitule": "Détournement de mineurs"
+      },
+      {
+        "peine": 8,
+        "intitule": "Abus de faiblesse"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 19,
+    "idAffaires": [
+      78,
+      203
+    ]
+  },
+  {
+    "id": 68,
+    "nom": "Marty",
+    "prenom": "Lucien",
+    "crimes": [
+      {
+        "peine": 13,
+        "intitule": "Blanchiment d\u0027argent"
+      },
+      {
+        "peine": 9,
+        "intitule": "Association de malfaiteurs"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 22,
+    "idAffaires": [
+      12,
+      212
+    ]
+  },
+  {
+    "id": 69,
+    "nom": "Aubry",
+    "prenom": "Marcelle",
+    "crimes": [
+      {
+        "peine": 10,
+        "intitule": "Homicide volontaire"
+      },
+      {
+        "peine": 7,
+        "intitule": "Coups mortels"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 17,
+    "idAffaires": [
+      67,
+      156
+    ]
+  },
+  {
+    "id": 70,
+    "nom": "Guyot",
+    "prenom": "Paul",
+    "crimes": [
+      {
+        "peine": 8,
+        "intitule": "Atteinte à la vie privée"
+      },
+      {
+        "peine": 5,
+        "intitule": "Enregistrement illicite"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 13,
+    "idAffaires": [
+      34,
+      245
+    ]
+  },
+  {
+    "id": 71,
+    "nom": "Carre",
+    "prenom": "Germaine",
+    "crimes": [
+      {
+        "peine": 12,
+        "intitule": "Trafic de médicaments"
+      },
+      {
+        "peine": 8,
+        "intitule": "Contrefaçon de produits pharmaceutiques"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 20,
+    "idAffaires": [
+      102,
+      198
+    ]
+  },
+  {
+    "id": 72,
+    "nom": "Charles",
+    "prenom": "Georges",
+    "crimes": [
+      {
+        "peine": 15,
+        "intitule": "Viol"
+      },
+      {
+        "peine": 10,
+        "intitule": "Agression sexuelle"
+      },
+      {
+        "peine": 5,
+        "intitule": "Atteinte à la pudeur"
+      }
+    ],
+    "preuves": [
+      {},
+      {},
+      {}
+    ],
+    "peineTotale": 30,
+    "idAffaires": [
+      23,
+      123,
+      167
+    ]
+  },
+  {
+    "id": 73,
+    "nom": "Renault",
+    "prenom": "Paulette",
+    "crimes": [
+      {
+        "peine": 9,
+        "intitule": "Chantage"
+      },
+      {
+        "peine": 6,
+        "intitule": "Extorsion"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 15,
+    "idAffaires": [
+      56,
+      178
+    ]
+  },
+  {
+    "id": 74,
+    "nom": "Charpentier",
+    "prenom": "Léon",
+    "crimes": [
+      {
+        "peine": 11,
+        "intitule": "Faux-monnayage"
+      },
+      {
+        "peine": 8,
+        "intitule": "Mise en circulation de fausse monnaie"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 19,
+    "idAffaires": [
+      45,
+      112
+    ]
+  },
+  {
+    "id": 75,
+    "nom": "Menard",
+    "prenom": "Denise",
+    "crimes": [
+      {
+        "peine": 7,
+        "intitule": "Cyberharcèlement"
+      },
+      {
+        "peine": 5,
+        "intitule": "Usurpation d\u0027identité numérique"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 12,
+    "idAffaires": [
+      89,
+      212
+    ]
+  },
+  {
+    "id": 76,
+    "nom": "Maillard",
+    "prenom": "René",
+    "crimes": [
+      {
+        "peine": 14,
+        "intitule": "Trafic d\u0027influence"
+      },
+      {
+        "peine": 10,
+        "intitule": "Corruption"
+      }
+    ],
+    "preuves": [
+      {},
+      {}
+    ],
+    "peineTotale": 24,
+    "idAffaires": [
+      134,
+      203
     ]
   }
 ]

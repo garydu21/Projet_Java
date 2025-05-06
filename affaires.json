@@ -3,4460 +3,503 @@
     "id": 1,
     "description": "Vol à la bijouterie",
     "lieu": "Paris",
-    "date": "2023-11-09",
+    "date": "21-06-2000",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      479,
-      809,
-      271
-    ]
-  },
-  {
-    "id": 2,
-    "description": "Braquage de banque",
-    "lieu": "Lille",
-    "date": "2023-08-22",
-    "idCriminels": [
-      946,
-      502
-    ]
-  },
-  {
-    "id": 3,
-    "description": "Cambriolage en série",
-    "lieu": "Lille",
-    "date": "2022-08-02",
-    "idCriminels": [
-      369,
-      561,
-      848,
-      979
-    ]
-  },
-  {
-    "id": 4,
-    "description": "Fraude fiscale massive",
-    "lieu": "Marseille",
-    "date": "2022-08-12",
-    "idCriminels": [
-      312,
-      483,
-      973,
-      956
-    ]
-  },
-  {
-    "id": 5,
-    "description": "Enlèvement d’un diplomate",
-    "lieu": "Lyon",
-    "date": "2023-07-17",
-    "idCriminels": [
-      529,
-      600,
-      835,
-      120
-    ]
-  },
-  {
-    "id": 6,
-    "description": "Contrebande d’armes",
-    "lieu": "Grenoble",
-    "date": "2022-09-14",
-    "idCriminels": [
-      479,
-      794,
-      835,
-      681
-    ]
-  },
-  {
-    "id": 7,
-    "description": "Corruption politique",
-    "lieu": "Toulouse",
-    "date": "2022-05-30",
-    "idCriminels": [
-      502,
-      873,
-      641
-    ]
-  },
-  {
-    "id": 8,
-    "description": "Piratage informatique",
-    "lieu": "Paris",
-    "date": "2023-09-19",
-    "idCriminels": [
-      809,
-      477,
-      215,
-      312
-    ]
-  },
-  {
-    "id": 9,
-    "description": "Sabotage d’usine",
-    "lieu": "Strasbourg",
-    "date": "2024-02-27",
-    "idCriminels": [
-      812,
-      989
-    ]
-  },
-  {
-    "id": 10,
-    "description": "Trafic de drogues",
-    "lieu": "Nantes",
-    "date": "2023-06-12",
-    "idCriminels": [
-      843
-    ]
-  },
-  {
-    "id": 11,
-    "description": "Falsification de documents",
-    "lieu": "Toulouse",
-    "date": "2024-05-14",
-    "idCriminels": [
-      691,
-      218,
-      312,
-      311
+      1,
+      32,
+      49
     ]
   },
   {
     "id": 12,
     "description": "Attaque de convoi blindé",
     "lieu": "Nantes",
-    "date": "2022-11-16",
+    "date": "15-05-2022",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      762,
-      192,
-      502,
-      527
-    ]
-  },
-  {
-    "id": 13,
-    "description": "Espionnage industriel",
-    "lieu": "Lyon",
-    "date": "2023-03-08",
-    "idCriminels": [
-      933,
-      169,
-      288
-    ]
-  },
-  {
-    "id": 14,
-    "description": "Vol d’œuvres d’art",
-    "lieu": "Paris",
-    "date": "2022-11-09",
-    "idCriminels": [
-      238,
-      812
-    ]
-  },
-  {
-    "id": 15,
-    "description": "Rançongiciel sur hôpital",
-    "lieu": "Lille",
-    "date": "2023-02-06",
-    "idCriminels": [
-      641,
-      827,
-      682,
-      140
-    ]
-  },
-  {
-    "id": 16,
-    "description": "Incendie criminel",
-    "lieu": "Lyon",
-    "date": "2023-07-21",
-    "idCriminels": [
-      971,
-      488,
-      271,
-      551
-    ]
-  },
-  {
-    "id": 17,
-    "description": "Meurtre en série",
-    "lieu": "Toulouse",
-    "date": "2022-01-22",
-    "idCriminels": [
-      158,
-      250,
-      870
-    ]
-  },
-  {
-    "id": 18,
-    "description": "Arnaque téléphonique",
-    "lieu": "Marseille",
-    "date": "2022-06-06",
-    "idCriminels": [
-      621
-    ]
-  },
-  {
-    "id": 19,
-    "description": "Infiltration mafieuse",
-    "lieu": "Lille",
-    "date": "2022-12-27",
-    "idCriminels": [
-      250,
-      257
-    ]
-  },
-  {
-    "id": 20,
-    "description": "Déraillement de train",
-    "lieu": "Paris",
-    "date": "2022-05-04",
-    "idCriminels": [
-      621,
-      670
-    ]
-  },
-  {
-    "id": 21,
-    "description": "Braconnage",
-    "lieu": "Strasbourg",
-    "date": "2018-06-09",
-    "idCriminels": [
-      120
-    ]
-  },
-  {
-    "id": 22,
-    "description": "Faux en écriture",
-    "lieu": "Lille",
-    "date": "2021-03-01",
-    "idCriminels": [
-      192,
-      165,
-      136,
-      116
+      1,
+      25,
+      40,
+      59
     ]
   },
   {
     "id": 23,
-    "description": "Cambriolage",
-    "lieu": "Grenoble",
-    "date": "2024-05-29",
+    "description": "Trafic d'êtres humains",
+    "lieu": "Lyon",
+    "date": "14-07-2021",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      542,
-      986
-    ]
-  },
-  {
-    "id": 24,
-    "description": "Piratage informatique",
-    "lieu": "Nice",
-    "date": "2016-07-16",
-    "idCriminels": [
-      542,
-      238,
-      120,
-      971
-    ]
-  },
-  {
-    "id": 25,
-    "description": "Recel",
-    "lieu": "Paris",
-    "date": "2019-09-15",
-    "idCriminels": [
-      963,
-      288,
-      296
-    ]
-  },
-  {
-    "id": 26,
-    "description": "Harcèlement",
-    "lieu": "Lille",
-    "date": "2024-01-20",
-    "idCriminels": [
-      794
-    ]
-  },
-  {
-    "id": 27,
-    "description": "Espionnage",
-    "lieu": "Paris",
-    "date": "2025-04-13",
-    "idCriminels": [
-      529,
-      831,
-      483
-    ]
-  },
-  {
-    "id": 28,
-    "description": "Menaces",
-    "lieu": "Lille",
-    "date": "2020-07-29",
-    "idCriminels": [
-      167,
-      660,
-      158
-    ]
-  },
-  {
-    "id": 29,
-    "description": "Meurtre",
-    "lieu": "Grenoble",
-    "date": "2018-12-31",
-    "idCriminels": [
-      848,
-      956,
-      946
-    ]
-  },
-  {
-    "id": 30,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Paris",
-    "date": "2020-01-11",
-    "idCriminels": [
-      979
-    ]
-  },
-  {
-    "id": 31,
-    "description": "Vol de voiture",
-    "lieu": "Paris",
-    "date": "2023-05-18",
-    "idCriminels": [
-      956,
-      776,
-      350
-    ]
-  },
-  {
-    "id": 32,
-    "description": "Entrave à la justice",
-    "lieu": "Grenoble",
-    "date": "2024-07-01",
-    "idCriminels": [
-      709,
-      771,
-      527
-    ]
-  },
-  {
-    "id": 33,
-    "description": "Trafic de drogues",
-    "lieu": "Marseille",
-    "date": "2015-12-05",
-    "idCriminels": [
-      159,
-      956
+      2,
+      17,
+      36,
+      53
     ]
   },
   {
     "id": 34,
-    "description": "Menaces",
-    "lieu": "Marseille",
-    "date": "2021-08-15",
-    "idCriminels": [
-      641,
-      979,
-      873
-    ]
-  },
-  {
-    "id": 35,
-    "description": "Viol",
-    "lieu": "Bordeaux",
-    "date": "2022-07-29",
-    "idCriminels": [
-      116,
-      158,
-      633,
-      130
-    ]
-  },
-  {
-    "id": 36,
-    "description": "Entrave à la justice",
-    "lieu": "Lille",
-    "date": "2017-06-24",
-    "idCriminels": [
-      238
-    ]
-  },
-  {
-    "id": 37,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Strasbourg",
-    "date": "2015-09-12",
-    "idCriminels": [
-      474,
-      563,
-      660
-    ]
-  },
-  {
-    "id": 38,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Strasbourg",
-    "date": "2019-11-17",
-    "idCriminels": [
-      869,
-      971,
-      381
-    ]
-  },
-  {
-    "id": 39,
-    "description": "Fraude fiscale",
+    "description": "Corruption politique",
     "lieu": "Paris",
-    "date": "2016-02-25",
+    "date": "18-09-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      971,
-      527,
-      444
-    ]
-  },
-  {
-    "id": 40,
-    "description": "Délit de fuite",
-    "lieu": "Lille",
-    "date": "2020-05-30",
-    "idCriminels": [
-      831,
-      412,
-      168,
-      551
-    ]
-  },
-  {
-    "id": 41,
-    "description": "Contrebande",
-    "lieu": "Grenoble",
-    "date": "2021-02-18",
-    "idCriminels": [
-      312,
-      524,
-      956,
-      128
-    ]
-  },
-  {
-    "id": 42,
-    "description": "Cambriolage",
-    "lieu": "Marseille",
-    "date": "2015-10-27",
-    "idCriminels": [
-      551,
-      350,
-      517,
-      971
-    ]
-  },
-  {
-    "id": 43,
-    "description": "Piratage informatique",
-    "lieu": "Strasbourg",
-    "date": "2022-10-02",
-    "idCriminels": [
-      835,
-      250,
-      419
-    ]
-  },
-  {
-    "id": 44,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Bordeaux",
-    "date": "2022-06-06",
-    "idCriminels": [
-      350,
-      159,
-      895
+      3,
+      16,
+      24,
+      42
     ]
   },
   {
     "id": 45,
-    "description": "Violences conjugales",
-    "lieu": "Strasbourg",
-    "date": "2019-06-28",
+    "description": "Braquage de banque",
+    "lieu": "Marseille",
+    "date": "12-03-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      682,
-      741,
-      158
-    ]
-  },
-  {
-    "id": 46,
-    "description": "Incendie criminel",
-    "lieu": "Paris",
-    "date": "2021-11-17",
-    "idCriminels": [
-      215
-    ]
-  },
-  {
-    "id": 47,
-    "description": "Fraude fiscale",
-    "lieu": "Strasbourg",
-    "date": "2016-07-28",
-    "idCriminels": [
-      462
-    ]
-  },
-  {
-    "id": 48,
-    "description": "Harcèlement",
-    "lieu": "Toulouse",
-    "date": "2021-04-12",
-    "idCriminels": [
-      479,
-      827,
-      296
-    ]
-  },
-  {
-    "id": 49,
-    "description": "Braconnage",
-    "lieu": "Lyon",
-    "date": "2021-09-04",
-    "idCriminels": [
-      544
-    ]
-  },
-  {
-    "id": 50,
-    "description": "Braconnage",
-    "lieu": "Nice",
-    "date": "2020-05-25",
-    "idCriminels": [
-      963
-    ]
-  },
-  {
-    "id": 51,
-    "description": "Homicide involontaire",
-    "lieu": "Toulouse",
-    "date": "2015-05-09",
-    "idCriminels": [
-      919,
-      140,
-      369
-    ]
-  },
-  {
-    "id": 52,
-    "description": "Harcèlement",
-    "lieu": "Paris",
-    "date": "2021-09-03",
-    "idCriminels": [
-      369,
-      979,
-      128,
-      946
-    ]
-  },
-  {
-    "id": 53,
-    "description": "Escroquerie",
-    "lieu": "Lyon",
-    "date": "2024-10-05",
-    "idCriminels": [
-      483,
-      215,
-      169
-    ]
-  },
-  {
-    "id": 54,
-    "description": "Trafic de drogues",
-    "lieu": "Nice",
-    "date": "2021-04-09",
-    "idCriminels": [
-      116,
-      979,
-      641
-    ]
-  },
-  {
-    "id": 55,
-    "description": "Braconnage",
-    "lieu": "Lille",
-    "date": "2017-08-17",
-    "idCriminels": [
-      919,
-      417,
-      304
+      7,
+      11,
+      28,
+      45
     ]
   },
   {
     "id": 56,
-    "description": "Détournement de fonds",
-    "lieu": "Nice",
-    "date": "2015-11-06",
+    "description": "Incendie criminel",
+    "lieu": "Toulouse",
+    "date": "07-11-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      238,
-      979,
-      288,
-      843
-    ]
-  },
-  {
-    "id": 57,
-    "description": "Recel",
-    "lieu": "Nantes",
-    "date": "2017-10-26",
-    "idCriminels": [
-      445,
-      330,
-      946
-    ]
-  },
-  {
-    "id": 58,
-    "description": "Escroquerie",
-    "lieu": "Nantes",
-    "date": "2025-01-19",
-    "idCriminels": [
-      919
-    ]
-  },
-  {
-    "id": 59,
-    "description": "Espionnage",
-    "lieu": "Grenoble",
-    "date": "2023-05-25",
-    "idCriminels": [
-      218,
-      439,
-      350
-    ]
-  },
-  {
-    "id": 60,
-    "description": "Détournement de fonds",
-    "lieu": "Marseille",
-    "date": "2022-03-12",
-    "idCriminels": [
-      809
-    ]
-  },
-  {
-    "id": 61,
-    "description": "Séquestration",
-    "lieu": "Paris",
-    "date": "2022-05-20",
-    "idCriminels": [
-      656,
-      412
-    ]
-  },
-  {
-    "id": 62,
-    "description": "Recel",
-    "lieu": "Lyon",
-    "date": "2016-11-11",
-    "idCriminels": [
-      563,
-      288
-    ]
-  },
-  {
-    "id": 63,
-    "description": "Proxénétisme",
-    "lieu": "Lyon",
-    "date": "2020-03-06",
-    "idCriminels": [
-      527,
-      641,
-      130
-    ]
-  },
-  {
-    "id": 64,
-    "description": "Délit de fuite",
-    "lieu": "Paris",
-    "date": "2021-02-09",
-    "idCriminels": [
-      444,
-      250,
-      419,
-      869
-    ]
-  },
-  {
-    "id": 65,
-    "description": "Vol simple",
-    "lieu": "Marseille",
-    "date": "2023-08-10",
-    "idCriminels": [
-      257,
-      159,
-      304
-    ]
-  },
-  {
-    "id": 66,
-    "description": "Vol de voiture",
-    "lieu": "Nice",
-    "date": "2025-02-12",
-    "idCriminels": [
-      551
+      4,
+      10,
+      20,
+      29
     ]
   },
   {
     "id": 67,
-    "description": "Contrebande",
-    "lieu": "Nice",
-    "date": "2021-06-04",
-    "idCriminels": [
-      600,
-      848,
-      149
-    ]
-  },
-  {
-    "id": 68,
-    "description": "Fraude fiscale",
-    "lieu": "Bordeaux",
-    "date": "2019-03-23",
-    "idCriminels": [
-      445,
-      843,
-      776
-    ]
-  },
-  {
-    "id": 69,
-    "description": "Violences conjugales",
+    "description": "Escroquerie massive",
     "lieu": "Lyon",
-    "date": "2018-10-01",
+    "date": "23-01-2023",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      979,
-      544,
-      483,
-      116
-    ]
-  },
-  {
-    "id": 70,
-    "description": "Harcèlement",
-    "lieu": "Strasbourg",
-    "date": "2020-09-29",
-    "idCriminels": [
-      656
-    ]
-  },
-  {
-    "id": 71,
-    "description": "Contrebande",
-    "lieu": "Lille",
-    "date": "2017-02-26",
-    "idCriminels": [
-      130,
-      444,
-      641
-    ]
-  },
-  {
-    "id": 72,
-    "description": "Blanchiment d'argent",
-    "lieu": "Paris",
-    "date": "2025-02-25",
-    "idCriminels": [
-      682
-    ]
-  },
-  {
-    "id": 73,
-    "description": "Trafic de drogues",
-    "lieu": "Nice",
-    "date": "2020-04-21",
-    "idCriminels": [
-      765,
-      128,
-      296
-    ]
-  },
-  {
-    "id": 74,
-    "description": "Homicide involontaire",
-    "lieu": "Grenoble",
-    "date": "2023-07-16",
-    "idCriminels": [
-      159,
-      794,
-      629
-    ]
-  },
-  {
-    "id": 75,
-    "description": "Viol",
-    "lieu": "Bordeaux",
-    "date": "2021-03-19",
-    "idCriminels": [
-      257,
-      271
-    ]
-  },
-  {
-    "id": 76,
-    "description": "Trafic de drogues",
-    "lieu": "Toulouse",
-    "date": "2023-11-28",
-    "idCriminels": [
-      167,
-      600
-    ]
-  },
-  {
-    "id": 77,
-    "description": "Violences conjugales",
-    "lieu": "Nantes",
-    "date": "2019-06-05",
-    "idCriminels": [
-      812
+      8,
+      19,
+      33,
+      41
     ]
   },
   {
     "id": 78,
-    "description": "Cambriolage",
-    "lieu": "Toulouse",
-    "date": "2023-12-02",
-    "idCriminels": [
-      158,
-      288,
-      304
-    ]
-  },
-  {
-    "id": 79,
-    "description": "Enlèvement",
-    "lieu": "Strasbourg",
-    "date": "2025-01-08",
-    "idCriminels": [
-      169,
-      709
-    ]
-  },
-  {
-    "id": 80,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Paris",
-    "date": "2022-12-05",
-    "idCriminels": [
-      544,
-      946
-    ]
-  },
-  {
-    "id": 81,
-    "description": "Extorsion",
+    "description": "Trafic d'armes",
     "lieu": "Bordeaux",
-    "date": "2024-12-08",
+    "date": "05-06-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      986
-    ]
-  },
-  {
-    "id": 82,
-    "description": "Meurtre",
-    "lieu": "Toulouse",
-    "date": "2018-11-04",
-    "idCriminels": [
-      524,
-      479,
-      563,
-      165
-    ]
-  },
-  {
-    "id": 83,
-    "description": "Homicide involontaire",
-    "lieu": "Nice",
-    "date": "2019-11-30",
-    "idCriminels": [
-      250,
-      848
-    ]
-  },
-  {
-    "id": 84,
-    "description": "Fraude fiscale",
-    "lieu": "Nantes",
-    "date": "2021-01-27",
-    "idCriminels": [
-      946
-    ]
-  },
-  {
-    "id": 85,
-    "description": "Séquestration",
-    "lieu": "Marseille",
-    "date": "2019-05-28",
-    "idCriminels": [
-      483,
-      140,
-      563
-    ]
-  },
-  {
-    "id": 86,
-    "description": "Fraude fiscale",
-    "lieu": "Bordeaux",
-    "date": "2016-12-28",
-    "idCriminels": [
-      660,
-      330,
-      445,
-      869
-    ]
-  },
-  {
-    "id": 87,
-    "description": "Blanchiment d'argent",
-    "lieu": "Nice",
-    "date": "2022-05-24",
-    "idCriminels": [
-      542,
-      218,
-      673,
-      417
-    ]
-  },
-  {
-    "id": 88,
-    "description": "Proxénétisme",
-    "lieu": "Toulouse",
-    "date": "2024-01-22",
-    "idCriminels": [
-      517,
-      843,
-      312,
-      831
+      3,
+      13,
+      30,
+      47
     ]
   },
   {
     "id": 89,
-    "description": "Séquestration",
-    "lieu": "Lyon",
-    "date": "2021-03-28",
+    "description": "Cambriolage de musée",
+    "lieu": "Paris",
+    "date": "30-10-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      479
-    ]
-  },
-  {
-    "id": 90,
-    "description": "Blanchiment d'argent",
-    "lieu": "Bordeaux",
-    "date": "2016-12-10",
-    "idCriminels": [
-      444,
-      410,
-      869,
-      477
+      9,
+      27,
+      38,
+      56
     ]
   },
   {
     "id": 91,
-    "description": "Homicide involontaire",
-    "lieu": "Toulouse",
-    "date": "2024-08-09",
+    "description": "Fraude fiscale",
+    "lieu": "Nice",
+    "date": "14-02-2023",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      136,
-      483,
-      554,
-      479
-    ]
-  },
-  {
-    "id": 92,
-    "description": "Vol de voiture",
-    "lieu": "Strasbourg",
-    "date": "2021-12-04",
-    "idCriminels": [
-      709,
-      350,
-      794,
-      439
-    ]
-  },
-  {
-    "id": 93,
-    "description": "Trafic de drogues",
-    "lieu": "Strasbourg",
-    "date": "2017-06-30",
-    "idCriminels": [
-      445,
-      130
-    ]
-  },
-  {
-    "id": 94,
-    "description": "Usurpation d'identité",
-    "lieu": "Grenoble",
-    "date": "2020-05-22",
-    "idCriminels": [
-      933
-    ]
-  },
-  {
-    "id": 95,
-    "description": "Enlèvement",
-    "lieu": "Lyon",
-    "date": "2025-03-20",
-    "idCriminels": [
-      827,
-      848,
-      168
-    ]
-  },
-  {
-    "id": 96,
-    "description": "Espionnage",
-    "lieu": "Grenoble",
-    "date": "2024-01-18",
-    "idCriminels": [
-      629,
-      128,
-      544
-    ]
-  },
-  {
-    "id": 97,
-    "description": "Contrebande",
-    "lieu": "Nantes",
-    "date": "2024-07-02",
-    "idCriminels": [
-      544,
-      986,
-      120,
-      218
-    ]
-  },
-  {
-    "id": 98,
-    "description": "Meurtre",
-    "lieu": "Lille",
-    "date": "2019-06-07",
-    "idCriminels": [
-      865,
-      417,
-      488
-    ]
-  },
-  {
-    "id": 99,
-    "description": "Homicide involontaire",
-    "lieu": "Strasbourg",
-    "date": "2025-04-22",
-    "idCriminels": [
-      524,
-      445
-    ]
-  },
-  {
-    "id": 100,
-    "description": "Viol",
-    "lieu": "Strasbourg",
-    "date": "2021-12-15",
-    "idCriminels": [
-      271
-    ]
-  },
-  {
-    "id": 101,
-    "description": "Blanchiment d'argent",
-    "lieu": "Paris",
-    "date": "2023-06-02",
-    "idCriminels": [
-      502,
-      979
+      4,
+      14,
+      21,
+      39
     ]
   },
   {
     "id": 102,
-    "description": "Blanchiment d'argent",
-    "lieu": "Toulouse",
-    "date": "2020-09-21",
-    "idCriminels": [
-      483,
-      551,
-      381,
-      168
-    ]
-  },
-  {
-    "id": 103,
-    "description": "Fraude fiscale",
+    "description": "Trafic de stupéfiants",
     "lieu": "Lille",
-    "date": "2023-11-01",
+    "date": "09-09-2022",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      529,
-      351
-    ]
-  },
-  {
-    "id": 104,
-    "description": "Blanchiment d'argent",
-    "lieu": "Bordeaux",
-    "date": "2021-12-05",
-    "idCriminels": [
-      169,
-      168
-    ]
-  },
-  {
-    "id": 105,
-    "description": "Vol simple",
-    "lieu": "Strasbourg",
-    "date": "2017-05-13",
-    "idCriminels": [
-      128,
-      488,
-      946
-    ]
-  },
-  {
-    "id": 106,
-    "description": "Piratage informatique",
-    "lieu": "Paris",
-    "date": "2023-06-18",
-    "idCriminels": [
-      419,
-      835
-    ]
-  },
-  {
-    "id": 107,
-    "description": "Usurpation d'identité",
-    "lieu": "Lyon",
-    "date": "2017-05-26",
-    "idCriminels": [
-      271,
-      477,
-      502,
-      488
-    ]
-  },
-  {
-    "id": 108,
-    "description": "Cambriolage",
-    "lieu": "Lille",
-    "date": "2015-07-28",
-    "idCriminels": [
-      444,
-      561,
-      218,
-      524
-    ]
-  },
-  {
-    "id": 109,
-    "description": "Harcèlement",
-    "lieu": "Strasbourg",
-    "date": "2017-06-27",
-    "idCriminels": [
-      831,
-      474,
-      641
-    ]
-  },
-  {
-    "id": 110,
-    "description": "Proxénétisme",
-    "lieu": "Lille",
-    "date": "2023-05-26",
-    "idCriminels": [
-      762,
-      656
-    ]
-  },
-  {
-    "id": 111,
-    "description": "Homicide involontaire",
-    "lieu": "Lille",
-    "date": "2023-04-27",
-    "idCriminels": [
-      158,
-      835,
-      542,
-      351
+      5,
+      18,
+      35,
+      43
     ]
   },
   {
     "id": 112,
-    "description": "Faux en écriture",
-    "lieu": "Paris",
-    "date": "2016-01-17",
+    "description": "Cybercriminalité",
+    "lieu": "Lyon",
+    "date": "27-07-2021",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      415,
-      116,
-      794
-    ]
-  },
-  {
-    "id": 113,
-    "description": "Entrave à la justice",
-    "lieu": "Lille",
-    "date": "2021-05-30",
-    "idCriminels": [
-      843
-    ]
-  },
-  {
-    "id": 114,
-    "description": "Homicide involontaire",
-    "lieu": "Lille",
-    "date": "2017-01-29",
-    "idCriminels": [
-      128,
-      116,
-      296
-    ]
-  },
-  {
-    "id": 115,
-    "description": "Piratage informatique",
-    "lieu": "Lille",
-    "date": "2023-04-06",
-    "idCriminels": [
-      304,
-      621
-    ]
-  },
-  {
-    "id": 116,
-    "description": "Meurtre",
-    "lieu": "Bordeaux",
-    "date": "2018-05-27",
-    "idCriminels": [
-      381,
-      311,
-      444,
-      971
-    ]
-  },
-  {
-    "id": 117,
-    "description": "Blanchiment d'argent",
-    "lieu": "Lille",
-    "date": "2024-07-16",
-    "idCriminels": [
-      827,
-      741
-    ]
-  },
-  {
-    "id": 118,
-    "description": "Usurpation d'identité",
-    "lieu": "Paris",
-    "date": "2015-05-25",
-    "idCriminels": [
-      554,
-      120
-    ]
-  },
-  {
-    "id": 119,
-    "description": "Extorsion",
-    "lieu": "Grenoble",
-    "date": "2020-10-06",
-    "idCriminels": [
-      709,
-      979,
-      312
-    ]
-  },
-  {
-    "id": 120,
-    "description": "Homicide involontaire",
-    "lieu": "Bordeaux",
-    "date": "2021-11-28",
-    "idCriminels": [
-      257
-    ]
-  },
-  {
-    "id": 121,
-    "description": "Recel",
-    "lieu": "Paris",
-    "date": "2020-03-07",
-    "idCriminels": [
-      167,
-      946,
-      986
-    ]
-  },
-  {
-    "id": 122,
-    "description": "Recel",
-    "lieu": "Strasbourg",
-    "date": "2024-03-24",
-    "idCriminels": [
-      412,
-      551,
-      165,
-      250
+      6,
+      15,
+      26,
+      37
     ]
   },
   {
     "id": 123,
-    "description": "Incendie criminel",
-    "lieu": "Toulouse",
-    "date": "2017-04-05",
-    "idCriminels": [
-      524,
-      641,
-      483
-    ]
-  },
-  {
-    "id": 124,
-    "description": "Proxénétisme",
-    "lieu": "Strasbourg",
-    "date": "2019-01-22",
-    "idCriminels": [
-      412
-    ]
-  },
-  {
-    "id": 125,
-    "description": "Enlèvement",
-    "lieu": "Paris",
-    "date": "2019-02-02",
-    "idCriminels": [
-      681
-    ]
-  },
-  {
-    "id": 126,
-    "description": "Trafic de drogues",
-    "lieu": "Nice",
-    "date": "2021-06-03",
-    "idCriminels": [
-      673
-    ]
-  },
-  {
-    "id": 127,
-    "description": "Escroquerie",
-    "lieu": "Lyon",
-    "date": "2016-12-04",
-    "idCriminels": [
-      691,
-      809,
-      794
-    ]
-  },
-  {
-    "id": 128,
-    "description": "Séquestration",
-    "lieu": "Lille",
-    "date": "2021-07-10",
-    "idCriminels": [
-      477,
-      116
-    ]
-  },
-  {
-    "id": 129,
-    "description": "Corruption",
-    "lieu": "Lille",
-    "date": "2018-11-27",
-    "idCriminels": [
-      551,
-      474
-    ]
-  },
-  {
-    "id": 130,
-    "description": "Espionnage",
-    "lieu": "Bordeaux",
-    "date": "2015-05-08",
-    "idCriminels": [
-      419,
-      116
-    ]
-  },
-  {
-    "id": 131,
-    "description": "Proxénétisme",
-    "lieu": "Grenoble",
-    "date": "2024-11-29",
-    "idCriminels": [
-      120,
-      149
-    ]
-  },
-  {
-    "id": 132,
-    "description": "Meurtre",
-    "lieu": "Grenoble",
-    "date": "2021-07-30",
-    "idCriminels": [
-      794
-    ]
-  },
-  {
-    "id": 133,
-    "description": "Proxénétisme",
+    "description": "Faux et usage de faux",
     "lieu": "Marseille",
-    "date": "2023-06-02",
+    "date": "03-04-2022",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      765
+      4,
+      12,
+      19,
+      34
     ]
   },
   {
     "id": 134,
-    "description": "Incendie criminel",
+    "description": "Blanchiment d'argent",
     "lieu": "Toulouse",
-    "date": "2019-10-15",
+    "date": "21-08-2023",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      794,
-      812,
-      622,
-      130
-    ]
-  },
-  {
-    "id": 135,
-    "description": "Braconnage",
-    "lieu": "Marseille",
-    "date": "2020-10-08",
-    "idCriminels": [
-      563,
-      765,
-      865
-    ]
-  },
-  {
-    "id": 136,
-    "description": "Entrave à la justice",
-    "lieu": "Marseille",
-    "date": "2015-07-22",
-    "idCriminels": [
-      330,
-      843,
-      544
-    ]
-  },
-  {
-    "id": 137,
-    "description": "Enlèvement",
-    "lieu": "Nantes",
-    "date": "2015-09-24",
-    "idCriminels": [
-      831,
-      835,
-      488
-    ]
-  },
-  {
-    "id": 138,
-    "description": "Extorsion",
-    "lieu": "Marseille",
-    "date": "2022-11-24",
-    "idCriminels": [
-      288,
-      691
-    ]
-  },
-  {
-    "id": 139,
-    "description": "Usurpation d'identité",
-    "lieu": "Lille",
-    "date": "2022-05-02",
-    "idCriminels": [
-      691,
-      973,
-      529
-    ]
-  },
-  {
-    "id": 140,
-    "description": "Espionnage",
-    "lieu": "Paris",
-    "date": "2020-06-23",
-    "idCriminels": [
-      865,
-      288,
-      544,
-      542
-    ]
-  },
-  {
-    "id": 141,
-    "description": "Extorsion",
-    "lieu": "Strasbourg",
-    "date": "2018-01-09",
-    "idCriminels": [
-      369,
-      483,
-      622,
-      561
-    ]
-  },
-  {
-    "id": 142,
-    "description": "Viol",
-    "lieu": "Bordeaux",
-    "date": "2024-03-25",
-    "idCriminels": [
-      542,
-      128,
-      529
-    ]
-  },
-  {
-    "id": 143,
-    "description": "Piratage informatique",
-    "lieu": "Lyon",
-    "date": "2023-04-14",
-    "idCriminels": [
-      488
-    ]
-  },
-  {
-    "id": 144,
-    "description": "Vol simple",
-    "lieu": "Marseille",
-    "date": "2023-04-26",
-    "idCriminels": [
-      794,
-      656
+      8,
+      18,
+      22,
+      40
     ]
   },
   {
     "id": 145,
-    "description": "Usurpation d'identité",
-    "lieu": "Paris",
-    "date": "2019-07-28",
-    "idCriminels": [
-      350,
-      563,
-      417
-    ]
-  },
-  {
-    "id": 146,
-    "description": "Escroquerie",
-    "lieu": "Marseille",
-    "date": "2020-12-09",
-    "idCriminels": [
-      843
-    ]
-  },
-  {
-    "id": 147,
-    "description": "Harcèlement",
-    "lieu": "Bordeaux",
-    "date": "2021-12-29",
-    "idCriminels": [
-      439,
-      271
-    ]
-  },
-  {
-    "id": 148,
-    "description": "Viol",
-    "lieu": "Marseille",
-    "date": "2019-08-11",
-    "idCriminels": [
-      873,
-      140,
-      271,
-      544
-    ]
-  },
-  {
-    "id": 149,
-    "description": "Enlèvement",
-    "lieu": "Toulouse",
-    "date": "2019-07-17",
-    "idCriminels": [
-      682,
-      159,
-      551,
-      895
-    ]
-  },
-  {
-    "id": 150,
-    "description": "Incendie criminel",
-    "lieu": "Grenoble",
-    "date": "2017-07-26",
-    "idCriminels": [
-      218,
-      551,
-      771
-    ]
-  },
-  {
-    "id": 151,
-    "description": "Menaces",
-    "lieu": "Nice",
-    "date": "2024-08-28",
-    "idCriminels": [
-      130,
-      477,
-      946
-    ]
-  },
-  {
-    "id": 152,
-    "description": "Harcèlement",
-    "lieu": "Lyon",
-    "date": "2023-11-28",
-    "idCriminels": [
-      116,
-      933,
-      812,
-      561
-    ]
-  },
-  {
-    "id": 153,
-    "description": "Proxénétisme",
+    "description": "Kidnapping",
     "lieu": "Strasbourg",
-    "date": "2020-03-04",
+    "date": "16-12-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      419,
-      633
-    ]
-  },
-  {
-    "id": 154,
-    "description": "Extorsion",
-    "lieu": "Nantes",
-    "date": "2022-05-13",
-    "idCriminels": [
-      831,
-      158
-    ]
-  },
-  {
-    "id": 155,
-    "description": "Blanchiment d'argent",
-    "lieu": "Lyon",
-    "date": "2020-10-22",
-    "idCriminels": [
-      238,
-      524,
-      776
+      7,
+      13,
+      22,
+      30
     ]
   },
   {
     "id": 156,
-    "description": "Escroquerie",
+    "description": "Trafic de contrefaçons",
     "lieu": "Nantes",
-    "date": "2020-04-29",
+    "date": "25-03-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      895,
-      158,
-      831,
-      517
-    ]
-  },
-  {
-    "id": 157,
-    "description": "Incendie criminel",
-    "lieu": "Lyon",
-    "date": "2022-10-07",
-    "idCriminels": [
-      462,
-      116,
-      128,
-      681
-    ]
-  },
-  {
-    "id": 158,
-    "description": "Usurpation d'identité",
-    "lieu": "Bordeaux",
-    "date": "2024-02-14",
-    "idCriminels": [
-      831,
-      812
-    ]
-  },
-  {
-    "id": 159,
-    "description": "Détournement de fonds",
-    "lieu": "Toulouse",
-    "date": "2021-02-28",
-    "idCriminels": [
-      296,
-      781
-    ]
-  },
-  {
-    "id": 160,
-    "description": "Menaces",
-    "lieu": "Nantes",
-    "date": "2022-05-27",
-    "idCriminels": [
-      989,
-      873
-    ]
-  },
-  {
-    "id": 161,
-    "description": "Vol de voiture",
-    "lieu": "Lyon",
-    "date": "2016-08-29",
-    "idCriminels": [
-      542,
-      682
-    ]
-  },
-  {
-    "id": 162,
-    "description": "Incendie criminel",
-    "lieu": "Lyon",
-    "date": "2020-10-08",
-    "idCriminels": [
-      288
-    ]
-  },
-  {
-    "id": 163,
-    "description": "Séquestration",
-    "lieu": "Bordeaux",
-    "date": "2022-08-15",
-    "idCriminels": [
-      986,
-      529
-    ]
-  },
-  {
-    "id": 164,
-    "description": "Menaces",
-    "lieu": "Marseille",
-    "date": "2022-06-22",
-    "idCriminels": [
-      474,
-      128,
-      865
-    ]
-  },
-  {
-    "id": 165,
-    "description": "Viol",
-    "lieu": "Toulouse",
-    "date": "2017-06-23",
-    "idCriminels": [
-      288,
-      554,
-      296,
-      973
-    ]
-  },
-  {
-    "id": 166,
-    "description": "Fraude fiscale",
-    "lieu": "Grenoble",
-    "date": "2015-05-11",
-    "idCriminels": [
-      551
+      3,
+      13,
+      24,
+      33
     ]
   },
   {
     "id": 167,
-    "description": "Meurtre",
-    "lieu": "Nice",
-    "date": "2018-06-06",
-    "idCriminels": [
-      296,
-      474,
-      417
-    ]
-  },
-  {
-    "id": 168,
-    "description": "Menaces",
+    "description": "Agression sexuelle",
     "lieu": "Paris",
-    "date": "2022-10-22",
+    "date": "11-05-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      250
-    ]
-  },
-  {
-    "id": 169,
-    "description": "Recel",
-    "lieu": "Toulouse",
-    "date": "2021-03-16",
-    "idCriminels": [
-      168
-    ]
-  },
-  {
-    "id": 170,
-    "description": "Braconnage",
-    "lieu": "Grenoble",
-    "date": "2021-01-12",
-    "idCriminels": [
-      781,
-      527
-    ]
-  },
-  {
-    "id": 171,
-    "description": "Incendie criminel",
-    "lieu": "Lyon",
-    "date": "2024-11-24",
-    "idCriminels": [
-      419,
-      192,
-      621,
-      483
-    ]
-  },
-  {
-    "id": 172,
-    "description": "Vol de voiture",
-    "lieu": "Marseille",
-    "date": "2023-09-04",
-    "idCriminels": [
-      116,
-      873
-    ]
-  },
-  {
-    "id": 173,
-    "description": "Usurpation d'identité",
-    "lieu": "Grenoble",
-    "date": "2018-09-09",
-    "idCriminels": [
-      776,
-      979,
-      165,
-      986
-    ]
-  },
-  {
-    "id": 174,
-    "description": "Délit de fuite",
-    "lieu": "Marseille",
-    "date": "2016-04-23",
-    "idCriminels": [
-      381
-    ]
-  },
-  {
-    "id": 175,
-    "description": "Fraude fiscale",
-    "lieu": "Lille",
-    "date": "2019-11-29",
-    "idCriminels": [
-      691
-    ]
-  },
-  {
-    "id": 176,
-    "description": "Incendie criminel",
-    "lieu": "Paris",
-    "date": "2024-06-06",
-    "idCriminels": [
-      296,
-      167
-    ]
-  },
-  {
-    "id": 177,
-    "description": "Menaces",
-    "lieu": "Lille",
-    "date": "2021-03-11",
-    "idCriminels": [
-      288
+      7,
+      14,
+      20,
+      28
     ]
   },
   {
     "id": 178,
-    "description": "Blanchiment d'argent",
-    "lieu": "Toulouse",
-    "date": "2024-02-07",
-    "idCriminels": [
-      483,
-      870,
-      986,
-      561
-    ]
-  },
-  {
-    "id": 179,
-    "description": "Enlèvement",
-    "lieu": "Lille",
-    "date": "2018-08-16",
-    "idCriminels": [
-      159,
-      312,
-      444
-    ]
-  },
-  {
-    "id": 180,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Lille",
-    "date": "2015-11-17",
-    "idCriminels": [
-      192,
-      621,
-      462,
-      257
-    ]
-  },
-  {
-    "id": 181,
-    "description": "Vol de voiture",
-    "lieu": "Toulouse",
-    "date": "2022-10-07",
-    "idCriminels": [
-      149
-    ]
-  },
-  {
-    "id": 182,
-    "description": "Piratage informatique",
-    "lieu": "Nice",
-    "date": "2020-01-29",
-    "idCriminels": [
-      136,
-      641,
-      831
-    ]
-  },
-  {
-    "id": 183,
-    "description": "Entrave à la justice",
-    "lieu": "Lille",
-    "date": "2023-08-03",
-    "idCriminels": [
-      136,
-      919,
-      741,
-      765
-    ]
-  },
-  {
-    "id": 184,
-    "description": "Détournement de fonds",
+    "description": "Extorsion en bande organisée",
     "lieu": "Lyon",
-    "date": "2021-09-04",
+    "date": "07-10-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      140,
-      502,
-      554,
-      682
-    ]
-  },
-  {
-    "id": 185,
-    "description": "Usurpation d'identité",
-    "lieu": "Marseille",
-    "date": "2020-07-13",
-    "idCriminels": [
-      238,
-      140,
-      873
-    ]
-  },
-  {
-    "id": 186,
-    "description": "Braconnage",
-    "lieu": "Lyon",
-    "date": "2023-09-11",
-    "idCriminels": [
-      215
-    ]
-  },
-  {
-    "id": 187,
-    "description": "Enlèvement",
-    "lieu": "Lyon",
-    "date": "2018-07-18",
-    "idCriminels": [
-      140,
-      979,
-      167,
-      130
-    ]
-  },
-  {
-    "id": 188,
-    "description": "Extorsion",
-    "lieu": "Lyon",
-    "date": "2019-03-14",
-    "idCriminels": [
-      479,
-      128,
-      561,
-      192
+      9,
+      15,
+      32,
+      41
     ]
   },
   {
     "id": 189,
-    "description": "Conduite en état d’ivresse",
+    "description": "Sabotage industriel",
     "lieu": "Lille",
-    "date": "2024-04-25",
+    "date": "19-01-2023",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      827,
-      149,
-      250
-    ]
-  },
-  {
-    "id": 190,
-    "description": "Séquestration",
-    "lieu": "Paris",
-    "date": "2020-03-27",
-    "idCriminels": [
-      130,
-      506,
-      765
-    ]
-  },
-  {
-    "id": 191,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Toulouse",
-    "date": "2019-04-29",
-    "idCriminels": [
-      312
-    ]
-  },
-  {
-    "id": 192,
-    "description": "Incendie criminel",
-    "lieu": "Bordeaux",
-    "date": "2021-03-24",
-    "idCriminels": [
-      257,
-      621
-    ]
-  },
-  {
-    "id": 193,
-    "description": "Meurtre",
-    "lieu": "Bordeaux",
-    "date": "2016-05-12",
-    "idCriminels": [
-      527
-    ]
-  },
-  {
-    "id": 194,
-    "description": "Viol",
-    "lieu": "Toulouse",
-    "date": "2020-12-03",
-    "idCriminels": [
-      524,
-      169,
-      140,
-      919
-    ]
-  },
-  {
-    "id": 195,
-    "description": "Séquestration",
-    "lieu": "Bordeaux",
-    "date": "2022-04-19",
-    "idCriminels": [
-      311,
-      765,
-      681,
-      771
-    ]
-  },
-  {
-    "id": 196,
-    "description": "Vol de voiture",
-    "lieu": "Nantes",
-    "date": "2018-11-20",
-    "idCriminels": [
-      304,
-      895,
-      633
-    ]
-  },
-  {
-    "id": 197,
-    "description": "Fraude fiscale",
-    "lieu": "Strasbourg",
-    "date": "2016-06-24",
-    "idCriminels": [
-      827,
-      417,
-      621,
-      919
+      10,
+      16,
+      23,
+      31
     ]
   },
   {
     "id": 198,
-    "description": "Cambriolage",
-    "lieu": "Lyon",
-    "date": "2018-02-26",
+    "description": "Association de malfaiteurs",
+    "lieu": "Bordeaux",
+    "date": "06-06-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      776,
-      622
-    ]
-  },
-  {
-    "id": 199,
-    "description": "Meurtre",
-    "lieu": "Strasbourg",
-    "date": "2025-03-22",
-    "idCriminels": [
-      479,
-      765,
-      462
-    ]
-  },
-  {
-    "id": 200,
-    "description": "Braconnage",
-    "lieu": "Nantes",
-    "date": "2016-12-26",
-    "idCriminels": [
-      544,
-      381,
-      682
-    ]
-  },
-  {
-    "id": 201,
-    "description": "Corruption",
-    "lieu": "Paris",
-    "date": "2024-01-25",
-    "idCriminels": [
-      835,
-      381,
-      350,
-      238
-    ]
-  },
-  {
-    "id": 202,
-    "description": "Escroquerie",
-    "lieu": "Toulouse",
-    "date": "2022-11-09",
-    "idCriminels": [
-      989,
-      691,
-      979
+      5,
+      10,
+      26,
+      35
     ]
   },
   {
     "id": 203,
-    "description": "Incendie criminel",
-    "lieu": "Nantes",
-    "date": "2019-05-02",
+    "description": "Homicide volontaire",
+    "lieu": "Marseille",
+    "date": "14-11-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      483,
-      865,
-      502,
-      895
-    ]
-  },
-  {
-    "id": 204,
-    "description": "Enlèvement",
-    "lieu": "Bordeaux",
-    "date": "2016-05-31",
-    "idCriminels": [
-      812,
-      444,
-      488
-    ]
-  },
-  {
-    "id": 205,
-    "description": "Harcèlement",
-    "lieu": "Bordeaux",
-    "date": "2017-12-20",
-    "idCriminels": [
-      656,
-      554
-    ]
-  },
-  {
-    "id": 206,
-    "description": "Proxénétisme",
-    "lieu": "Nantes",
-    "date": "2019-05-02",
-    "idCriminels": [
-      673,
-      831
-    ]
-  },
-  {
-    "id": 207,
-    "description": "Contrebande",
-    "lieu": "Grenoble",
-    "date": "2017-04-25",
-    "idCriminels": [
-      762,
-      895,
-      444
-    ]
-  },
-  {
-    "id": 208,
-    "description": "Extorsion",
-    "lieu": "Lille",
-    "date": "2017-11-23",
-    "idCriminels": [
-      445,
-      158
-    ]
-  },
-  {
-    "id": 209,
-    "description": "Vol simple",
-    "lieu": "Nice",
-    "date": "2019-02-23",
-    "idCriminels": [
-      691,
-      827,
-      381
-    ]
-  },
-  {
-    "id": 210,
-    "description": "Enlèvement",
-    "lieu": "Toulouse",
-    "date": "2019-07-14",
-    "idCriminels": [
-      192,
-      218,
-      128
-    ]
-  },
-  {
-    "id": 211,
-    "description": "Menaces",
-    "lieu": "Grenoble",
-    "date": "2018-01-18",
-    "idCriminels": [
-      551,
-      741,
-      474,
-      848
+      7,
+      16,
+      25,
+      31
     ]
   },
   {
     "id": 212,
-    "description": "Enlèvement",
-    "lieu": "Nantes",
-    "date": "2016-09-05",
-    "idCriminels": [
-      351,
-      848,
-      835
-    ]
-  },
-  {
-    "id": 213,
-    "description": "Recel",
+    "description": "Séquestration",
     "lieu": "Nice",
-    "date": "2018-05-11",
+    "date": "29-08-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      873
-    ]
-  },
-  {
-    "id": 214,
-    "description": "Escroquerie",
-    "lieu": "Grenoble",
-    "date": "2018-12-05",
-    "idCriminels": [
-      415,
-      330,
-      410
-    ]
-  },
-  {
-    "id": 215,
-    "description": "Agression",
-    "lieu": "Lille",
-    "date": "2015-09-13",
-    "idCriminels": [
-      812,
-      130
-    ]
-  },
-  {
-    "id": 216,
-    "description": "Entrave à la justice",
-    "lieu": "Nice",
-    "date": "2023-05-09",
-    "idCriminels": [
-      444,
-      167,
-      417
-    ]
-  },
-  {
-    "id": 217,
-    "description": "Incendie criminel",
-    "lieu": "Grenoble",
-    "date": "2018-04-29",
-    "idCriminels": [
-      479,
-      809,
-      167
-    ]
-  },
-  {
-    "id": 218,
-    "description": "Usurpation d'identité",
-    "lieu": "Paris",
-    "date": "2015-05-28",
-    "idCriminels": [
-      554,
-      622
+      11,
+      17,
+      22,
+      30
     ]
   },
   {
     "id": 219,
-    "description": "Proxénétisme",
-    "lieu": "Lyon",
-    "date": "2024-07-29",
+    "description": "Piratage informatique",
+    "lieu": "Toulouse",
+    "date": "13-12-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      445,
-      271
-    ]
-  },
-  {
-    "id": 220,
-    "description": "Enlèvement",
-    "lieu": "Grenoble",
-    "date": "2021-05-08",
-    "idCriminels": [
-      561,
-      865
-    ]
-  },
-  {
-    "id": 221,
-    "description": "Extorsion",
-    "lieu": "Paris",
-    "date": "2018-12-19",
-    "idCriminels": [
-      165
-    ]
-  },
-  {
-    "id": 222,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Grenoble",
-    "date": "2024-04-14",
-    "idCriminels": [
-      296,
-      979
+      6,
+      18,
+      27,
+      36
     ]
   },
   {
     "id": 223,
-    "description": "Faux en écriture",
-    "lieu": "Bordeaux",
-    "date": "2018-03-27",
+    "description": "Harcèlement aggravé",
+    "lieu": "Strasbourg",
+    "date": "02-07-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      641,
-      933,
-      551,
-      542
-    ]
-  },
-  {
-    "id": 224,
-    "description": "Détournement de fonds",
-    "lieu": "Marseille",
-    "date": "2024-04-02",
-    "idCriminels": [
-      794,
-      870,
-      488
-    ]
-  },
-  {
-    "id": 225,
-    "description": "Usurpation d'identité",
-    "lieu": "Lyon",
-    "date": "2015-10-03",
-    "idCriminels": [
-      527,
-      444,
-      561,
-      330
-    ]
-  },
-  {
-    "id": 226,
-    "description": "Homicide involontaire",
-    "lieu": "Lyon",
-    "date": "2019-01-11",
-    "idCriminels": [
-      831,
-      843
-    ]
-  },
-  {
-    "id": 227,
-    "description": "Incendie criminel",
-    "lieu": "Toulouse",
-    "date": "2017-08-12",
-    "idCriminels": [
-      167,
-      895,
-      120,
-      870
-    ]
-  },
-  {
-    "id": 228,
-    "description": "Cambriolage",
-    "lieu": "Lille",
-    "date": "2020-10-25",
-    "idCriminels": [
-      483,
-      474,
-      304
-    ]
-  },
-  {
-    "id": 229,
-    "description": "Meurtre",
-    "lieu": "Lyon",
-    "date": "2024-03-09",
-    "idCriminels": [
-      506,
-      835,
-      296
+      15,
+      21,
+      29,
+      38
     ]
   },
   {
     "id": 230,
-    "description": "Cambriolage",
-    "lieu": "Nantes",
-    "date": "2017-12-12",
+    "description": "Enlèvement d'enfant",
+    "lieu": "Paris",
+    "date": "24-04-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      502,
-      933,
-      488,
-      130
-    ]
-  },
-  {
-    "id": 231,
-    "description": "Piratage informatique",
-    "lieu": "Strasbourg",
-    "date": "2018-05-27",
-    "idCriminels": [
-      527,
-      933,
-      835,
-      311
-    ]
-  },
-  {
-    "id": 232,
-    "description": "Harcèlement",
-    "lieu": "Lyon",
-    "date": "2021-01-16",
-    "idCriminels": [
-      971
-    ]
-  },
-  {
-    "id": 233,
-    "description": "Menaces",
-    "lieu": "Lille",
-    "date": "2019-04-27",
-    "idCriminels": [
-      843,
-      656
-    ]
-  },
-  {
-    "id": 234,
-    "description": "Meurtre",
-    "lieu": "Grenoble",
-    "date": "2020-03-10",
-    "idCriminels": [
-      257
-    ]
-  },
-  {
-    "id": 235,
-    "description": "Homicide involontaire",
-    "lieu": "Lyon",
-    "date": "2016-12-01",
-    "idCriminels": [
-      412
-    ]
-  },
-  {
-    "id": 236,
-    "description": "Proxénétisme",
-    "lieu": "Lyon",
-    "date": "2025-04-19",
-    "idCriminels": [
-      956,
-      444
+      7,
+      19,
+      26,
+      36
     ]
   },
   {
     "id": 237,
-    "description": "Escroquerie",
-    "lieu": "Paris",
-    "date": "2022-03-21",
+    "description": "Détournement de fonds publics",
+    "lieu": "Lyon",
+    "date": "15-09-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      682,
-      843,
-      412,
-      660
-    ]
-  },
-  {
-    "id": 238,
-    "description": "Viol",
-    "lieu": "Lille",
-    "date": "2024-10-18",
-    "idCriminels": [
-      986,
-      641,
-      369,
-      477
-    ]
-  },
-  {
-    "id": 239,
-    "description": "Contrebande",
-    "lieu": "Lille",
-    "date": "2019-11-04",
-    "idCriminels": [
-      517
-    ]
-  },
-  {
-    "id": 240,
-    "description": "Viol",
-    "lieu": "Bordeaux",
-    "date": "2015-10-01",
-    "idCriminels": [
-      350,
-      776
-    ]
-  },
-  {
-    "id": 241,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Paris",
-    "date": "2023-07-15",
-    "idCriminels": [
-      351,
-      304,
-      544,
-      415
-    ]
-  },
-  {
-    "id": 242,
-    "description": "Blanchiment d'argent",
-    "lieu": "Paris",
-    "date": "2022-06-28",
-    "idCriminels": [
-      271,
-      350,
-      158
-    ]
-  },
-  {
-    "id": 243,
-    "description": "Détournement de fonds",
-    "lieu": "Strasbourg",
-    "date": "2024-03-31",
-    "idCriminels": [
-      673,
-      946
-    ]
-  },
-  {
-    "id": 244,
-    "description": "Délit de fuite",
-    "lieu": "Nice",
-    "date": "2016-11-24",
-    "idCriminels": [
-      250,
-      600,
-      165,
-      765
+      4,
+      16,
+      31,
+      41
     ]
   },
   {
     "id": 245,
-    "description": "Extorsion",
+    "description": "Escroquerie en ligne",
     "lieu": "Nantes",
-    "date": "2016-12-16",
+    "date": "28-01-2023",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      831
-    ]
-  },
-  {
-    "id": 246,
-    "description": "Meurtre",
-    "lieu": "Bordeaux",
-    "date": "2016-11-17",
-    "idCriminels": [
-      136,
-      551,
-      919
-    ]
-  },
-  {
-    "id": 247,
-    "description": "Trafic de drogues",
-    "lieu": "Toulouse",
-    "date": "2018-02-25",
-    "idCriminels": [
-      524
-    ]
-  },
-  {
-    "id": 248,
-    "description": "Menaces",
-    "lieu": "Nice",
-    "date": "2016-08-26",
-    "idCriminels": [
-      479,
-      159
-    ]
-  },
-  {
-    "id": 249,
-    "description": "Entrave à la justice",
-    "lieu": "Paris",
-    "date": "2017-07-15",
-    "idCriminels": [
-      158,
-      629,
-      843,
-      296
-    ]
-  },
-  {
-    "id": 250,
-    "description": "Vol simple",
-    "lieu": "Toulouse",
-    "date": "2024-12-04",
-    "idCriminels": [
-      502,
-      869,
-      870,
-      633
-    ]
-  },
-  {
-    "id": 251,
-    "description": "Faux en écriture",
-    "lieu": "Lyon",
-    "date": "2024-07-21",
-    "idCriminels": [
-      870,
-      257
+      6,
+      12,
+      21,
+      29
     ]
   },
   {
     "id": 252,
-    "description": "Menaces",
-    "lieu": "Paris",
-    "date": "2016-08-28",
-    "idCriminels": [
-      524,
-      312
-    ]
-  },
-  {
-    "id": 253,
-    "description": "Proxénétisme",
+    "description": "Vol de véhicules",
     "lieu": "Marseille",
-    "date": "2016-04-15",
+    "date": "07-03-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      351,
-      444,
-      238,
-      381
-    ]
-  },
-  {
-    "id": 254,
-    "description": "Blanchiment d'argent",
-    "lieu": "Lyon",
-    "date": "2019-07-06",
-    "idCriminels": [
-      168,
-      771,
-      869
-    ]
-  },
-  {
-    "id": 255,
-    "description": "Corruption",
-    "lieu": "Lyon",
-    "date": "2025-02-28",
-    "idCriminels": [
-      417,
-      673,
-      118,
-      215
-    ]
-  },
-  {
-    "id": 256,
-    "description": "Enlèvement",
-    "lieu": "Toulouse",
-    "date": "2023-06-07",
-    "idCriminels": [
-      681
-    ]
-  },
-  {
-    "id": 257,
-    "description": "Braconnage",
-    "lieu": "Nantes",
-    "date": "2020-06-27",
-    "idCriminels": [
-      271,
-      956
-    ]
-  },
-  {
-    "id": 258,
-    "description": "Menaces",
-    "lieu": "Marseille",
-    "date": "2021-11-14",
-    "idCriminels": [
-      812
+      1,
+      9,
+      17,
+      42
     ]
   },
   {
     "id": 259,
-    "description": "Escroquerie",
-    "lieu": "Nice",
-    "date": "2017-02-28",
-    "idCriminels": [
-      989,
-      517,
-      483
-    ]
-  },
-  {
-    "id": 260,
-    "description": "Viol",
-    "lieu": "Grenoble",
-    "date": "2017-09-14",
-    "idCriminels": [
-      369,
-      312,
-      250
-    ]
-  },
-  {
-    "id": 261,
-    "description": "Escroquerie",
-    "lieu": "Lille",
-    "date": "2017-06-05",
-    "idCriminels": [
-      776
-    ]
-  },
-  {
-    "id": 262,
-    "description": "Proxénétisme",
-    "lieu": "Toulouse",
-    "date": "2024-06-09",
-    "idCriminels": [
-      544,
-      238,
-      311
-    ]
-  },
-  {
-    "id": 263,
     "description": "Usurpation d'identité",
-    "lieu": "Bordeaux",
-    "date": "2016-05-14",
+    "lieu": "Lille",
+    "date": "16-10-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      168,
-      218,
-      250,
-      762
+      8,
+      11,
+      34,
+      39
     ]
   },
   {
     "id": 264,
-    "description": "Entrave à la justice",
-    "lieu": "Nantes",
-    "date": "2024-10-14",
-    "idCriminels": [
-      140,
-      116,
-      502
-    ]
-  },
-  {
-    "id": 265,
-    "description": "Incendie criminel",
-    "lieu": "Marseille",
-    "date": "2017-11-07",
-    "idCriminels": [
-      544,
-      167
-    ]
-  },
-  {
-    "id": 266,
-    "description": "Détournement de fonds",
-    "lieu": "Lyon",
-    "date": "2025-03-31",
-    "idCriminels": [
-      986,
-      554,
-      168,
-      311
-    ]
-  },
-  {
-    "id": 267,
-    "description": "Contrebande",
+    "description": "Violence conjugale",
     "lieu": "Toulouse",
-    "date": "2016-03-29",
+    "date": "05-08-2022",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      933
-    ]
-  },
-  {
-    "id": 268,
-    "description": "Harcèlement",
-    "lieu": "Lille",
-    "date": "2023-01-17",
-    "idCriminels": [
-      130,
-      140,
-      682
-    ]
-  },
-  {
-    "id": 269,
-    "description": "Escroquerie",
-    "lieu": "Bordeaux",
-    "date": "2018-03-13",
-    "idCriminels": [
-      809,
-      415,
-      165,
-      351
-    ]
-  },
-  {
-    "id": 270,
-    "description": "Fraude fiscale",
-    "lieu": "Paris",
-    "date": "2022-04-27",
-    "idCriminels": [
-      681,
-      963
+      14,
+      19,
+      24,
+      42
     ]
   },
   {
     "id": 271,
-    "description": "Enlèvement",
-    "lieu": "Toulouse",
-    "date": "2016-01-30",
-    "idCriminels": [
-      641,
-      895,
-      417,
-      462
-    ]
-  },
-  {
-    "id": 272,
-    "description": "Contrebande",
-    "lieu": "Grenoble",
-    "date": "2020-03-01",
-    "idCriminels": [
-      848
-    ]
-  },
-  {
-    "id": 273,
-    "description": "Homicide involontaire",
-    "lieu": "Lille",
-    "date": "2023-12-13",
-    "idCriminels": [
-      660,
-      682,
-      118
-    ]
-  },
-  {
-    "id": 274,
-    "description": "Séquestration",
+    "description": "Sabotage informatique",
     "lieu": "Nice",
-    "date": "2023-11-10",
+    "date": "28-11-2021",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      350,
-      330,
-      527
-    ]
-  },
-  {
-    "id": 275,
-    "description": "Viol",
-    "lieu": "Nice",
-    "date": "2018-11-03",
-    "idCriminels": [
-      781,
-      159,
-      551,
-      771
-    ]
-  },
-  {
-    "id": 276,
-    "description": "Incendie criminel",
-    "lieu": "Lille",
-    "date": "2018-06-18",
-    "idCriminels": [
-      488,
-      776,
-      351,
-      257
-    ]
-  },
-  {
-    "id": 277,
-    "description": "Délit de fuite",
-    "lieu": "Grenoble",
-    "date": "2020-02-19",
-    "idCriminels": [
-      946
+      6,
+      13,
+      37,
+      40
     ]
   },
   {
     "id": 278,
-    "description": "Braconnage",
-    "lieu": "Nantes",
-    "date": "2023-10-20",
-    "idCriminels": [
-      542
-    ]
-  },
-  {
-    "id": 279,
-    "description": "Détournement de fonds",
-    "lieu": "Toulouse",
-    "date": "2022-01-26",
-    "idCriminels": [
-      479,
-      462,
-      128,
-      238
-    ]
-  },
-  {
-    "id": 280,
-    "description": "Escroquerie",
-    "lieu": "Nantes",
-    "date": "2015-12-02",
-    "idCriminels": [
-      218,
-      544,
-      831,
-      895
-    ]
-  },
-  {
-    "id": 281,
-    "description": "Recel",
-    "lieu": "Lyon",
-    "date": "2018-05-07",
-    "idCriminels": [
-      312,
-      561,
-      682
-    ]
-  },
-  {
-    "id": 282,
-    "description": "Homicide involontaire",
-    "lieu": "Lyon",
-    "date": "2025-01-13",
-    "idCriminels": [
-      946,
-      812,
-      312,
-      136
-    ]
-  },
-  {
-    "id": 283,
-    "description": "Piratage informatique",
+    "description": "Corruption de fonctionnaires",
     "lieu": "Paris",
-    "date": "2015-09-20",
+    "date": "10-02-2023",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      673,
-      168
-    ]
-  },
-  {
-    "id": 284,
-    "description": "Espionnage",
-    "lieu": "Lille",
-    "date": "2017-04-03",
-    "idCriminels": [
-      159
+      3,
+      16,
+      38,
+      44
     ]
   },
   {
     "id": 285,
-    "description": "Corruption",
-    "lieu": "Nice",
-    "date": "2020-10-27",
+    "description": "Trafic d'armes",
+    "lieu": "Lyon",
+    "date": "25-05-2022",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      971,
-      192
-    ]
-  },
-  {
-    "id": 286,
-    "description": "Délit de fuite",
-    "lieu": "Nice",
-    "date": "2019-12-13",
-    "idCriminels": [
-      140,
-      417,
-      946,
-      812
-    ]
-  },
-  {
-    "id": 287,
-    "description": "Agression",
-    "lieu": "Grenoble",
-    "date": "2018-11-01",
-    "idCriminels": [
-      741,
-      621,
-      709
-    ]
-  },
-  {
-    "id": 288,
-    "description": "Entrave à la justice",
-    "lieu": "Paris",
-    "date": "2021-05-07",
-    "idCriminels": [
-      250
-    ]
-  },
-  {
-    "id": 289,
-    "description": "Cambriolage",
-    "lieu": "Marseille",
-    "date": "2018-09-04",
-    "idCriminels": [
-      843,
-      765,
-      257
+      18,
+      22,
+      27,
+      50
     ]
   },
   {
     "id": 290,
-    "description": "Détournement de fonds",
-    "lieu": "Nice",
-    "date": "2022-11-16",
-    "idCriminels": [
-      835,
-      656
-    ]
-  },
-  {
-    "id": 291,
-    "description": "Trafic de drogues",
-    "lieu": "Lyon",
-    "date": "2017-11-04",
-    "idCriminels": [
-      551,
-      919,
-      827
-    ]
-  },
-  {
-    "id": 292,
-    "description": "Contrebande",
-    "lieu": "Grenoble",
-    "date": "2021-09-08",
-    "idCriminels": [
-      765,
-      561,
-      474
-    ]
-  },
-  {
-    "id": 293,
-    "description": "Trafic de drogues",
+    "description": "Traite des êtres humains",
     "lieu": "Bordeaux",
-    "date": "2015-10-04",
+    "date": "14-12-2021",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      895,
-      831,
-      622,
-      621
-    ]
-  },
-  {
-    "id": 294,
-    "description": "Corruption",
-    "lieu": "Lille",
-    "date": "2020-03-01",
-    "idCriminels": [
-      288
+      13,
+      26,
+      30,
+      35
     ]
   },
   {
     "id": 295,
-    "description": "Cambriolage",
-    "lieu": "Toulouse",
-    "date": "2018-04-05",
-    "idCriminels": [
-      477
-    ]
-  },
-  {
-    "id": 296,
-    "description": "Meurtre",
+    "description": "Fraude informatique",
     "lieu": "Marseille",
-    "date": "2015-09-04",
+    "date": "03-07-2022",
+    "etat": "Résolue",
+    "informationsSupplementaires": "",
     "idCriminels": [
-      410,
-      116,
-      865
-    ]
-  },
-  {
-    "id": 297,
-    "description": "Violences conjugales",
-    "lieu": "Nantes",
-    "date": "2016-11-23",
-    "idCriminels": [
-      629
-    ]
-  },
-  {
-    "id": 298,
-    "description": "Homicide involontaire",
-    "lieu": "Nantes",
-    "date": "2025-04-02",
-    "idCriminels": [
-      350,
-      439,
-      629,
-      971
-    ]
-  },
-  {
-    "id": 299,
-    "description": "Homicide involontaire",
-    "lieu": "Marseille",
-    "date": "2016-01-26",
-    "idCriminels": [
-      622,
-      765,
-      656,
-      527
+      2,
+      6,
+      23,
+      45
     ]
   },
   {
     "id": 300,
-    "description": "Piratage informatique",
-    "lieu": "Nantes",
-    "date": "2022-03-02",
-    "idCriminels": [
-      257
-    ]
-  },
-  {
-    "id": 301,
-    "description": "Faux en écriture",
-    "lieu": "Bordeaux",
-    "date": "2019-02-09",
-    "idCriminels": [
-      709,
-      218,
-      304
-    ]
-  },
-  {
-    "id": 302,
-    "description": "Séquestration",
-    "lieu": "Grenoble",
-    "date": "2018-04-18",
-    "idCriminels": [
-      483
-    ]
-  },
-  {
-    "id": 303,
-    "description": "Escroquerie",
-    "lieu": "Lyon",
-    "date": "2022-05-24",
-    "idCriminels": [
-      192,
-      502,
-      419,
-      682
-    ]
-  },
-  {
-    "id": 304,
-    "description": "Espionnage",
-    "lieu": "Paris",
-    "date": "2016-09-27",
-    "idCriminels": [
-      794,
-      462,
-      444,
-      956
-    ]
-  },
-  {
-    "id": 305,
-    "description": "Harcèlement",
-    "lieu": "Grenoble",
-    "date": "2019-11-03",
-    "idCriminels": [
-      986,
-      989,
-      351,
-      656
-    ]
-  },
-  {
-    "id": 306,
-    "description": "Blanchiment d'argent",
-    "lieu": "Lille",
-    "date": "2019-10-01",
-    "idCriminels": [
-      691,
-      600,
-      765,
-      445
-    ]
-  },
-  {
-    "id": 307,
-    "description": "Blanchiment d'argent",
-    "lieu": "Lyon",
-    "date": "2023-12-20",
-    "idCriminels": [
-      350,
-      956,
-      656,
-      641
-    ]
-  },
-  {
-    "id": 308,
-    "description": "Espionnage",
-    "lieu": "Grenoble",
-    "date": "2024-02-24",
-    "idCriminels": [
-      870,
-      462,
-      417,
-      192
-    ]
-  },
-  {
-    "id": 309,
-    "description": "Faux en écriture",
-    "lieu": "Lyon",
-    "date": "2015-10-17",
-    "idCriminels": [
-      444,
-      140
-    ]
-  },
-  {
-    "id": 310,
-    "description": "Viol",
-    "lieu": "Toulouse",
-    "date": "2024-03-22",
-    "idCriminels": [
-      439,
-      215,
-      120,
-      933
-    ]
-  },
-  {
-    "id": 311,
-    "description": "Délit de fuite",
-    "lieu": "Lyon",
-    "date": "2020-01-20",
-    "idCriminels": [
-      311,
-      544,
-      524
-    ]
-  },
-  {
-    "id": 312,
-    "description": "Entrave à la justice",
-    "lieu": "Toulouse",
-    "date": "2023-09-09",
-    "idCriminels": [
-      257,
-      130,
-      673
-    ]
-  },
-  {
-    "id": 313,
-    "description": "Enlèvement",
-    "lieu": "Toulouse",
-    "date": "2023-12-19",
-    "idCriminels": [
-      873
-    ]
-  },
-  {
-    "id": 314,
-    "description": "Recel",
-    "lieu": "Paris",
-    "date": "2016-09-05",
-    "idCriminels": [
-      979,
-      831,
-      271,
-      869
-    ]
-  },
-  {
-    "id": 315,
-    "description": "Usurpation d'identité",
-    "lieu": "Bordeaux",
-    "date": "2021-01-26",
-    "idCriminels": [
-      870,
-      843,
-      312
-    ]
-  },
-  {
-    "id": 316,
-    "description": "Viol",
-    "lieu": "Grenoble",
-    "date": "2020-06-19",
-    "idCriminels": [
-      827,
-      159,
-      502
-    ]
-  },
-  {
-    "id": 317,
-    "description": "Faux en écriture",
-    "lieu": "Lyon",
-    "date": "2024-12-26",
-    "idCriminels": [
-      622
-    ]
-  },
-  {
-    "id": 318,
-    "description": "Agression",
+    "description": "Meurtre avec préméditation",
     "lieu": "Strasbourg",
-    "date": "2021-09-04",
-    "idCriminels": [
-      986
-    ]
-  },
-  {
-    "id": 319,
-    "description": "Escroquerie",
-    "lieu": "Toulouse",
-    "date": "2016-05-09",
-    "idCriminels": [
-      633,
-      445,
-      517
-    ]
-  },
-  {
-    "id": 320,
-    "description": "Menaces",
-    "lieu": "Lyon",
-    "date": "2017-06-14",
-    "idCriminels": [
-      288
-    ]
-  },
-  {
-    "id": 321,
-    "description": "Faux en écriture",
-    "lieu": "Toulouse",
-    "date": "2015-06-21",
-    "idCriminels": [
-      462,
-      136
-    ]
-  },
-  {
-    "id": 322,
-    "description": "Extorsion",
-    "lieu": "Nice",
-    "date": "2018-08-03",
-    "idCriminels": [
-      419,
-      296,
-      933
-    ]
-  },
-  {
-    "id": 323,
-    "description": "Corruption",
-    "lieu": "Bordeaux",
-    "date": "2019-03-03",
-    "idCriminels": [
-      781,
-      488,
-      415,
-      563
-    ]
-  },
-  {
-    "id": 324,
-    "description": "Espionnage",
-    "lieu": "Lille",
-    "date": "2018-10-27",
-    "idCriminels": [
-      215,
-      474
-    ]
-  },
-  {
-    "id": 325,
-    "description": "Harcèlement",
-    "lieu": "Paris",
-    "date": "2025-01-02",
-    "idCriminels": [
-      296,
-      812,
-      544,
-      524
-    ]
-  },
-  {
-    "id": 326,
-    "description": "Usurpation d'identité",
-    "lieu": "Lyon",
-    "date": "2017-12-15",
-    "idCriminels": [
-      312,
-      656,
-      681,
-      149
-    ]
-  },
-  {
-    "id": 327,
-    "description": "Piratage informatique",
-    "lieu": "Nice",
-    "date": "2019-06-02",
-    "idCriminels": [
-      462,
-      986,
-      656,
-      527
-    ]
-  },
-  {
-    "id": 328,
-    "description": "Harcèlement",
-    "lieu": "Toulouse",
-    "date": "2021-01-02",
-    "idCriminels": [
-      561,
-      524,
-      417
-    ]
-  },
-  {
-    "id": 329,
-    "description": "Fraude fiscale",
-    "lieu": "Lille",
-    "date": "2023-06-21",
-    "idCriminels": [
-      873,
-      116,
-      120,
-      330
-    ]
-  },
-  {
-    "id": 330,
-    "description": "Recel",
-    "lieu": "Grenoble",
-    "date": "2018-06-21",
-    "idCriminels": [
-      381,
-      130
-    ]
-  },
-  {
-    "id": 331,
-    "description": "Contrebande",
-    "lieu": "Toulouse",
-    "date": "2024-05-19",
-    "idCriminels": [
-      812,
-      765
-    ]
-  },
-  {
-    "id": 332,
-    "description": "Incendie criminel",
-    "lieu": "Toulouse",
-    "date": "2017-11-13",
-    "idCriminels": [
-      809,
-      445,
-      622,
-      140
-    ]
-  },
-  {
-    "id": 333,
-    "description": "Violences conjugales",
-    "lieu": "Paris",
-    "date": "2024-01-07",
-    "idCriminels": [
-      673,
-      971
-    ]
-  },
-  {
-    "id": 334,
-    "description": "Incendie criminel",
-    "lieu": "Grenoble",
-    "date": "2016-02-21",
-    "idCriminels": [
-      691,
-      979
-    ]
-  },
-  {
-    "id": 335,
-    "description": "Corruption",
-    "lieu": "Strasbourg",
-    "date": "2017-01-27",
-    "idCriminels": [
-      250,
-      304
-    ]
-  },
-  {
-    "id": 336,
-    "description": "Usurpation d'identité",
-    "lieu": "Lille",
-    "date": "2015-05-08",
-    "idCriminels": [
-      312,
-      762,
-      835,
-      919
-    ]
-  },
-  {
-    "id": 337,
-    "description": "Contrebande",
-    "lieu": "Bordeaux",
-    "date": "2022-02-02",
-    "idCriminels": [
-      865,
-      271
-    ]
-  },
-  {
-    "id": 338,
-    "description": "Corruption",
-    "lieu": "Strasbourg",
-    "date": "2018-11-26",
-    "idCriminels": [
-      351,
-      136,
-      660
-    ]
-  },
-  {
-    "id": 339,
-    "description": "Escroquerie",
-    "lieu": "Lyon",
-    "date": "2016-02-07",
-    "idCriminels": [
-      330,
-      412
-    ]
-  },
-  {
-    "id": 340,
-    "description": "Braconnage",
-    "lieu": "Lille",
-    "date": "2018-12-06",
-    "idCriminels": [
-      542,
-      809
-    ]
-  },
-  {
-    "id": 341,
-    "description": "Menaces",
-    "lieu": "Toulouse",
-    "date": "2021-07-07",
-    "idCriminels": [
-      381,
-      417
-    ]
-  },
-  {
-    "id": 342,
-    "description": "Viol",
-    "lieu": "Nantes",
-    "date": "2024-09-15",
-    "idCriminels": [
-      946
-    ]
-  },
-  {
-    "id": 343,
-    "description": "Séquestration",
-    "lieu": "Strasbourg",
-    "date": "2023-12-07",
-    "idCriminels": [
-      488
-    ]
-  },
-  {
-    "id": 344,
-    "description": "Agression",
-    "lieu": "Grenoble",
-    "date": "2022-01-05",
-    "idCriminels": [
-      963
-    ]
-  },
-  {
-    "id": 345,
-    "description": "Détournement de fonds",
-    "lieu": "Marseille",
-    "date": "2021-11-29",
-    "idCriminels": [
-      169,
-      120,
-      527,
-      136
-    ]
-  },
-  {
-    "id": 346,
-    "description": "Proxénétisme",
-    "lieu": "Nice",
-    "date": "2022-06-10",
-    "idCriminels": [
-      741,
-      412,
-      986,
-      776
-    ]
-  },
-  {
-    "id": 347,
-    "description": "Enlèvement",
-    "lieu": "Toulouse",
-    "date": "2022-02-07",
-    "idCriminels": [
-      600
-    ]
-  },
-  {
-    "id": 348,
-    "description": "Contrebande",
-    "lieu": "Nice",
-    "date": "2020-08-09",
-    "idCriminels": [
-      986,
-      351
-    ]
-  },
-  {
-    "id": 349,
-    "description": "Séquestration",
-    "lieu": "Nice",
-    "date": "2025-04-18",
-    "idCriminels": [
-      502,
-      192
-    ]
-  },
-  {
-    "id": 350,
-    "description": "Braconnage",
-    "lieu": "Grenoble",
-    "date": "2015-08-02",
-    "idCriminels": [
-      130
-    ]
-  },
-  {
-    "id": 351,
-    "description": "Proxénétisme",
-    "lieu": "Nantes",
-    "date": "2020-01-09",
-    "idCriminels": [
-      691,
-      118
-    ]
-  },
-  {
-    "id": 352,
-    "description": "Détournement de fonds",
-    "lieu": "Lyon",
-    "date": "2016-03-02",
-    "idCriminels": [
-      128,
-      812
-    ]
-  },
-  {
-    "id": 353,
-    "description": "Usurpation d'identité",
-    "lieu": "Toulouse",
-    "date": "2019-02-19",
-    "idCriminels": [
-      415,
-      271,
-      165,
-      412
-    ]
-  },
-  {
-    "id": 354,
-    "description": "Usurpation d'identité",
-    "lieu": "Marseille",
-    "date": "2015-05-23",
-    "idCriminels": [
-      622,
-      271,
-      873
-    ]
-  },
-  {
-    "id": 355,
-    "description": "Délit de fuite",
-    "lieu": "Grenoble",
-    "date": "2019-04-28",
-    "idCriminels": [
-      128,
-      477,
-      776
-    ]
-  },
-  {
-    "id": 356,
-    "description": "Harcèlement",
-    "lieu": "Paris",
-    "date": "2015-12-20",
-    "idCriminels": [
-      412
-    ]
-  },
-  {
-    "id": 357,
-    "description": "Fraude fiscale",
-    "lieu": "Nice",
-    "date": "2016-06-04",
-    "idCriminels": [
-      794
-    ]
-  },
-  {
-    "id": 358,
-    "description": "Recel",
-    "lieu": "Strasbourg",
-    "date": "2022-05-22",
-    "idCriminels": [
-      238,
-      381,
-      812,
-      681
-    ]
-  },
-  {
-    "id": 359,
-    "description": "Enlèvement",
-    "lieu": "Lyon",
-    "date": "2015-12-01",
-    "idCriminels": [
-      765
-    ]
-  },
-  {
-    "id": 360,
-    "description": "Braconnage",
-    "lieu": "Bordeaux",
-    "date": "2016-04-02",
-    "idCriminels": [
-      656
-    ]
-  },
-  {
-    "id": 361,
-    "description": "Entrave à la justice",
-    "lieu": "Bordeaux",
-    "date": "2015-05-21",
-    "idCriminels": [
-      506,
-      527,
-      158
-    ]
-  },
-  {
-    "id": 362,
-    "description": "Entrave à la justice",
-    "lieu": "Paris",
-    "date": "2020-03-09",
-    "idCriminels": [
-      895,
-      415
-    ]
-  },
-  {
-    "id": 363,
-    "description": "Harcèlement",
-    "lieu": "Nice",
-    "date": "2018-07-31",
-    "idCriminels": [
-      165,
-      781
-    ]
-  },
-  {
-    "id": 364,
-    "description": "Vol de voiture",
-    "lieu": "Nantes",
-    "date": "2021-11-17",
-    "idCriminels": [
-      506,
-      311
-    ]
-  },
-  {
-    "id": 365,
-    "description": "Usurpation d'identité",
-    "lieu": "Paris",
-    "date": "2024-03-03",
-    "idCriminels": [
-      412,
-      130,
-      410
-    ]
-  },
-  {
-    "id": 366,
-    "description": "Vol de voiture",
-    "lieu": "Nice",
-    "date": "2022-01-08",
-    "idCriminels": [
-      257,
-      641,
-      682
-    ]
-  },
-  {
-    "id": 367,
-    "description": "Proxénétisme",
-    "lieu": "Marseille",
-    "date": "2024-10-26",
-    "idCriminels": [
-      250
-    ]
-  },
-  {
-    "id": 368,
-    "description": "Faux en écriture",
-    "lieu": "Nantes",
-    "date": "2024-07-12",
-    "idCriminels": [
-      544,
-      563,
-      351
-    ]
-  },
-  {
-    "id": 369,
-    "description": "Séquestration",
-    "lieu": "Toulouse",
-    "date": "2022-01-30",
-    "idCriminels": [
-      776,
-      312
-    ]
-  },
-  {
-    "id": 370,
-    "description": "Entrave à la justice",
-    "lieu": "Lille",
-    "date": "2015-11-27",
-    "idCriminels": [
-      869,
-      165,
-      691,
-      741
-    ]
-  },
-  {
-    "id": 371,
-    "description": "Détournement de fonds",
-    "lieu": "Lyon",
-    "date": "2015-11-07",
-    "idCriminels": [
-      167,
-      835,
-      311
-    ]
-  },
-  {
-    "id": 372,
-    "description": "Délit de fuite",
-    "lieu": "Marseille",
-    "date": "2023-09-20",
-    "idCriminels": [
-      158,
-      561
-    ]
-  },
-  {
-    "id": 373,
-    "description": "Cambriolage",
-    "lieu": "Lyon",
-    "date": "2017-08-18",
-    "idCriminels": [
-      873,
-      771
-    ]
-  },
-  {
-    "id": 374,
-    "description": "Braconnage",
-    "lieu": "Lyon",
-    "date": "2021-12-13",
-    "idCriminels": [
-      169,
-      350,
-      809
-    ]
-  },
-  {
-    "id": 375,
-    "description": "Détournement de fonds",
-    "lieu": "Bordeaux",
-    "date": "2022-05-26",
-    "idCriminels": [
-      288,
-      168
-    ]
-  },
-  {
-    "id": 376,
-    "description": "Détournement de fonds",
-    "lieu": "Strasbourg",
-    "date": "2019-03-20",
-    "idCriminels": [
-      682
-    ]
-  },
-  {
-    "id": 377,
-    "description": "Contrebande",
-    "lieu": "Marseille",
-    "date": "2022-05-06",
-    "idCriminels": [
-      168
-    ]
-  },
-  {
-    "id": 378,
-    "description": "Corruption",
-    "lieu": "Marseille",
-    "date": "2019-07-26",
-    "idCriminels": [
-      551,
-      165,
-      488
-    ]
-  },
-  {
-    "id": 379,
-    "description": "Corruption",
-    "lieu": "Toulouse",
-    "date": "2018-08-22",
-    "idCriminels": [
-      149
-    ]
-  },
-  {
-    "id": 380,
-    "description": "Proxénétisme",
-    "lieu": "Nantes",
-    "date": "2018-12-30",
-    "idCriminels": [
-      369,
-      412
-    ]
-  },
-  {
-    "id": 381,
-    "description": "Espionnage",
-    "lieu": "Bordeaux",
-    "date": "2018-06-07",
-    "idCriminels": [
-      524,
-      563,
-      561,
-      130
-    ]
-  },
-  {
-    "id": 382,
-    "description": "Enlèvement",
-    "lieu": "Marseille",
-    "date": "2016-11-14",
-    "idCriminels": [
-      831,
-      479,
-      762
-    ]
-  },
-  {
-    "id": 383,
-    "description": "Escroquerie",
-    "lieu": "Lyon",
-    "date": "2019-02-08",
-    "idCriminels": [
-      682,
-      956,
-      439,
-      410
-    ]
-  },
-  {
-    "id": 384,
-    "description": "Agression",
-    "lieu": "Strasbourg",
-    "date": "2019-01-27",
-    "idCriminels": [
-      158,
-      542,
-      296,
-      304
-    ]
-  },
-  {
-    "id": 385,
-    "description": "Fraude fiscale",
-    "lieu": "Bordeaux",
-    "date": "2018-04-19",
-    "idCriminels": [
-      641,
-      169,
-      167
-    ]
-  },
-  {
-    "id": 386,
-    "description": "Séquestration",
-    "lieu": "Marseille",
-    "date": "2021-11-15",
-    "idCriminels": [
-      116,
-      848
-    ]
-  },
-  {
-    "id": 387,
-    "description": "Menaces",
-    "lieu": "Grenoble",
-    "date": "2023-11-19",
-    "idCriminels": [
-      673,
-      633,
-      781,
-      506
-    ]
-  },
-  {
-    "id": 388,
-    "description": "Braconnage",
-    "lieu": "Grenoble",
-    "date": "2019-12-13",
-    "idCriminels": [
-      136,
-      771,
-      445
-    ]
-  },
-  {
-    "id": 389,
-    "description": "Escroquerie",
-    "lieu": "Paris",
-    "date": "2016-05-24",
-    "idCriminels": [
-      919
-    ]
-  },
-  {
-    "id": 390,
-    "description": "Vol de voiture",
-    "lieu": "Marseille",
-    "date": "2023-07-29",
-    "idCriminels": [
-      502,
-      159
-    ]
-  },
-  {
-    "id": 391,
-    "description": "Corruption",
-    "lieu": "Grenoble",
-    "date": "2020-10-16",
-    "idCriminels": [
-      554,
-      827,
-      167,
-      158
-    ]
-  },
-  {
-    "id": 392,
-    "description": "Incendie criminel",
-    "lieu": "Strasbourg",
-    "date": "2023-07-13",
-    "idCriminels": [
-      971,
-      215,
-      527
-    ]
-  },
-  {
-    "id": 393,
-    "description": "Entrave à la justice",
-    "lieu": "Lille",
-    "date": "2024-02-28",
-    "idCriminels": [
-      477,
-      843
-    ]
-  },
-  {
-    "id": 394,
-    "description": "Faux en écriture",
-    "lieu": "Lyon",
-    "date": "2018-09-29",
-    "idCriminels": [
-      986
-    ]
-  },
-  {
-    "id": 395,
-    "description": "Vol simple",
-    "lieu": "Marseille",
-    "date": "2016-04-17",
-    "idCriminels": [
-      963,
-      622,
-      529,
-      971
-    ]
-  },
-  {
-    "id": 396,
-    "description": "Violences conjugales",
-    "lieu": "Paris",
-    "date": "2018-09-24",
-    "idCriminels": [
-      130,
-      989,
-      869,
-      873
-    ]
-  },
-  {
-    "id": 397,
-    "description": "Piratage informatique",
-    "lieu": "Marseille",
-    "date": "2017-09-27",
-    "idCriminels": [
-      865,
-      765
-    ]
-  },
-  {
-    "id": 398,
-    "description": "Cambriolage",
-    "lieu": "Toulouse",
-    "date": "2022-09-12",
-    "idCriminels": [
-      641,
-      781
-    ]
-  },
-  {
-    "id": 399,
-    "description": "Contrebande",
-    "lieu": "Nice",
-    "date": "2019-07-16",
-    "idCriminels": [
-      554,
-      956,
-      167
-    ]
-  },
-  {
-    "id": 400,
-    "description": "Usurpation d'identité",
-    "lieu": "Lille",
-    "date": "2015-08-11",
-    "idCriminels": [
-      477,
-      118,
-      933,
-      410
-    ]
-  },
-  {
-    "id": 401,
-    "description": "Escroquerie",
-    "lieu": "Nice",
-    "date": "2015-05-08",
-    "idCriminels": [
-      641
-    ]
-  },
-  {
-    "id": 402,
-    "description": "Conduite en état d’ivresse",
-    "lieu": "Toulouse",
-    "date": "2021-01-08",
-    "idCriminels": [
-      381,
-      369,
-      776
-    ]
-  },
-  {
-    "id": 403,
-    "description": "Espionnage",
-    "lieu": "Paris",
-    "date": "2017-05-05",
-    "idCriminels": [
-      311,
-      622,
-      118,
-      986
-    ]
-  },
-  {
-    "id": 404,
-    "description": "Piratage informatique",
-    "lieu": "Strasbourg",
-    "date": "2021-01-11",
-    "idCriminels": [
-      410,
-      600
-    ]
-  },
-  {
-    "id": 405,
-    "description": "Recel",
-    "lieu": "Bordeaux",
-    "date": "2021-07-04",
-    "idCriminels": [
-      869
-    ]
-  },
-  {
-    "id": 406,
-    "description": "Homicide involontaire",
-    "lieu": "Paris",
-    "date": "2021-10-04",
-    "idCriminels": [
-      462
-    ]
-  },
-  {
-    "id": 407,
-    "description": "Entrave à la justice",
-    "lieu": "Paris",
-    "date": "2018-11-02",
-    "idCriminels": [
-      304,
-      741,
-      771
-    ]
-  },
-  {
-    "id": 408,
-    "description": "Contrebande",
-    "lieu": "Bordeaux",
-    "date": "2017-03-30",
-    "idCriminels": [
-      563,
-      979
-    ]
-  },
-  {
-    "id": 409,
-    "description": "Vol de voiture",
-    "lieu": "Bordeaux",
-    "date": "2019-09-17",
-    "idCriminels": [
-      741,
-      895,
-      973
-    ]
-  },
-  {
-    "id": 410,
-    "description": "Contrebande",
-    "lieu": "Nantes",
-    "date": "2020-08-31",
-    "idCriminels": [
-      158,
-      149,
-      412,
-      330
-    ]
-  },
-  {
-    "id": 411,
-    "description": "Braconnage",
-    "lieu": "Nantes",
-    "date": "2020-09-03",
-    "idCriminels": [
-      809,
-      544
-    ]
-  },
-  {
-    "id": 412,
-    "description": "Piratage informatique",
-    "lieu": "Grenoble",
-    "date": "2019-05-05",
-    "idCriminels": [
-      831,
-      600
-    ]
-  },
-  {
-    "id": 413,
-    "description": "Blanchiment d'argent",
-    "lieu": "Nice",
-    "date": "2025-03-02",
-    "idCriminels": [
-      412,
-      439,
-      835,
-      165
-    ]
-  },
-  {
-    "id": 414,
-    "description": "Contrebande",
-    "lieu": "Grenoble",
-    "date": "2018-06-16",
-    "idCriminels": [
-      542,
-      410
-    ]
-  },
-  {
-    "id": 415,
-    "description": "Faux en écriture",
-    "lieu": "Grenoble",
-    "date": "2019-09-13",
-    "idCriminels": [
-      563,
-      128
-    ]
-  },
-  {
-    "id": 416,
-    "description": "Contrebande",
-    "lieu": "Nantes",
-    "date": "2016-10-17",
-    "idCriminels": [
-      350
-    ]
-  },
-  {
-    "id": 417,
-    "description": "Usurpation d'identité",
-    "lieu": "Nice",
-    "date": "2022-06-01",
-    "idCriminels": [
-      656,
-      167
-    ]
-  },
-  {
-    "id": 418,
-    "description": "Extorsion",
-    "lieu": "Nantes",
-    "date": "2020-04-06",
-    "idCriminels": [
-      250,
-      741,
-      542
-    ]
-  },
-  {
-    "id": 419,
-    "description": "Harcèlement",
-    "lieu": "Lyon",
-    "date": "2023-08-28",
-    "idCriminels": [
-      250,
-      656
-    ]
-  },
-  {
-    "id": 420,
-    "description": "Corruption",
-    "lieu": "Bordeaux",
-    "date": "2017-02-23",
-    "idCriminels": [
-      827,
-      296,
-      419,
-      417
+    "date": "22-09-2021",
+    "etat": "En cours",
+    "informationsSupplementaires": "",
+    "idCriminels": [
+      3,
+      25,
+      32,
+      52
     ]
   }
 ]

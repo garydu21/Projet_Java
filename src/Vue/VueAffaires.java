@@ -46,6 +46,10 @@ public class VueAffaires extends JFrame {
         panelHaut.add(btnGraphe, BorderLayout.WEST);
         panelHaut.add(label);
         JButton btnPrediction = new JButton("Predire une affaire");
+        btnPrediction.setBorder(new RoundedBorder(10));
+        btnPrediction.setFont(fontButton);
+        btnPrediction.setBackground(Color.LIGHT_GRAY);
+        btnPrediction.setForeground(Color.BLACK);
         panelHaut.add(btnPrediction);
         add(panelHaut, BorderLayout.NORTH);
 
@@ -161,6 +165,10 @@ public class VueAffaires extends JFrame {
         panelHaut.add(btnGraphe, BorderLayout.WEST);
         panelHaut.add(label);
         JButton btnPrediction = new JButton("Predire une affaire");
+        btnPrediction.setBorder(new RoundedBorder(10));
+        btnPrediction.setFont(fontButton);
+        btnPrediction.setBackground(Color.LIGHT_GRAY);
+        btnPrediction.setForeground(Color.BLACK);
         add(panelHaut, BorderLayout.NORTH);
 
         // Centre
@@ -332,7 +340,20 @@ public class VueAffaires extends JFrame {
             String description = JOptionPane.showInputDialog(this, "Description :");
             String lieu = JOptionPane.showInputDialog(this, "Lieu :");
             String dateStr = JOptionPane.showInputDialog(this, "Date (yyyy-MM-dd) :");
-            String etat = JOptionPane.showInputDialog(this, "État de l'affaire :", "En cours");
+
+            String[] etats = {"En cours", "Résolue"};
+            JComboBox<String> etatCombo = new JComboBox<>(etats);
+            etatCombo.setSelectedIndex(0); // valeur par défaut : "En cours"
+
+            JPanel panelEtat = new JPanel();
+            panelEtat.add(new JLabel("État de l'affaire :"));
+            panelEtat.add(etatCombo);
+
+            int resultEtat = JOptionPane.showConfirmDialog(this, panelEtat, "Choisir l'état de l'affaire", JOptionPane.OK_CANCEL_OPTION);
+            if (resultEtat != JOptionPane.OK_OPTION) return;
+
+            String etat = (String) etatCombo.getSelectedItem();
+
             String infos = JOptionPane.showInputDialog(this, "Informations supplémentaires :", "");
 
             if (description == null || lieu == null || dateStr == null || etat == null || infos == null) return;
@@ -357,7 +378,20 @@ public class VueAffaires extends JFrame {
             String desc = JOptionPane.showInputDialog(this, "Modifier la description :", affaire.getDescription());
             String lieu = JOptionPane.showInputDialog(this, "Modifier le lieu :", affaire.getLieu());
             String dateStr = JOptionPane.showInputDialog(this, "Modifier la date (yyyy-MM-dd) :", affaire.getDate().toString());
-            String etat = JOptionPane.showInputDialog(this, "Modifier l'état :", affaire.getEtat());
+
+            String[] etats = {"En cours", "Résolue"};
+            JComboBox<String> etatCombo = new JComboBox<>(etats);
+            etatCombo.setSelectedItem(affaire.getEtat());
+
+            JPanel panelEtat = new JPanel();
+            panelEtat.add(new JLabel("Modifier l'état :"));
+            panelEtat.add(etatCombo);
+
+            int resultEtat = JOptionPane.showConfirmDialog(this, panelEtat, "État", JOptionPane.OK_CANCEL_OPTION);
+            if (resultEtat != JOptionPane.OK_OPTION) return;
+
+            String etat = (String) etatCombo.getSelectedItem();
+
             String infos = JOptionPane.showInputDialog(this, "Modifier les infos supplémentaires :", affaire.getInformationsSupplementaires());
 
             if (desc != null && lieu != null && dateStr != null && etat != null && infos != null) {
