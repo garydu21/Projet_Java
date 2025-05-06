@@ -118,8 +118,7 @@ public class Vue extends JFrame implements Observer {
     }
 
     private void ouvrirGestionEnquetes() {
-        // Open VueEnquetes frame, passing the modele instance
-        new VueEnquetes(modele);
+        new VueGestionEnqueteurs(modele);
     }
 
     private void ouvrirMap() {

@@ -3,8 +3,7 @@ package Modele;
 import Criminel.Criminel;
 import Criminel.Affaire;
 import Criminel.Affaire;
-import Enqueteur.Enquete;
-import Enqueteur.Enqueteur;
+import Criminel.Enqueteur;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -21,14 +20,12 @@ public class Modele extends Observable {
     private static final String FICHIER_JSON = "criminels.json";
     private static final String FICHIER_AFFAIRES = "affaires.json";
     private static final String FICHIER_CRIMES = "crimes.json";
-    private static final String FICHIER_ENQUETES = "enquetes.json";
-    private static final String FICHIER_ENQUETEURS = "enqueteurs.json";
 
     private List<Criminel> listeCriminel;
     private List<Affaire> listeAffaires;
     private ArrayList<Crime> listeCrimes;
-    private List<Enquete> listeEnquetes;
     private List<Enqueteur> listeEnqueteurs;
+    private static final String FICHIER_ENQUETEURS = "enqueteurs.json";
 
     private static final Gson gson = new GsonBuilder()
             .setDateFormat("dd-MM-yyyy") //Format ISO : yyyy-MM-dd, je n'ai pas encore regardé comment la passer en français - Angel
@@ -40,12 +37,10 @@ public class Modele extends Observable {
         this.listeCriminel = new ArrayList<>();
         this.listeAffaires = new ArrayList<>();
         this.listeCrimes = new ArrayList<>();
-        this.listeEnquetes = new ArrayList<>();
         this.listeEnqueteurs = new ArrayList<>();
         chargerDonnees();
         chargerAffaires();
         chargerCrimes();
-        chargerEnquetes();
         chargerEnqueteurs();
     }
 
@@ -59,9 +54,6 @@ public class Modele extends Observable {
 
     public List<Affaire> getListeAffaires() {
         return listeAffaires;
-    }
-    public List<Enquete> getListeEnquetes() {
-        return listeEnquetes;
     }
 
     public List<Enqueteur> getListeEnqueteurs() {
@@ -112,6 +104,41 @@ public class Modele extends Observable {
         }
     }
 
+    public void sauvegarderEnqueteurs() {
+        try (FileWriter writer = new FileWriter(FICHIER_ENQUETEURS)) {
+            gson.toJson(listeEnqueteurs, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void chargerEnqueteurs() {
+        File fichier = new File(FICHIER_ENQUETEURS);
+        if (fichier.exists()) {
+            try (FileReader reader = new FileReader(fichier)) {
+                Type listType = new TypeToken<ArrayList<Enqueteur>>() {}.getType();
+                listeEnqueteurs = gson.fromJson(reader, listType);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void assignerEnqueteurAffaire(Enqueteur enqueteur, Affaire affaire) {
+        affaire.assignerEnqueteur(enqueteur);
+        sauvegarderAffaires();
+        sauvegarderEnqueteurs();
+        setChanged();
+        notifyObservers();
+    }
+
+    public void retirerEnqueteurAffaire(Enqueteur enqueteur, Affaire affaire) {
+        affaire.retirerEnqueteur(enqueteur);
+        sauvegarderAffaires();
+        sauvegarderEnqueteurs();
+        setChanged();
+        notifyObservers();
+    }
 
     public void exporterJson(File fichier) {
         try (FileWriter writer = new FileWriter(fichier)) {
@@ -196,19 +223,30 @@ public class Modele extends Observable {
     }
 
     private void reconstruireLiens() {
-        // Créer une map des criminels par ID
         Map<Integer, Criminel> mapCriminels = new HashMap<>();
         for (Criminel c : listeCriminel) {
             mapCriminels.put(c.getId(), c);
         }
 
-        // Relier les suspects aux affaires, et vice-versa
+        Map<String, Enqueteur> mapEnqueteurs = new HashMap<>();
+        for (Enqueteur e : listeEnqueteurs) {
+            mapEnqueteurs.put(e.getId(), e);
+        }
+
         for (Affaire a : listeAffaires) {
             for (int id : a.getIdCriminels()) {
                 Criminel c = mapCriminels.get(id);
                 if (c != null) {
                     a.getSuspects().add(c);
                     c.getAffaires().add(a);
+                }
+            }
+
+            for (String id : a.getIdEnqueteurs()) {
+                Enqueteur e = mapEnqueteurs.get(id);
+                if (e != null) {
+                    a.getEnqueteurs().add(e);
+                    e.getAffairesAssignees().add(a);
                 }
             }
         }
@@ -247,92 +285,9 @@ public class Modele extends Observable {
         setChanged();
         notifyObservers();
     }
-
-    // Methods to add, remove, and modify Enqueteur
-    public void addEnqueteur(Enqueteur enqueteur) {
-        listeEnqueteurs.add(enqueteur);
-        sauvegarderEnqueteurs();
-        notifierChangement();
-    }
-
-    public void supprimerEnqueteur(int index) {
-        if (index >= 0 && index < listeEnqueteurs.size()) {
-            listeEnqueteurs.remove(index);
-            sauvegarderEnqueteurs();
-            notifierChangement();
-        }
-    }
-
-    // Similar methods for Enquete
-    public void ajouterEnquete(Enquete e) {
-        listeEnquetes.add(e);
-        sauvegarderEnquetes();
-        notifierChangement();
-    }
-
-    public void supprimerEnquete(Enquete e) {
-        if (listeEnquetes.remove(e)) {
-            sauvegarderEnquetes();
-            notifierChangement();
-        }
-    }
-
-    public void modifierEnquete(int index, Enquete e) {
-        if (index >= 0 && index < listeEnquetes.size()) {
-            listeEnquetes.set(index, e);
-            sauvegarderEnquetes();
-            notifierChangement();
-        }
-    }
-
-    private void chargerEnquetes() {
-        File fichier = new File(FICHIER_ENQUETES);
-        if (fichier.exists()) {
-            try (FileReader reader = new FileReader(fichier)) {
-                Type listType = new TypeToken<ArrayList<Enquete>>() {}.getType();
-                listeEnquetes = gson.fromJson(reader, listType);
-                if (listeEnquetes == null) {
-                    listeEnquetes = new ArrayList<>();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    private void sauvegarderEnquetes() {
-        try (FileWriter writer = new FileWriter(FICHIER_ENQUETES)) {
-            gson.toJson(listeEnquetes, writer);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     // Notify observers helper method (public wrapper)
     public void notifierChangement() {
         setChanged();
         notifyObservers();
-    }
-
-
-    // Load and save Enqueteurs JSON
-    private void sauvegarderEnqueteurs() {
-        try (FileWriter writer = new FileWriter(FICHIER_ENQUETEURS)) {
-            gson.toJson(listeEnqueteurs, writer);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void chargerEnqueteurs() {
-        File fichier = new File(FICHIER_ENQUETEURS);
-        if (fichier.exists()) {
-            try (FileReader reader = new FileReader(fichier)) {
-                Type listType = new TypeToken<ArrayList<Enqueteur>>() {}.getType();
-                listeEnqueteurs = gson.fromJson(reader, listType);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
     }
 }

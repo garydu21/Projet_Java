@@ -2,6 +2,8 @@ package Vue;
 
 import Criminel.Affaire;
 import Criminel.Criminel;
+import Criminel.Enqueteur;
+import Interface.RoundedBorder;
 import Modele.Modele;
 
 import javax.swing.*;
@@ -62,6 +64,12 @@ public class VueAffaires extends JFrame {
         panelBas.add(btnDissocierCriminel);
         add(panelBas, BorderLayout.SOUTH);
 
+        JButton btnGererEnqueteurs = new JButton("Gérer Enquêteurs");
+        btnGererEnqueteurs.setBorder(new RoundedBorder(10));
+        btnGererEnqueteurs.setBackground(Color.LIGHT_GRAY);
+        btnGererEnqueteurs.setForeground(Color.BLACK);
+        panelBas.add(btnGererEnqueteurs);
+
         // Actions
         mettreAJourListe();
 
@@ -72,6 +80,7 @@ public class VueAffaires extends JFrame {
         btnAssocierCriminel.addActionListener(e -> associerCriminel());
         btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
         btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
+        btnGererEnqueteurs.addActionListener(e -> gererEnqueteurs());
 
         setVisible(true);
     }
@@ -120,6 +129,13 @@ public class VueAffaires extends JFrame {
         panelBas.add(btnDissocierCriminel);
         add(panelBas, BorderLayout.SOUTH);
 
+        JButton btnGererEnqueteurs = new JButton("Gérer Enquêteurs");
+        btnGererEnqueteurs.setBorder(new RoundedBorder(10));
+        btnGererEnqueteurs.setBackground(Color.LIGHT_GRAY);
+        btnGererEnqueteurs.setForeground(Color.BLACK);
+        panelBas.add(btnGererEnqueteurs);
+
+
         // Actions
         mettreAJourAffichage();
 
@@ -130,6 +146,7 @@ public class VueAffaires extends JFrame {
         btnAssocierCriminel.addActionListener(e -> associerCriminel());
         btnAjouterPlusieurs.addActionListener(e -> associerCriminelsMultiples());
         btnDissocierCriminel.addActionListener(e -> dissocierCriminel());
+        btnGererEnqueteurs.addActionListener(e -> gererEnqueteurs());
 
         setVisible(true);
     }
@@ -198,6 +215,15 @@ public class VueAffaires extends JFrame {
                 sb.append("Suspects :\n");
                 for (Criminel c : suspects) {
                     sb.append(" - ").append(c.getNom()).append(" ").append(c.getPrenom()).append("\n");
+                }
+            }
+
+            List<Enqueteur> enqueteurs = affaire.getEnqueteurs();
+            if (!enqueteurs.isEmpty()) {
+                sb.append("\nEnquêteurs assignés :\n");
+                for (Enqueteur e : enqueteurs) {
+                    sb.append(" - ").append(e.getNom()).append(" ").append(e.getPrenom())
+                            .append(" (").append(e.getGrade()).append(")\n");
                 }
             }
 
@@ -365,6 +391,15 @@ public class VueAffaires extends JFrame {
                 mettreAJourAffichage();
                 listeAffaires.setSelectedIndex(listeAffaires.getSelectedIndex());
             }
+        }
+    }
+
+    private void gererEnqueteurs() {
+        Affaire affaire = getAffaireSelectionnee();
+        if (affaire != null) {
+            new VueEnqueteursAffaire(modele, affaire);
+        } else {
+            JOptionPane.showMessageDialog(this, "Veuillez sélectionner une affaire", "Erreur", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
